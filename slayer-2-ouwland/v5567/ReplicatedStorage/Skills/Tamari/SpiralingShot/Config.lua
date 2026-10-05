@@ -1,0 +1,28 @@
+local createVector = vector.create
+return {
+	SKILL_NAME = "Spiraling Shot",
+	STARTUP_DELAY = 0.17,
+	LAUNCH_DELAY = 1.83,
+	HIT_VFX_DELAY = 0.7,
+	GRAB_WINDOW = 0.25,
+	GRAB_OFFSET_STRIDE = 1.5,
+	POS_PART_NAME = "PosPartSpiralingShot",
+	AIM_RANGE = 500,
+	MOUSE_RANGE = 500,
+	SPHERECAST_RADIUS = 10,
+	DOWNCAST = 15,
+	TRACK_TICK = 0.05,
+	PROJECTILE_SPEED = 150,
+	PROJECTILE_LIFETIME = 3,
+	PROJECTILE_SIZE = createVector(12, 12, 12),
+	EXPLOSION_SIZE = createVector(22, 22, 22),
+	DAMAGE = 55,
+	STUN = 1.5,
+	RAGDOLL_DURATION = 1.5,
+	KNOCKBACK = 45,
+	BLOCK_BREAK = 5,
+	EXPLOSION_BLOCK_BREAK = 2,
+	PVP = {
+		RankedCooldown = 1.4
+	}
+}

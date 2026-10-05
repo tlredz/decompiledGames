@@ -1,0 +1,1 @@
+return require(script.Parent._Index["ouw2204_cleanit@2.0.9"].cleanit)

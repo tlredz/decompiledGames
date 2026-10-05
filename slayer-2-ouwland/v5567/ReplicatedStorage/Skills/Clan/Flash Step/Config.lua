@@ -1,0 +1,9 @@
+return {
+	MAX_HOLD = 1.5,
+	INPUT_DEADZONE = 0.1,
+	MOUSE_RANGE = 500,
+	SPEED = 66,
+	MAX_FORCE = 20000,
+	ENDLAG = 0.15,
+	INVISIBILITY_VALUE = "Invisibility"
+}

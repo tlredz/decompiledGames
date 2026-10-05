@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["ouw2204_data-serializer@1.0.4"]["data-serializer"])

@@ -1,0 +1,5 @@
+return table.freeze({
+	MAX_COIN_SPINS = 3,
+	COIN_SPIN_PRICE = 3000,
+	COIN_SPIN_COOLDOWN = 86400
+})

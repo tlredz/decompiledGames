@@ -1,0 +1,6 @@
+return {
+	WINDUP = 0.5,
+	LISTEN_DURATION = 6,
+	IMPRINT_DURATION = 30,
+	DODGE_WINDOW = 2
+}

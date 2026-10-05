@@ -1,0 +1,26 @@
+local Config = {
+	MOUSE_RANGE = 1500,
+	RUN_SPEED = 50,
+	LOOP_HITBOX_SIZE = vector.create(12, 10, 15),
+	LOOP_HITBOX_OFFSET = CFrame.new(0, 0, -5),
+	LOOP_INTERVAL = 0.1,
+	BLOCK_BREAK = 5,
+	ANIM_DURATION = 3.48,
+	CUTSCENE_PREAMBLE = 0.16
+}
+Config.SPIN_START = Config.CUTSCENE_PREAMBLE + 1.41
+Config.SPIN_END = Config.CUTSCENE_PREAMBLE + 2.13
+Config.SPIN_TICK = 0.1
+Config.SPIN_TICK_COUNT = math.floor((Config.SPIN_END - Config.SPIN_START) / Config.SPIN_TICK)
+Config.SPIN_TICK_DAMAGE = 4
+Config.IMPACT_AT = Config.ANIM_DURATION - 0.35
+Config.IMPACT_DAMAGE = 29
+Config.IMPACT_STUN = 1.5
+Config.IMPACT_RAGDOLL = 1.5
+Config.IMPACT_KNOCKBACK_FORWARD = 40
+Config.IMPACT_KNOCKBACK_UP = 20
+Config.IMPACT_KNOCKBACK_DURATION = 0.4
+Config.PVP = {
+	RankedCooldown = 1.4
+}
+return Config

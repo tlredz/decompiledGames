@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["mountaindouw_simplesignal@1.2.3"].simplesignal)

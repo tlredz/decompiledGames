@@ -1,0 +1,73 @@
+return {
+	UpdateInterval = 0.03333333333333333,
+	Danger = {
+		Enabled = true,
+		AttackTime = 0.3,
+		ReleaseTime = 0.65,
+		InactiveFadeTime = 0.15,
+		SampleTimeout = 0.4,
+		MinRate = 0.9,
+		MaxRate = 1.5
+	},
+	MusicFade = 1.2,
+	MaxVoices = 32,
+	MaxOneShotSeconds = 12,
+	RemoteFootstepGain = 0.18,
+	RemoteMovementGain = 0.35,
+	RemoteFootstepDistance = 36,
+	RemoteActionDistance = 65,
+	MaxNearbyCharacters = 8,
+	MinStepSpeed = 2,
+	MinStepInterval = 0.13,
+	FallbackStepDistance = 7,
+	FootstepPhases = { 0, 0.5 },
+	DefaultSurface = "Grass",
+	HardLandingSpeed = 35,
+	MinFallTime = 0.18,
+	CountdownPhases = {
+		Countdown = true,
+		Prepare = true,
+		HeroChoice = true
+	},
+	CrossingPhases = {
+		HeroRun = true,
+		GroupRun = true,
+		FinalRun = true
+	},
+	PhaseCues = {
+		Countdown = "MatchCountdown",
+		Prepare = "RoundReady",
+		GroupRun = "RunStart",
+		HeroRun = "HeroRunStart",
+		FinalRun = "FinalRunStart",
+		Results = "MatchEnd"
+	},
+	Materials = {
+		Grass = "Grass",
+		LeafyGrass = "Grass",
+		Ground = "Dirt",
+		Mud = "Dirt",
+		Sand = "Sand",
+		Sandstone = "Sand",
+		Snow = "Snow",
+		Ice = "Snow",
+		Glacier = "Snow",
+		Wood = "Wood",
+		WoodPlanks = "Wood",
+		Metal = "Metal",
+		CorrodedMetal = "Metal",
+		DiamondPlate = "Metal",
+		Foil = "Metal",
+		Concrete = "Concrete",
+		Brick = "Concrete",
+		Cobblestone = "Concrete",
+		Rock = "Concrete",
+		Slate = "Concrete",
+		Asphalt = "Concrete",
+		Pavement = "Concrete",
+		Marble = "Concrete",
+		Granite = "Concrete",
+		Pebble = "Concrete",
+		Water = "Water"
+	}
+}

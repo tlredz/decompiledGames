@@ -1,0 +1,1 @@
+return require(script.Parent._Index["ouw2204_spritesheetplayer@1.0.1"].spritesheetplayer)

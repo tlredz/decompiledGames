@@ -1,0 +1,1 @@
+return require(script.Parent["Plasma Blasters"])

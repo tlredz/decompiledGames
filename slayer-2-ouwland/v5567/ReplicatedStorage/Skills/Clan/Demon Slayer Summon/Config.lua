@@ -1,0 +1,19 @@
+return {
+	LOCK = 0.45,
+	WHISTLE_AT = 0.35,
+	WHISTLE_PAUSE_AT = 0.3,
+	FIRST_ARRIVAL_AT = 0.05,
+	ARRIVAL_STAGGER = 0.15,
+	TARGET_RANGE = 30,
+	SPHERECAST_RADIUS = 10,
+	DOWNCAST = 15,
+	MAX_AIM = 5,
+	MOUSE_RANGE = 500,
+	SUMMON_CONFIG = "Summoned Slayer",
+	SUMMON_COUNT = 1,
+	SUMMON_HEALTH = 1,
+	SUMMON_LIFETIME = 15,
+	ARRIVAL_FREEZE = 0.5,
+	LOCK_PART_NAME = "DemonSlayerSummonArrival",
+	SPAWN_OFFSETS = { CFrame.new(9.5, 0, 0), CFrame.new(-9.5, 0, 0), CFrame.new(0, 0, 9.5) }
+}

@@ -1,0 +1,24 @@
+local createVector = vector.create
+local Config = {
+	MOUSE_RANGE = 300,
+	WINDUP = 0.5,
+	CAST_DURATION = 1.07,
+	TORNADO_RANGE = 120,
+	TORNADO_SPEED = 45,
+	TORNADO_SIZE = createVector(16, 18, 16)
+}
+Config.TORNADO_LIFETIME = Config.TORNADO_RANGE / Config.TORNADO_SPEED
+Config.TORNADO_SPAWN_OFFSET = CFrame.new(0, Config.TORNADO_SIZE.Y / 2 - 3, -4)
+Config.TORNADO_VFX_OFFSET = CFrame.new(0, -3.25, 0)
+Config.TORNADO_BLOCK_BREAK = 1.5
+Config.CAPTURE_INITIAL_DAMAGE = 2
+Config.CAPTURE_TICK_INTERVAL = 0.35
+Config.CAPTURE_TICK_DAMAGE = 2
+Config.CAPTURE_STRICT_STUN = 4
+Config.SPIN_OFFSET = createVector(0, 0, -7)
+Config.SPIN_INCREMENT = 0.05
+Config.SPIN_RISE_RATE = 0.2
+Config.BURST_DAMAGE = 12
+Config.BURST_STUN = 1.5
+Config.BURST_KNOCKBACK = 45
+return Config

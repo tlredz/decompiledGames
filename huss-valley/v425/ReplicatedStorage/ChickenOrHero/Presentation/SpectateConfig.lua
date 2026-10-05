@@ -1,0 +1,21 @@
+return table.freeze({
+	Enabled = true,
+	Speed = 48,
+	FastSpeed = 90,
+	Acceleration = 9,
+	LookSmoothness = 20,
+	FollowSmoothness = 12,
+	MouseSensitivity = 0.0035,
+	TouchSensitivity = 0.007,
+	GamepadLookSpeed = 2.4,
+	OrbitDistance = 18,
+	MinDistance = 5,
+	MaxDistance = 65,
+	MinPitch = -1.4,
+	MaxPitch = 1.25,
+	FieldInset = 1.5,
+	MinHeight = 2,
+	MaxHeight = 85,
+	CameraRadius = 0.5,
+	FocusInterval = 0.2
+})

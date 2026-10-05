@@ -1,0 +1,15 @@
+return {
+	MOUSE_RANGE = 80,
+	POS_PART_NAME = "PosPart" .. script.Parent.Name,
+	STARTUP_DELAY = 0.5,
+	GRAB_DURATION = 2.4166666666666665,
+	MISS_RECOVERY = 0.8,
+	TOTAL_DURATION = 3.5,
+	SPIKE_HITBOX_SIZE = vector.create(20, 20, 20),
+	HIT_DAMAGE = 11,
+	HIT_STUN = 1.5,
+	HIT_KNOCKBACK = 55,
+	PVP = {
+		RankedCooldown = 1.1428571428571428
+	}
+}

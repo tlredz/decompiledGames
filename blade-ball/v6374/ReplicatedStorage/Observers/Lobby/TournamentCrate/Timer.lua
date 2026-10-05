@@ -1,0 +1,12 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Observers = require(ReplicatedStorage.Packages.Observers)
+local Utils = require(ReplicatedStorage.Common.Utils)
+local TournamentCrateData = require(ReplicatedStorage.Shared.TournamentCrateData)
+return Observers.observeTagNoAncestry("TournamentCrateTimer", function(p)
+	local connection = Utils.Thread.Every(1, function()
+		p.Text = Utils.ValueConvertor:FormatTimeWithDays(TournamentCrateData.TimeLength.UnixTimestamp - workspace:GetServerTimeNow())
+	end)
+	return function()
+		connection:Disconnect()
+	end
+end)

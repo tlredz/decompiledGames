@@ -1,0 +1,10 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+require(ReplicatedStorage.ClientGameModules.FFlagClient)
+local SantaMarketData = require(ReplicatedStorage.Shared.SantaMarket.SantaMarketData)
+local Observers = require(ReplicatedStorage.Packages.Observers)
+return Observers.observeTagNoAncestry("SantaMarketEndTime", function(instance)
+	instance:SetAttribute("EndTime", SantaMarketData.EndTimestamp)
+	return function()
+		instance:SetAttribute("EndTime", nil)
+	end
+end)

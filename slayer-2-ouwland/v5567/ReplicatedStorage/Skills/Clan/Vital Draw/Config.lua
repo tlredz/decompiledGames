@@ -1,0 +1,11 @@
+return {
+	DRAWS = { "Heart", "Muscle", "Lungs" },
+	HEART_HEAL = 150,
+	MUSCLE_DURATION = 11,
+	MUSCLE_DODGES = 5,
+	MUSCLE_BUFF_VALUE = "VitalDrawMuscle",
+	MUSCLE_BUFF_MASTERY = "Fist",
+	MUSCLE_BUFF_AMOUNT = 0.15,
+	LUNGS_MAX_STAMINA = 150,
+	LUNGS_DURATION = 15
+}

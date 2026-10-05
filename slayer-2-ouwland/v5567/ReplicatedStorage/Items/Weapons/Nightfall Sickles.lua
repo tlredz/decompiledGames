@@ -1,0 +1,56 @@
+local Menum = require(game.ReplicatedStorage:WaitForChild("CAM"):WaitForChild("Global"):WaitForChild("Menum"))
+require(game.ReplicatedStorage.CAM.Global.Types.ItemTypes)
+return {
+	Icon = "rbxassetid://102115345920287",
+	Description = "Paired set sickles that drink torchlight along the curve, made for Blood Manipulation and the reaper's spinning rush.",
+	Rarity = 6,
+	Series = "Nightfall",
+	EquipType = Menum.ItemEquipType.Toolbar,
+	Price = {
+		["Mythic Refinement Ore"] = 4
+	},
+	DemonArt = "Blood Manipulation",
+	EquipRequirements = {
+		Race = { "Demon", "Hybrid" }
+	},
+	HasCombat = true,
+	CombatPreset = "Sickles",
+	Mastery = "Sickles",
+	SkillCategory = "Sickles",
+	ActiveToolStats = {
+		["Additional Damage"] = 5.75,
+		["Additional Damage Factor"] = 0.151,
+		["Block Points"] = 7.95,
+		["Block Regen"] = 1.31,
+		["Max Stamina"] = 5
+	},
+	Skills = {
+		{
+			Name = "Blocking",
+			Key = "F",
+			CoolDown = 1,
+			icon = "http://www.roblox.com/asset/?id=12529007524"
+		},
+		{
+			Name = "Execution Scyther",
+			SkillStats = {
+				additional_damage_scale = 0.4
+			},
+			CoolDown = 18,
+			icon = "rbxassetid://74114109530745",
+			Max_Hold = 5,
+			Stamina = 28
+		},
+		{
+			Name = "Scyther Vortex",
+			SkillStats = {
+				additional_damage_scale = 0.28
+			},
+			CoolDown = 15,
+			icon = "rbxassetid://85996996726779",
+			Max_Hold = 5,
+			Boss = "Hoyuzo",
+			Stamina = 24
+		}
+	}
+}

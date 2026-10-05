@@ -1,0 +1,13 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Utils = require(ReplicatedStorage.Common.Utils)
+local Observers = require(ReplicatedStorage.Packages.Observers)
+local FFlagClient = require(ReplicatedStorage.ClientGameModules.FFlagClient)
+local GenericGachaController = require(ReplicatedStorage.Controllers.UI.GenericGachaController)
+return Observers.observeTag("GenericGachaLuckTimer", function(p)
+	local connection = Utils.Thread.Every(1, function()
+		p.Text = Utils.ValueConvertor:FormatTimeHHMMSS((FFlagClient:IsDataReady() and FFlagClient:GetKey((`{GenericGachaController.Identifier}LuckEndTime`)) or 0) - workspace:GetServerTimeNow())
+	end)
+	return function()
+		connection:Disconnect()
+	end
+end, { workspace })

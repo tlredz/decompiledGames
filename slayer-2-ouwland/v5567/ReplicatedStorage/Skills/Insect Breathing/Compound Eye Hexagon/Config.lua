@@ -1,0 +1,33 @@
+local createVector = vector.create
+local Config = {
+	MOUSE_RANGE = 500,
+	WINDUP = 0.2,
+	LOOP_TICK_INTERVAL = 0.15,
+	LOOP_DAMAGE = 0.25,
+	LOOP_STUN = 1,
+	LOOP_KNOCKUP = 0.01,
+	LOOP_KNOCKBACK_DUR = 0.15,
+	LOOP_BLOCK_BREAK = 0.325,
+	LOOP_HITBOX_SIZE = createVector(14, 11.2, 25.9)
+}
+Config.LOOP_HITBOX_OFFSET = CFrame.new(0, 0, -(Config.LOOP_HITBOX_SIZE.Z / 2 - 1))
+Config.DASH_START_AT = 0.2
+Config.UNHOLD_CANCEL_WINDOW = 0.6
+Config.UNHOLD_LOCK_DURATION = 0.7
+Config.DASH_SPEED = 80
+Config.DASH_DURATION = 0.5
+Config.DASH_DISTANCE = 43.5
+Config.DASH_HITBOX_COUNT = 6
+Config.DASH_SWEEP_DURATION = 0.4
+Config.DASH_HITBOX_SIZE = createVector(14, 14, 12.6)
+Config.DASH_HITBOX_START_OFFSET = CFrame.new(0, 0, 4)
+Config.DASH_DAMAGE = 7
+Config.DASH_STUN = 1
+Config.DASH_RAGDOLL = 1
+Config.DASH_KNOCKBACK = 65
+Config.DASH_KNOCKUP = 2
+Config.DASH_KNOCKBACK_DUR = 0.15
+Config.DASH_BLOCK_BREAK = 2.5
+Config.POISON_TICK_DAMAGE = 1
+Config.POISON_DURATION = 5
+return Config

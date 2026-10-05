@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["ouw2204_faye@2.5.4"].faye)

@@ -1,0 +1,79 @@
+==================== DECOMPILE ERRORS ====================
+Game: Survive 99 Nights (v714)
+Total problems: 19
+
+#1 [SYNTAX] Players.LocalPlayer.PlayerScripts.Client.CutsceneModuleClient.CutsceneSequences.HappyFinalRam
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/CutsceneModuleClient/CutsceneSequences/HappyFinalRam.lua
+    error: oPaZVOfeFWBpOUZjzvWhJcuYH:98: Expected identifier when parsing expression, got ';'
+
+#2 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.ClassModules.UndeadClass
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/ClassModules/UndeadClass.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.UpdateParty.GemRainClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/GemRainClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.UpdateParty.RedChestMeteorClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/RedChestMeteorClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.UpdateParty.UpdatePartyBoostpadClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/UpdatePartyBoostpadClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.UpdateParty.DiamondTreeClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/DiamondTreeClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#7 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.UpdateParty.AlienChestSpawnClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/AlienChestSpawnClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#8 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.NpcModules.NPCModuleClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/NpcModules/NPCModuleClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#9 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Client.AnimalTamingModules.AnimalTamingClient
+    file:  decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/AnimalTamingModules/AnimalTamingClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#10 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.CutsceneModuleClient.CutsceneSequences.HappyFinalRam
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/CutsceneModuleClient/CutsceneSequences/HappyFinalRam.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/CutsceneModuleClient/CutsceneSequences/HappyFinalRam.lua, which had status SYNTAX_ERROR
+
+#11 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.ClassModules.UndeadClass
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/ClassModules/UndeadClass.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/ClassModules/UndeadClass.lua, which had status FAILED
+
+#12 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.UpdateParty.GemRainClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/UpdateParty/GemRainClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/GemRainClient.lua, which had status FAILED
+
+#13 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.UpdateParty.RedChestMeteorClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/UpdateParty/RedChestMeteorClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/RedChestMeteorClient.lua, which had status FAILED
+
+#14 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.UpdateParty.UpdatePartyBoostpadClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/UpdateParty/UpdatePartyBoostpadClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/UpdatePartyBoostpadClient.lua, which had status FAILED
+
+#15 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.UpdateParty.DiamondTreeClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/UpdateParty/DiamondTreeClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/DiamondTreeClient.lua, which had status FAILED
+
+#16 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.UpdateParty.AlienChestSpawnClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/UpdateParty/AlienChestSpawnClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/UpdateParty/AlienChestSpawnClient.lua, which had status FAILED
+
+#17 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.NpcModules.NPCModuleClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/NpcModules/NPCModuleClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/NpcModules/NPCModuleClient.lua, which had status FAILED
+
+#18 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Client.AnimalTamingModules.AnimalTamingClient
+    file:  decompiledGames/survive-99-nights/v714/StarterPlayer/StarterPlayerScripts/Client/AnimalTamingModules/AnimalTamingClient.lua
+    error: copied from decompiledGames/survive-99-nights/v714/Players/LocalPlayer/PlayerScripts/Client/AnimalTamingModules/AnimalTamingClient.lua, which had status FAILED
+
+#19 [DECOMPILE] ReplicatedStorage.Tools.NecromancerStaff
+    file:  decompiledGames/survive-99-nights/v714/ReplicatedStorage/Tools/NecromancerStaff.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

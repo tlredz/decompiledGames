@@ -1,0 +1,12 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Observers = require(ReplicatedStorage.Packages.Observers)
+local Utils = require(ReplicatedStorage.Common.Utils)
+local SpecialTrainingData = require(ReplicatedStorage.Shared.SpecialTrainingData)
+return Observers.observeTagNoAncestry("TrainingExpiresTime", function(p)
+	local connection = Utils.Thread.Every(1, function()
+		p.Text = Utils.ValueConvertor:FormatTimeWithDaysFull(SpecialTrainingData.MAXEVENTTIME.UnixTimestamp - workspace:GetServerTimeNow())
+	end)
+	return function()
+		connection:Disconnect()
+	end
+end)

@@ -1,0 +1,16 @@
+local createVector = vector.create
+return {
+	HOLD_MAX_DUR = 10,
+	TICK_INTERVAL = 0.15,
+	TICK_DAMAGE = 0.1,
+	TICK_STUN = 1,
+	TICK_RAGDOLL = 1.5,
+	TICK_BLOCK_BREAK = 0.3,
+	TICK_HITBOX_SIZE = createVector(60, 23, 60),
+	FINAL_DAMAGE = 0.1,
+	FINAL_STUN = 1,
+	FINAL_RAGDOLL = 1.5,
+	FINAL_KNOCKUP = 75,
+	FINAL_KNOCKBACK_DUR = 0.4,
+	FINAL_HITBOX_SIZE = createVector(60, 40, 60)
+}

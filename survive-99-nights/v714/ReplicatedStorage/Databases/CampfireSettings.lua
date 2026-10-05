@@ -1,0 +1,3 @@
+return {
+	MaxLevel = 7
+}

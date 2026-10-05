@@ -1,0 +1,663 @@
+==================== DECOMPILE ERRORS ====================
+Game: Blade Ball (v6374)
+Total problems: 165
+
+#1 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#7 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#8 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#9 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#10 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#11 [DECOMPILE] Workspace.bobo(KeyFrames R Merged).Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#12 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#13 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#14 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#15 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#16 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#17 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#18 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#19 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#20 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#21 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#22 [CACHED_ERROR] Workspace.Alive.dear_x7z6w3v66pp99y.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/dear_x7z6w3v66pp99y/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#23 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#24 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#25 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#26 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#27 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#28 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#29 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#30 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#31 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#32 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#33 [CACHED_ERROR] Workspace.Dead.ho1Iowed.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Dead/ho1Iowed/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#34 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#35 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#36 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#37 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#38 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#39 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#40 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#41 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#42 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#43 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#44 [CACHED_ERROR] Workspace.Alive.Dj_niuss.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Dj_niuss/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#45 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#46 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#47 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#48 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#49 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#50 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#51 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#52 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#53 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#54 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#55 [CACHED_ERROR] Workspace.Alive.EMMA56743974.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/EMMA56743974/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#56 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#57 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#58 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#59 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#60 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#61 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#62 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#63 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#64 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#65 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#66 [CACHED_ERROR] Workspace.Alive.gh0stlyveil_34.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/gh0stlyveil_34/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#67 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#68 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#69 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#70 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#71 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#72 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#73 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#74 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#75 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#76 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#77 [CACHED_ERROR] Workspace.Alive.LocalPlayer.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/LocalPlayer/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#78 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#79 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#80 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#81 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#82 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#83 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#84 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#85 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#86 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#87 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#88 [CACHED_ERROR] Workspace.Alive.coolkidchace59.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/coolkidchace59/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#89 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#90 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#91 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#92 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#93 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#94 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#95 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#96 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#97 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#98 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#99 [CACHED_ERROR] Workspace.Alive.Mochii92134.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/Mochii92134/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#100 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#101 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#102 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#103 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#104 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#105 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#106 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#107 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#108 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#109 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#110 [CACHED_ERROR] Workspace.Alive.sushicatkiki.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/sushicatkiki/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#111 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#112 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#113 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#114 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#115 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#116 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#117 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#118 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#119 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#120 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#121 [CACHED_ERROR] Workspace.Alive.xkittycatdjx.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/Workspace/Alive/xkittycatdjx/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#122 [DECOMPILE] Players.LocalPlayer.PlayerScripts.ClientLoader.ControllerRunners.SwordsController 
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/ClientLoader/ControllerRunners/SwordsController ^12.lua
+    error: HttpError: ServerProtocolError
+
+#123 [DECOMPILE] Players.LocalPlayer.PlayerScripts.ClientLoader.ControllerRunners.SinglePassShopController
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/ClientLoader/ControllerRunners/SinglePassShopController.lua
+    error: HttpError: ServerProtocolError
+
+#124 [DECOMPILE] Players.LocalPlayer.PlayerScripts.ClientLoader.ControllerRunners.EmoteController
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/ClientLoader/ControllerRunners/EmoteController.lua
+    error: HttpError: ServerProtocolError
+
+#125 [DECOMPILE] Players.LocalPlayer.PlayerScripts.EffectScripts.BallReplicationHandler
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/EffectScripts/BallReplicationHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#126 [DECOMPILE] Players.LocalPlayer.PlayerScripts.EffectScripts.ClientFX
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/EffectScripts/ClientFX.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#127 [DECOMPILE] Players.LocalPlayer.PlayerGui.RankedSelection.RankedSelectionClient.HistoryManager
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerGui/RankedSelection/RankedSelectionClient/HistoryManager.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#128 [DECOMPILE] Players.LocalPlayer.PlayerGui.RankedSelection.RankedSelectionClient.StatsManager
+    file:  decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerGui/RankedSelection/RankedSelectionClient/StatsManager.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#129 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.EffectScripts.BallReplicationHandler
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterPlayerScripts/EffectScripts/BallReplicationHandler.lua
+    error: copied from decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/EffectScripts/BallReplicationHandler.lua, which had status FAILED
+
+#130 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.EffectScripts.ClientFX
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterPlayerScripts/EffectScripts/ClientFX.lua
+    error: copied from decompiledGames/blade-ball/v6374/Players/LocalPlayer/PlayerScripts/EffectScripts/ClientFX.lua, which had status FAILED
+
+#131 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Raging Deflection
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Raging Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Raging Deflection.lua, which had status FAILED
+
+#132 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Death Slash.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Death Slash.lua, which had status FAILED
+
+#133 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Rapture
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Rapture.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Rapture.lua, which had status FAILED
+
+#134 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Phantom
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Phantom.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Phantom.lua, which had status FAILED
+
+#135 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Hell Hook
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Hell Hook.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Hell Hook.lua, which had status FAILED
+
+#136 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Calming Deflection
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Calming Deflection.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Calming Deflection.lua, which had status FAILED
+
+#137 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Continuity Zero
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Continuity Zero.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Continuity Zero.lua, which had status FAILED
+
+#138 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Telekinesis
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Telekinesis.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Telekinesis.lua, which had status FAILED
+
+#139 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Slash of Duality.DualityChoice
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Slash of Duality/DualityChoice.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Slash of Duality/DualityChoice.lua, which had status FAILED
+
+#140 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Bounty.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Bounty.lua, which had status FAILED
+
+#141 [CACHED_ERROR] StarterPlayer.StarterCharacterScripts.Abilities.Revenge
+    file:  decompiledGames/blade-ball/v6374/StarterPlayer/StarterCharacterScripts/Abilities/Revenge.lua
+    error: copied from decompiledGames/blade-ball/v6374/Workspace/bobo(KeyFrames R Merged)/Abilities/Revenge.lua, which had status FAILED
+
+#142 [DECOMPILE] ReplicatedStorage.UserGenerated.IO.Crypto.AES.Modes
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/UserGenerated/IO/Crypto/AES/Modes.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#143 [DECOMPILE] ReplicatedStorage.Common.ItemsUtil.ItemLoader
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Common/ItemsUtil/ItemLoader.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#144 [DECOMPILE] ReplicatedStorage.Shared.GameAnalyticsSDK.GameAnalytics.Events
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/GameAnalyticsSDK/GameAnalytics/Events.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#145 [DECOMPILE] ReplicatedStorage.Shared.GameAnalyticsSDK.GameAnalytics.HttpApi.HashLib
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/GameAnalyticsSDK/GameAnalytics/HttpApi/HashLib.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#146 [DECOMPILE] ReplicatedStorage.Shared.Abilities
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#147 [DECOMPILE] ReplicatedStorage.Shared.Abilities.Reaper
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities/Reaper.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#148 [DECOMPILE] ReplicatedStorage.Shared.Abilities.Death Slash
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities/Death Slash.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#149 [DECOMPILE] ReplicatedStorage.Shared.Abilities.Pulse
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities/Pulse.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#150 [DECOMPILE] ReplicatedStorage.Shared.Abilities.Qi-Charge
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities/Qi-Charge.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#151 [DECOMPILE] ReplicatedStorage.Shared.Abilities.Bounty
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/Abilities/Bounty.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#152 [DECOMPILE] ReplicatedStorage.Shared.ThreadSafeTargetingHelper
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/ThreadSafeTargetingHelper.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#153 [DECOMPILE] ReplicatedStorage.Shared.AbilityTimelineHandler
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/AbilityTimelineHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#154 [DECOMPILE] ReplicatedStorage.Shared.RankedDisabledAbilities
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/RankedDisabledAbilities.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#155 [DECOMPILE] ReplicatedStorage.Controllers.GiftingController
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/GiftingController.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#156 [DECOMPILE] ReplicatedStorage.Controllers.SwordsController 
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/SwordsController ^12.lua
+    error: HttpError: ServerProtocolError
+
+#157 [DECOMPILE] ReplicatedStorage.Controllers.SwordsController .PRY
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/SwordsController ^12/PRY.lua
+    error: HttpError: ServerProtocolError
+
+#158 [DECOMPILE] ReplicatedStorage.Controllers.UI.PersonalStatsController
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/UI/PersonalStatsController.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#159 [DECOMPILE] ReplicatedStorage.Controllers.UI.RankedSelectionController
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/UI/RankedSelectionController.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#160 [SYNTAX] ReplicatedStorage.Controllers.Tournaments.Event.TournamentEventCrateController
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Controllers/Tournaments/Event/TournamentEventCrateController.lua
+    error: BqVpLaaLITaMtGVhuGZQLPiTo:32: Expected identifier when parsing expression, got `TournamentEvent{
+
+#161 [DECOMPILE] ReplicatedStorage.Misc.DragonMoves.FixDragon2.Serpent
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Misc/DragonMoves/FixDragon2/Serpent.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#162 [DECOMPILE] ReplicatedStorage.Misc.DragonMoves.BigDragon.Serpent
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Misc/DragonMoves/BigDragon/Serpent.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#163 [CACHED_ERROR] ReplicatedStorage.Packages.GameAnalytics.GameAnalytics.HttpApi.HashLib
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Packages/GameAnalytics/GameAnalytics/HttpApi/HashLib.lua
+    error: copied from decompiledGames/blade-ball/v6374/ReplicatedStorage/Shared/GameAnalyticsSDK/GameAnalytics/HttpApi/HashLib.lua, which had status FAILED
+
+#164 [DECOMPILE] ReplicatedStorage.Packages.GameAnalytics.GameAnalytics.Events
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Packages/GameAnalytics/GameAnalytics/Events.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#165 [DECOMPILE] ReplicatedStorage.Packages.Chroma.node_modules.luau-regexp.src.RegEx
+    file:  decompiledGames/blade-ball/v6374/ReplicatedStorage/Packages/Chroma/node_modules/luau-regexp/src/RegEx.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

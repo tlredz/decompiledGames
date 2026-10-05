@@ -1,0 +1,22 @@
+local createVector = vector.create
+return {
+	DASH_SPEED = 72,
+	MAX_DASH_DURATION = 0.8,
+	MOUSE_RANGE = 100,
+	FRONT_STOP_OFFSET = CFrame.new(0, 0, -7),
+	FRONT_STOP_SIZE = createVector(10, 10, 15),
+	BRANCH_SIGNAL_TIMEOUT = 0.5,
+	KICK_DAMAGE = 8,
+	KICK_STUN = 1.2,
+	KICK_BLOCK_BREAK = 1,
+	KICK_UPWARD = 0.5,
+	KICK_HITBOX_SIZE = createVector(12, 12, 16),
+	KICK_HITBOX_OFFSET = CFrame.new(0, 0, -10),
+	SLAM_DAMAGE = 16,
+	SLAM_STUN = 1.6,
+	SLAM_KNOCKBACK = 30,
+	SLAM_UPWARD = 10,
+	SLAM_DOWNWARD = 25,
+	SLAM_BLOCK_BREAK = 2,
+	SLAM_HITBOX_OFFSET = CFrame.new(0, 0, -4)
+}

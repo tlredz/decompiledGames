@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["prophetouw_translatewrapper@1.0.6"].translatewrapper)

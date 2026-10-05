@@ -1,0 +1,7 @@
+local Players = game:GetService("Players")
+Players.PlayerAdded:Connect(function(player)
+	player.CharacterRemoving:Connect(function(character)
+		task.wait(61)
+		character:Destroy()
+	end)
+end)

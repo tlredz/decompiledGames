@@ -1,0 +1,3 @@
+return {
+	CoinsPerVote = 50
+}

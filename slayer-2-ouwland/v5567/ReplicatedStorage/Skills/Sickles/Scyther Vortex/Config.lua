@@ -1,0 +1,26 @@
+local createVector = vector.create
+local Config = {
+	HOLD_AT = 0.25,
+	BACK_DISTANCE = 25,
+	BACK_TIME = 0.5,
+	RELEASE_WINDUP = 0.3,
+	SELF_LOCK_DURATION = 1.2,
+	TORNADO_FORWARD = 10,
+	TORNADO_SIZE = createVector(25, 30, 25),
+	HITBOX_OFFSET = CFrame.new(0, 10, 0),
+	DURATION = 4,
+	SPIN_OFFSET = createVector(0, 0, -6),
+	SPIN_INCREMENT = 0.05,
+	SPIN_RISE_RATE = 0.2,
+	RESCAN_INTERVAL = 0.3,
+	CAPTURE_TICK_INTERVAL = 0.35
+}
+Config.CAPTURE_STRICT_STUN = Config.DURATION + 1
+Config.TOTAL_DAMAGE = 30
+Config.CAPTURE_INITIAL_DAMAGE = 2
+Config.BLOCK_BREAK = 0.75
+Config.BURST_DAMAGE = 8
+Config.BURST_STUN = 1.3
+Config.BURST_KNOCKBACK = 45
+Config.BURST_KNOCKUP = 8
+return Config

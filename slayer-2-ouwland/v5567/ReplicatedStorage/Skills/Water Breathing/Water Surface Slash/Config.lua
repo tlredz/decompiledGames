@@ -1,0 +1,20 @@
+local createVector = vector.create
+return {
+	MOUSE_RANGE = 1500,
+	DASH_SPEED = 60,
+	DASH_HITBOX_SIZE = createVector(13.5, 7, 25),
+	DASH_HITBOX_OFFSET = CFrame.new(0, 0, -11.5),
+	RUN_IFRAME_MAX = 5,
+	SLASH_AT = 0.315,
+	SLASH_DAMAGE = 15,
+	SLASH_STUN = 1,
+	SLASH_RAGDOLL = 1,
+	SLASH_KNOCKBACK = 30,
+	SLASH_BLOCK_BREAK = 3,
+	SLASH_HITBOX_SIZE = createVector(18, 12, 30),
+	SLASH_HITBOX_OFFSET = CFrame.new(0, 0, 0),
+	SPEED_BUFF_VALUE = "WaterSurfaceSlashSpeed",
+	SPEED_BUFF_DURATION = 5,
+	SPEED_BUFF_FACTOR = 0.15,
+	RANKED_STUN_CUT = 0.3
+}

@@ -1,0 +1,6 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Observers = require(ReplicatedStorage.Packages.Observers)
+local module = require("@game/ReplicatedStorage/Shared/InfiniteBattlepass/InfiniteBattlepassData")
+return Observers.observeTagNoAncestry("UI_SeasonPassCurrencyName", function(instance)
+	instance.Text = string.format(instance:GetAttribute("Pattern") or "%s", module.SeasonData.Currency.Name)
+end)

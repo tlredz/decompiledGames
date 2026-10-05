@@ -1,0 +1,22 @@
+local Config = {
+	ANIM_DURATION = 1.5333333333333334,
+	VFX_AT = 0.7,
+	FLING_AT = 1.0666666666666667,
+	GRAB_HITBOX_SIZE = vector.create(10, 10, 10)
+}
+Config.GRAB_HITBOX_OFFSET = CFrame.new(0, 0, -(Config.GRAB_HITBOX_SIZE.Z / 2 - 1))
+Config.BLOCK_BREAK = 1
+Config.GRAB_FORWARD = 0
+Config.GRAB_OFFSET_STRIDE = 1.5
+Config.DOSE_AT = 0.25
+Config.IMPACT_STUN = 1
+Config.KNOCKBACK = 30
+Config.KNOCKUP = 10
+Config.KNOCKBACK_DURATION = 0.25
+Config.FLING_DAMAGE = 12
+Config.DEBUFF_VALUE = "DemonCoagulantDose"
+Config.DEBUFF_DURATION = 5
+Config.DEBUFF_DAMAGE_FACTOR = -0.2
+Config.TICK_VALUE = "Poison Tick"
+Config.TICK_DURATION = 3
+return Config
