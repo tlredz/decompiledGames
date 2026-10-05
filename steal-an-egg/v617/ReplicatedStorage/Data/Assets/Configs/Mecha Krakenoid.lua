@@ -1,0 +1,90 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Rarity = require(ReplicatedStorage.Data.Rarity)
+
+local function makeAnimation(animationId: string)
+	local animation = Instance.new("Animation")
+
+	local function setAnimationId()
+		animation.AnimationId = animationId
+	end
+
+	if not pcall(setAnimationId) then
+		warn((`Animation {animationId} is not shared with this experience`))
+	end
+
+	return animation
+end
+
+local v = {
+	_id = "Mecha Krakenoid",
+	DisplayName = "Mecha Krakenoid",
+	Icon = "rbxassetid://129060456008038",
+	Egg = table.freeze({
+		DisplayName = "Mecha Krakenoid Egg",
+		Icon = "rbxassetid://96353647829204",
+		ModelName = "Mecha Egg",
+		GrowthTime = 10,
+		WeightKg = 6,
+		HideRarity = true,
+		IgnoreSizeGrowthMultiplier = true
+	}),
+	WhiteImage = nil,
+	MutationIcons = nil,
+	EarningRate = 1000000000,
+	IndexSpeedReward = 0,
+	DropWeight = 0,
+	VisualOdds = 1538.461538,
+	ModelWeight = 35,
+	Animations = 0,
+	WalkAnimationReferenceSpeed = nil,
+	Rarity = 0,
+	BaseModelScale = 1,
+	LimitedEggViewportScale = 1,
+	LimitedEggViewportVerticalOffset = 0,
+	BaseModelColor = 0,
+	PossibleModelColors = 0,
+	PlaceSound = nil,
+	WalkSound = nil,
+	RandomIdleSound = nil,
+	LuckyBlockDropTable = nil,
+	LuckyBlockDropTableType = nil,
+	LuckyBlockLevelRange = nil,
+	LuckyBlockOpenDuration = nil,
+	DontRoll = true,
+	CannotFuse = nil,
+	GenderLocked = nil,
+	AlbinosColorFullWhite = nil
+}
+local animation = Instance.new("Animation")
+local animationId2 = "rbxassetid://93950254562064"
+
+local function setAnimationId()
+	animation.AnimationId = animationId2
+end
+
+if not pcall(setAnimationId) then
+	warn("Animation rbxassetid://93950254562064 is not shared with this experience")
+end
+
+local v2 = {
+	Idle = animation,
+	Walk = 0,
+	TransitionFadeDuration = nil
+}
+local animation2 = Instance.new("Animation")
+local animationId3 = "rbxassetid://134552179576383"
+
+local function setAnimationId2()
+	animation2.AnimationId = animationId3
+end
+
+if not pcall(setAnimationId2) then
+	warn("Animation rbxassetid://134552179576383 is not shared with this experience")
+end
+
+v2.Walk = animation2
+v.Animations = table.freeze(v2)
+v.Rarity = Rarity.Rarities.Eternal
+v.BaseModelColor = Color3.fromRGB(150, 160, 175)
+v.PossibleModelColors = table.freeze({ table.freeze({ Color3.fromRGB(150, 160, 175), 1 }) })
+return (table.freeze(v))

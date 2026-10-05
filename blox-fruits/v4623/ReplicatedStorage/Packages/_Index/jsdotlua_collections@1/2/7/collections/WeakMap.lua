@@ -1,0 +1,26 @@
+require(script.Parent.Parent:WaitForChild("es7-types"))
+local WeakMap = {}
+WeakMap.__index = WeakMap
+
+function WeakMap.new()
+	return (setmetatable({
+		_weakMap = setmetatable({}, {
+			__mode = "k"
+		})
+	}, WeakMap))
+end
+
+function WeakMap:get(p2)
+	return self._weakMap[p2]
+end
+
+function WeakMap:set(p2, p3)
+	self._weakMap[p2] = p3
+	return self
+end
+
+function WeakMap:has(p2)
+	return self._weakMap[p2] ~= nil
+end
+
+return WeakMap

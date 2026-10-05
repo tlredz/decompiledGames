@@ -1,0 +1,11 @@
+local hUDButtonBar = script.Parent:WaitForChild("HUDButtonBar")
+local alliesButton = hUDButtonBar:WaitForChild("AlliesButton")
+local crewButton = hUDButtonBar:WaitForChild("CrewButton")
+local homeButton = hUDButtonBar:WaitForChild("HomeButton")
+local settings = hUDButtonBar:WaitForChild("Settings")
+alliesButton.NextSelectionLeft = crewButton
+alliesButton.NextSelectionRight = homeButton
+crewButton.NextSelectionLeft = settings
+crewButton.NextSelectionRight = alliesButton
+homeButton.NextSelectionLeft = alliesButton
+settings.NextSelectionRight = crewButton

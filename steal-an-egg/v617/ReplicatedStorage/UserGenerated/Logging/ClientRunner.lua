@@ -1,0 +1,7 @@
+local FastFlags = require(game.ReplicatedStorage.UserGenerated.FastFlags)
+local parentModule = require(script.Parent)
+local replicated = FastFlags.Replicated("UserGenerated.Logging.ClientLevel", parentModule.AssertLevel, "Warn")
+parentModule.SetLevel(replicated:Get())
+replicated.Changed:Connect(function(p)
+	parentModule.SetLevel(p)
+end)

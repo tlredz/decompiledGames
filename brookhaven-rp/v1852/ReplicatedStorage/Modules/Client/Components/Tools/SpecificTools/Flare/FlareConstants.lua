@@ -1,0 +1,4 @@
+return {
+	THROW_RANGE = 60,
+	DINOSAUR_DISTRACTION_TAG = "LandedFlare"
+}

@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("The crowd loves a good show, especially if you're particularly good at landing your shots."):setRewardDialogue("The crowd loved it! I think you've made some fans after that performance."):setIslandCompleteDialogue("The crowd loved it! I think you've made some fans after that performance."):insertTag("Repeatable"):build()

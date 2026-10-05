@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("It's really fun to play on the island when it snows."):setRewardDialogue("We've rolled two snowballs together into a snowboy, but we never thought to roll THREE snowballs together into a Snowman! I think you've started a new island tradition!"):setIslandCompleteDialogue("We've rolled two snowballs together into a snowboy, but we never thought to roll THREE snowballs together into a Snowman! I think you've started a new island tradition!"):insertTag("Repeatable"):build()

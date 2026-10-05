@@ -1,0 +1,1 @@
+return require(script.Parent._Index["voldex_rbxutil-component@1.0.0"]["rbxutil-component"])

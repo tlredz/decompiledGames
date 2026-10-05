@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("The old windmill has barely moved lately... what a shame."):setRewardDialogue("Good work! Us pirates are quite fond of the breeze the windmill gives the town."):setIslandCompleteDialogue("Would you look at that. I guess the old windmill still had it in her to spin once more."):build()

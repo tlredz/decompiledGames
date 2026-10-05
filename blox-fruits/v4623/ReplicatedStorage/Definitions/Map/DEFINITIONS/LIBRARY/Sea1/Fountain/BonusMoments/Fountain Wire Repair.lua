@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("They say when the time is right, wires spark across the ground here..."):setIslandCompleteDialogue("Nobody beats the Cyborg once he's fully charged. Nobody, until you."):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

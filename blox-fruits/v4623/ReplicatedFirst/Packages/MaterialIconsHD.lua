@@ -1,0 +1,1 @@
+return require(script.Parent._Index["nightcycle_material-icons-default-dp48-2x@1.0.3"]["material-icons-default-dp48-2x"])

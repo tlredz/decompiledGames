@@ -1,0 +1,5 @@
+return {
+	TAGS = {
+		IS_TELEPORTING = "IS_TELEPORTING"
+	}
+}

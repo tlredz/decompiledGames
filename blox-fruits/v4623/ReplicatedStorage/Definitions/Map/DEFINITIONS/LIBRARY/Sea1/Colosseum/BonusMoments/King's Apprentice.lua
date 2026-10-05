@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("I've heard the King seeks a worthy champion..."):setRewardDialogue("You looked powerful out there! The King chose his champion well."):setIslandCompleteDialogue("You looked powerful out there! The King chose his champion well."):build()

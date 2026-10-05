@@ -1,0 +1,1 @@
+return require(script.Parent._Index["voldex_math-util@0.0.1"]["math-util"])

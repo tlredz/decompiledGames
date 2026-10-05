@@ -1,0 +1,1 @@
+return require(script.Parent._Index["maximumadhd_model-squash@1.3.0"]["model-squash"])

@@ -1,0 +1,135 @@
+local parent = script.Parent.Parent.Parent
+local ReactGlobals = require(parent.ReactGlobals)
+local LuauPolyfill = require(parent.LuauPolyfill)
+local error2 = LuauPolyfill.Error
+local JestGlobals = require(parent.Dev.JestGlobals)
+local afterEach = JestGlobals.afterEach
+local beforeEach = JestGlobals.beforeEach
+local expect = JestGlobals.expect
+local it = JestGlobals.it
+local jest = JestGlobals.jest
+local v = nil
+beforeEach(function()
+	jest.resetModules()
+	local ReactErrorUtils = require(script.Parent.Parent.ReactErrorUtils)
+	v = ReactErrorUtils
+end)
+afterEach(function()
+	jest.unmock(script.Parent.Parent.invokeGuardedCallbackImpl)
+end)
+it("it should rethrow caught errors", function()
+	local v2 = error2("foo")
+	v.invokeGuardedCallbackAndCatchFirstError("foo", function()
+		error(v2)
+	end, nil)
+	expect(v.hasCaughtError()).toBe(false)
+	expect(function()
+		v.rethrowCaughtError()
+	end).toThrow(v2)
+end)
+it("should call the callback the passed arguments", function()
+	local v2 = jest.fn()
+	v.invokeGuardedCallback("foo", v2, nil, "arg1", "arg2")
+	expect(v2).toBeCalledWith("arg1", "arg2")
+end)
+it("should call the callback with the provided context", function()
+	local v2 = {
+		didCall = false
+	}
+	v.invokeGuardedCallback("foo", function(p)
+		p.didCall = true
+	end, v2)
+	expect(v2.didCall).toBe(true)
+end)
+it("should catch errors", function()
+	local v2 = error2()
+	expect((v.invokeGuardedCallback("foo", function()
+		error(v2)
+	end, nil, "arg1", "arg2"))).toBe(nil)
+	expect(v.hasCaughtError()).toBe(true)
+	expect(v.clearCaughtError()).toBe(v2)
+end)
+it("should return false from clearCaughtError if no error was thrown", function()
+	local v2 = jest.fn()
+	v.invokeGuardedCallback("foo", v2, nil)
+	expect(v.hasCaughtError()).toBe(false)
+	expect(v.clearCaughtError).toThrow("no error was captured")
+end)
+it("can nest with same debug name", function()
+	local v2 = error2()
+	local v3 = nil
+	local v4 = error2()
+	v.invokeGuardedCallback("foo", function()
+		v.invokeGuardedCallback("foo", function()
+			error(v2)
+		end, nil)
+		v3 = v.clearCaughtError()
+		error(v4)
+	end, nil)
+	local v5 = v.clearCaughtError()
+	expect(v3).toBe(v2)
+	expect(v5).toBe(v4)
+end)
+it("handles nested errors", function()
+	local v2 = error2()
+	local v3 = nil
+	v.invokeGuardedCallback("foo", function()
+		v.invokeGuardedCallback("foo", function()
+			error(v2)
+		end, nil)
+		v3 = v.clearCaughtError()
+	end, nil)
+	expect(v.hasCaughtError()).toBe(false)
+	expect(v3).toBe(v2)
+end)
+it("handles nested errors in separate renderers", function()
+	local ReactErrorUtils = require(script.Parent.Parent.ReactErrorUtils)
+	jest.resetModules()
+	local ReactErrorUtils2 = require(script.Parent.Parent.ReactErrorUtils)
+	expect(ReactErrorUtils).never.toEqual(ReactErrorUtils2)
+	local v2 = {}
+	ReactErrorUtils.invokeGuardedCallback(nil, function()
+		ReactErrorUtils2.invokeGuardedCallback(nil, function()
+			error(error2("nested error"))
+		end)
+		table.insert(v2, ReactErrorUtils2.hasCaughtError())
+		table.insert(v2, ReactErrorUtils2.clearCaughtError().message)
+	end, nil)
+	table.insert(v2, ReactErrorUtils.hasCaughtError())
+	expect(v2).toEqual({ true, "nested error", false })
+end)
+
+if not ReactGlobals.__DEV__ then
+	it("catches nil values", function()
+		v.invokeGuardedCallback(nil, function()
+			error(nil)
+		end, nil)
+		expect(v.hasCaughtError()).toBe(true)
+		expect(v.clearCaughtError()).toBe(nil)
+	end)
+end
+
+it("can be shimmed", function()
+	local v2 = {}
+	jest.resetModules()
+	jest.mock(script.Parent.Parent.invokeGuardedCallbackImpl, function()
+		return function(p, _, callback, p2, p3)
+			table.insert(v2, p3)
+			local success, result = pcall(callback, p2, p3)
+
+			if not success then
+				p.onError(result)
+			end
+		end
+	end)
+	local ReactErrorUtils = require(script.Parent.Parent.ReactErrorUtils)
+	v = ReactErrorUtils
+	local v3 = error2("foo")
+	v.invokeGuardedCallbackAndCatchFirstError("foo", function()
+		error(v3)
+	end, nil, "somearg")
+	expect(function()
+		v.rethrowCaughtError()
+	end).toThrow(v3)
+	expect(v2).toEqual({ "somearg" })
+end)

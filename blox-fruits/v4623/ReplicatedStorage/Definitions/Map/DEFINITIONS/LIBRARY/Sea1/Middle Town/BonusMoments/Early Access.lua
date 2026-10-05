@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("There are some devs that live on this island! I wanna meet them so bad, but I'm sure they're busy, working hard on their game..."):setIslandCompleteDialogue("Four years later and they're STILL cooking. W DEVS!"):build()

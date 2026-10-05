@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("I always feel like those statues are staring back at me..."):setRewardDialogue("So each statue answered to a different power... Good job discovering that!"):setIslandCompleteDialogue("So each statue answered to a different power... Good job discovering that!"):build()

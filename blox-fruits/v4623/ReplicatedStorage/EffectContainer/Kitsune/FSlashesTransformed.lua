@@ -1,0 +1,726 @@
+local createVector = vector.create
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+game:GetService("RunService")
+game:GetService("Lighting")
+local TweenService = game:GetService("TweenService")
+local _WorldOrigin = Workspace:WaitForChild("_WorldOrigin")
+Random.new()
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+CFrame.lookAt(Vector3.new(), createVector(1, 0, 0)):inverse()
+CFrame.lookAt(Vector3.new(), createVector(0, 1, 0)):inverse()
+local FX = require(ReplicatedStorage:WaitForChild("FX"))
+local Util = require(ReplicatedStorage:WaitForChild("Util"))
+local _ = Util.Sound
+local destroyAfter = Util.DestroyAfter
+local heartbeatLoopFor = Util.HeartbeatLoopFor
+local heartbeatLoopFor2 = heartbeatLoopFor.HeartbeatLoopFor
+local _ = heartbeatLoopFor.AwaitHeartbeatLoopFor
+local _ = Util.LightningBolt
+
+local function putFolder(instance, name: string)
+	local v = instance:FindFirstChild(name)
+
+	if v == nil then
+		v = Instance.new("Folder")
+		v.Name = name
+		Util.SetParentOverrideWithColor(v, instance, player, "KitsuneFruitVFXColor")
+	end
+
+	return v
+end
+
+local rescheduleDestruction
+
+rescheduleDestruction = function(instance, duration: number, flag: boolean?)
+	if (flag == nil or flag) == true or instance:GetAttribute("PrevTimeDestructInitiated") == nil then
+		instance:SetAttribute("PrevTimeDestructInitiated", time())
+	end
+
+	local destructionDepth = instance:GetAttribute("DestructionDepth") or 0
+	instance:SetAttribute("DestructionDepth", destructionDepth + 1)
+
+	if destructionDepth >= 100 then
+		instance:Destroy()
+		warn("rescheduleDestruction: Maximum re-entrancy depth of 100 exceeded")
+	else
+		task.delay(duration, function()
+			local prevTimeDestructInitiated = instance:GetAttribute("PrevTimeDestructInitiated")
+
+			if duration - (time() - prevTimeDestructInitiated) < 0.2 and instance ~= nil and instance.Parent ~= nil then
+				instance:Destroy()
+				return
+			end
+
+			if instance == nil or instance.Parent == nil then
+				return
+			end
+
+			rescheduleDestruction(instance, duration, false)
+		end)
+	end
+end
+
+local function putValueAsValueObject(instance, name: string, p, value: number)
+	local v2 = {
+		boolean = "BoolValue",
+		CFrame = "CFrameValue",
+		Color3 = "Color3Value",
+		number = "NumberValue",
+		Instance = "ObjectValue",
+		Ray = "RayValue",
+		string = "StringValue",
+		Vector3 = "Vector3Value"
+	}
+	local instance2 = instance:FindFirstChild(name)
+
+	if instance2 == nil then
+		instance2 = Instance.new(v2[typeof(p)])
+		instance2.Name = name
+		Util.SetParentOverrideWithColor(instance2, instance, player, "KitsuneFruitVFXColor")
+	end
+
+	instance2.Value = p
+	rescheduleDestruction(instance2, value or 60)
+	return instance2
+end
+
+local function getValueOfValueObject(instance, childName: string)
+	local child = instance:FindFirstChild(childName)
+
+	if child == nil then
+		return nil
+	end
+
+	return child.Value
+end
+
+local raycastParams = RaycastParams.new()
+raycastParams.FilterType = Enum.RaycastFilterType.Exclude
+raycastParams.FilterDescendantsInstances = { Workspace._WorldOrigin, Workspace.Characters, Workspace.Enemies }
+
+local function createDefaultProjectile(p: number)
+	local part = Instance.new("Part")
+	part.Anchored = true
+	part.CanCollide = false
+	part.CanTouch = false
+	part.CanQuery = false
+	part.Shape = Enum.PartType.Ball
+	part.Size = createVector(4, 4, 4)
+	part.Transparency = 1
+	part.Name = "Projectile"
+	Util.SetParentOverrideWithColor(part, _WorldOrigin, player, "KitsuneFruitVFXColor")
+	destroyAfter(part, p + 7)
+	return part
+end
+
+-- equivalent calls inferred from this helper; original call sites unknown
+local function snapProjectileToFinalPos(p, p2)
+	p.CFrame = p.CFrame.Rotation + p2
+end
+
+local function shouldStopProjectile(instance)
+	return instance:GetAttribute("ProjectileActive") ~= true and instance:GetAttribute("ImpactPos") ~= nil and instance:GetAttribute("DisabledInterp") < 0.9999
+end
+
+local function fireClientProjectile(p: number, callback, p2, p3, callback2)
+	local v = callback2 or function(_)
+		return CFrame.new()
+	end
+	local v2 = p2 or Instance.new("Folder")
+	local v3 = p3 or createDefaultProjectile(p)
+	v3.CFrame = CFrame.lookAt(callback(0.001), callback(0.002)) * v(0.001)
+	local bindableEvent = Instance.new("BindableEvent")
+	destroyAfter(bindableEvent, 7)
+	local v4 = false
+	local connection = nil
+	connection = heartbeatLoopFor2(p, function(_, _, p4)
+		local v5 = v2
+		local v6
+
+		if v5:GetAttribute("ProjectileActive") == true or v5:GetAttribute("ImpactPos") == nil then
+			v6 = false
+		else
+			v6 = v5:GetAttribute("DisabledInterp") < 0.9999
+		end
+
+		if not v6 then
+			v3.CFrame = CFrame.lookAt(callback(p4), callback(p4 + 0.01)) * v(p4)
+			return
+		end
+
+		connection:Disconnect()
+		connection = nil
+		snapProjectileToFinalPos(v3, v2:GetAttribute("ImpactPos")) -- equivalent call inferred; original call site unknown
+		bindableEvent:Fire(v2:GetAttribute("ImpactPos"), "Impact")
+		v4 = true
+	end, function()
+		if v4 == true then
+			return
+		end
+
+		snapProjectileToFinalPos(v3, callback(1)) -- equivalent call inferred; original call site unknown
+		bindableEvent:Fire(callback(1), "NonImpact")
+	end)
+	return bindableEvent, v3, connection
+end
+
+local function cameraShakeAt(vector2: Vector3, value: number, value2: number, value3: number, value4: number, value5: number)
+	local v = value2 or 8
+	local v2 = value3 or 14
+	local v3 = value4 or 0.2
+	local v4 = value5 or 0.7
+
+	if (value or 100) > (Workspace.CurrentCamera.CFrame.Position - vector2).Magnitude then
+		Util.CameraShaker:ShakeOnce(v, v2, v3, v4)
+	end
+end
+
+local function haltUntilCondition(callback, value: number?)
+	local v = value or 14
+	local bindableEvent = Instance.new("BindableEvent")
+	task.delay(v, bindableEvent.Fire, bindableEvent)
+	local connection = nil
+	connection = heartbeatLoopFor2(v, function()
+		local success, result = pcall(callback)
+
+		if success and result then
+			bindableEvent:Fire()
+			connection:Disconnect()
+			connection = nil
+		elseif not success then
+			print("haltUntilCondition: Error in predicate function: ", result)
+			bindableEvent:Fire()
+			connection:Disconnect()
+			connection = nil
+		end
+	end)
+	bindableEvent.Event:Wait()
+	bindableEvent:Destroy()
+end
+
+local function alignCFrameWithPlane(rotation: CFrame, vector2: Vector3)
+	local v = { rotation.RightVector, rotation.UpVector, rotation.LookVector }
+	local v2 = -1e999
+	local vector3 = nil
+
+	for _, vector4 in ipairs(v) do
+		local dot = vector4:Dot(vector2)
+
+		if not (v2 < math.abs(dot)) then
+			continue
+		end
+
+		v2 = math.abs(dot)
+		vector3 = math.sign(dot) * vector4
+	end
+
+	local cross = vector3:Cross(vector2)
+	local v3 = math.acos((math.clamp(v2, -1, 1)))
+
+	if cross.Magnitude < 0.0001 then
+		return rotation.Rotation
+	end
+
+	return CFrame.fromAxisAngle(cross, v3) * rotation.Rotation
+end
+
+local function snapPointToPlane(vector2: Vector3, vector3: Vector3, vector4: Vector3)
+	local unit = vector3.Unit
+	local X = unit.X
+	local Y = unit.Y
+	local Z = unit.Z
+	local X2 = vector2.X
+	local Z2 = vector2.Z
+	local dot = vector4:Dot(unit)
+	local v
+
+	if math.abs(Y) < 0.1 then
+		v = vector2.Y
+	else
+		v = (dot - X2 * X - Z2 * Z) / Y
+	end
+
+	return (Vector3.new(X2, v, Z2))
+end
+
+local function alignWithGround(folder, raycastResult: RaycastResult)
+	local v = not raycastResult and createVector(0, 1, 0) or raycastResult.Normal
+
+	if typeof(folder) == "CFrame" then
+		local position = folder.Position
+		local rotation = folder.Rotation
+		local position2
+
+		if raycastResult then
+			position2 = raycastResult.Position
+		else
+			position2 = position
+		end
+
+		local unit = v.Unit
+		local X = unit.X
+		local Y = unit.Y
+		local Z = unit.Z
+		local X2 = position.X
+		local Z2 = position.Z
+		local dot = position2:Dot(unit)
+		local v2
+
+		if math.abs(Y) < 0.1 then
+			v2 = position.Y
+		else
+			v2 = (dot - X2 * X - Z2 * Z) / Y
+		end
+
+		local vector2 = Vector3.new(X2, v2, Z2)
+		local v3 = vector2 + v * (position.Y - vector2.Y)
+		return alignCFrameWithPlane(rotation, v) + v3
+	else
+		if typeof(folder) == "Instance" and folder:IsA("BasePart") then
+			local position = folder.CFrame.Position
+			local rotation = folder.CFrame.Rotation
+			local position2
+
+			if raycastResult then
+				position2 = raycastResult.Position
+			else
+				position2 = position
+			end
+
+			local unit = v.Unit
+			local X = unit.X
+			local Y = unit.Y
+			local Z = unit.Z
+			local X2 = position.X
+			local Z2 = position.Z
+			local dot = position2:Dot(unit)
+			local v2
+
+			if math.abs(Y) < 0.1 then
+				v2 = position.Y
+			else
+				v2 = (dot - X2 * X - Z2 * Z) / Y
+			end
+
+			local vector2 = Vector3.new(X2, v2, Z2)
+			local v3 = vector2 + v * (position.Y - vector2.Y)
+			folder.CFrame = alignCFrameWithPlane(rotation, v) + v3
+		else
+			if typeof(folder) ~= "Instance" or not folder:IsA("Model") then
+				warn("alignWithGround: Failed to align with ground for object of type " .. typeof(folder))
+				return
+			end
+
+			local pivot = folder:GetPivot()
+			local position = pivot.Position
+			local rotation = pivot.Rotation
+			local position2
+
+			if raycastResult then
+				position2 = raycastResult.Position
+			else
+				position2 = position
+			end
+
+			local unit = v.Unit
+			local X = unit.X
+			local Y = unit.Y
+			local Z = unit.Z
+			local X2 = position.X
+			local Z2 = position.Z
+			local dot = position2:Dot(unit)
+			local v2
+
+			if math.abs(Y) < 0.1 then
+				v2 = position.Y
+			else
+				v2 = (dot - X2 * X - Z2 * Z) / Y
+			end
+
+			local vector2 = Vector3.new(X2, v2, Z2)
+			local v3 = vector2 + v * (position.Y - vector2.Y)
+			folder:PivotTo(alignCFrameWithPlane(rotation, v) + v3)
+		end
+
+		for _, emitter in ipairs(folder:GetDescendants()) do
+			if emitter:IsA("ParticleEmitter") then
+				emitter.LockedToPart = true
+			end
+		end
+	end
+end
+
+local function mockRootPart(_, cFrame: CFrame, player2)
+	local part = Instance.new("Part")
+	part.Name = "Mock" .. part.Name
+	part.Anchored = true
+	part.CanCollide = false
+	part.CanTouch = false
+	part.CanQuery = false
+	part.Transparency = 1
+	part.CFrame = cFrame
+	Util.SetParentOverrideWithColor(part, _WorldOrigin, player2, "KitsuneFruitVFXColor")
+	destroyAfter(part, 7)
+	return part
+end
+
+local function playAnimationOnPlayer(p, p2, p3: string)
+	if localPlayer ~= p2 then
+		return nil
+	end
+
+	local v = Util.Anims:Get(p, p3)
+	v:Play()
+	return v
+end
+
+return function(data)
+	local DISTANCE_THRESHOLD = 100
+	local player2 = data.player
+	local hrp = data.hrp
+
+	if hrp == nil or hrp.Parent == nil then
+		warn("Missing hrp, effect code aborted")
+		return
+	end
+
+	Util.Sound:Play("F Attacks- Transformed Lunge", hrp, nil, 1, 1)
+	local _ = hrp.Parent
+	local currentCamera = Workspace.CurrentCamera
+
+	if (hrp.CFrame.Position - currentCamera.CFrame.Position).Magnitude > 1500 then
+		return
+	end
+
+	local kitsuneSkillFAwaken = FX:WaitForChild("Kitsune").KitsuneSkillFAwaken
+
+	local function quadBezier(p, p2, p3, p4)
+		return (1 - p) ^ 2 * p2 + 2 * (1 - p) * p * p3 + p ^ 2 * p4
+	end
+
+	local function lerp(p, p2, p3)
+		return p + (p2 - p) * p3
+	end
+
+	local function cubicBezier(p, p2, p3, p4, p5)
+		local v = p2 + (p3 - p2) * p
+		local v2 = p3 + (p4 - p3) * p
+		local v3 = p4 + (p5 - p4) * p
+		local v4 = v + (v2 - v) * p
+		return v4 + (v2 + (v3 - v2) * p - v4) * p
+	end
+
+	local function GetNumberDependingDistance(p, p2, p3, p4, p5)
+		if p <= p4 then
+			return p2
+		end
+
+		if p4 < p and p <= p5 then
+			return p2 + (p3 - p2) * ((p - p4) / (p5 - p4))
+		end
+
+		return p3
+	end
+
+	local function ClawSlash(folder, folder2, _, _)
+		coroutine.wrap(function()
+			task.wait(0.0625)
+			folder2.CFrame = folder.CFrame * CFrame.new(0, 0, -9)
+
+			for _, emitter in ipairs(folder2:GetDescendants()) do
+				if emitter:IsA("ParticleEmitter") then
+					Util.EmitFix(emitter, emitter:GetAttribute("EmitCount"))
+				end
+			end
+		end)()
+		coroutine.wrap(function()
+			for _, beam in ipairs(folder:GetDescendants()) do
+				if not beam:IsA("Beam") then
+					continue
+				end
+
+				beam.Enabled = true
+				local startDelay = beam:GetAttribute("StartDelay")
+				local v = beam
+				local v2 = beam:GetAttribute("EndDelay")
+				coroutine.wrap(function()
+					local tween = TweenService:Create(
+						v,
+						TweenInfo.new(v2, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+						{
+							Width0 = v.Width0,
+							Width1 = v.Width1
+						}
+					)
+					v.Width0 = 0
+					v.Width1 = 0
+					task.wait(startDelay / 2)
+					tween:Play()
+					task.wait(v2 / 2)
+
+					if v:IsDescendantOf(folder.Slash2) then
+						task.wait(0.025)
+					elseif v:IsDescendantOf(folder.Slash3) then
+						task.wait(0.04)
+					elseif v:IsDescendantOf(folder) and not (v:IsDescendantOf(folder.Slash3) or v:IsDescendantOf(folder.Slash2)) then
+						task.wait(0.0625)
+					end
+
+					local tween2 = TweenService:Create(
+						v,
+						TweenInfo.new(v2 / 2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+						{
+							Width0 = 0,
+							Width1 = 0
+						}
+					)
+					tween2:Play()
+					tween2.Completed:Wait()
+					v:Destroy()
+				end)()
+			end
+		end)()
+		local tween = TweenService:Create(
+			folder.Weld,
+			TweenInfo.new(0.06, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{
+				C0 = folder.Weld.Part0.CFrame:ToObjectSpace(folder.Weld.Part1.CFrame) * CFrame.Angles(
+					-2.6179938779914944,
+					0,
+					0
+				)
+			}
+		)
+		tween:Play()
+		tween.Completed:Wait()
+		folder.Weld.Enabled = false
+		folder.Anchored = true
+		TweenService:Create(folder, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+			CFrame = folder.CFrame * CFrame.Angles(-1.3089969389957472, 0, 0)
+		}):Play()
+	end
+
+	local function ClawSpin(folder, _, part, _)
+		coroutine.wrap(function()
+			for _, descendant in ipairs(folder:GetDescendants()) do
+				if descendant:IsA("Beam") then
+					descendant.Enabled = true
+					local startDelay = descendant:GetAttribute("StartDelay")
+					local v = descendant
+					local v2 = descendant:GetAttribute("EndDelay")
+					coroutine.wrap(function()
+						local tween = TweenService:Create(
+							v,
+							TweenInfo.new(v2, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+							{
+								Width0 = v.Width0,
+								Width1 = v.Width1
+							}
+						)
+						v.Width0 = 0
+						v.Width1 = 0
+						task.wait(startDelay)
+						tween:Play()
+						task.wait(v2)
+						task.wait(0.15)
+						local tween2 = TweenService:Create(
+							v,
+							TweenInfo.new(v2 / 2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+							{
+								Width0 = 0,
+								Width1 = 0
+							}
+						)
+						tween2:Play()
+						tween2.Completed:Wait()
+						v:Destroy()
+					end)()
+				elseif descendant:IsA("Motor6D") and descendant:GetAttribute("Z") then
+					local Z = descendant:GetAttribute("Z")
+					local ZO = descendant:GetAttribute("ZO")
+					local tween = TweenService:Create(
+						descendant,
+						TweenInfo.new(0.2, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0.3),
+						{
+							C0 = folder.Weld.Part0.CFrame:ToObjectSpace(folder.Weld.Part1.CFrame) * CFrame.new(
+								0,
+								0,
+								Z / 2
+							) * CFrame.Angles(0, ZO, 0)
+						}
+					)
+					tween:Play()
+					local v = descendant
+					coroutine.wrap(function()
+						tween.Completed:Wait()
+						tween = TweenService:Create(v, TweenInfo.new(0.3), {
+							C0 = folder.Weld.Part0.CFrame:ToObjectSpace(folder.Weld.Part1.CFrame) * CFrame.Angles(
+								0,
+								ZO,
+								0
+							)
+						})
+						tween:Play()
+					end)()
+				end
+			end
+		end)()
+		coroutine.wrap(function()
+			local position = part.Position
+
+			if Workspace:Raycast(position + createVector(0, 1, 0), CFrame.new(position).UpVector * -7, raycastParams) then
+				local clone = kitsuneSkillFAwaken.Slash2Wind:Clone()
+				clone.Position = part.Position
+				Util.SetParentOverrideWithColor(clone, _WorldOrigin, player2, "KitsuneFruitVFXColor")
+				destroyAfter(clone, 7)
+				clone.Weld.Part0 = part
+
+				for _, emitter in ipairs(clone:GetDescendants()) do
+					if emitter:IsA("ParticleEmitter") then
+						emitter.Enabled = true
+					end
+				end
+
+				task.wait(0.5)
+				clone.Weld.Enabled = false
+				clone.Anchored = true
+
+				for _, emitter in ipairs(clone:GetDescendants()) do
+					if emitter:IsA("ParticleEmitter") then
+						emitter.Enabled = false
+					end
+				end
+			end
+		end)()
+
+		for _ = 1, 6 do
+			local tween = TweenService:Create(
+				folder.Weld,
+				TweenInfo.new(0.06, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{
+					C0 = folder.Weld.Part0.CFrame:ToObjectSpace(folder.Weld.Part1.CFrame) * CFrame.Angles(
+						0,
+						-2.6179938779914944,
+						0
+					)
+				}
+			)
+			tween:Play()
+			tween.Completed:Wait()
+		end
+
+		folder.Weld.Enabled = false
+		folder.Anchored = true
+		TweenService:Create(folder, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+			CFrame = folder.CFrame * CFrame.Angles(0, -2.6179938779914944, 0)
+		}):Play()
+	end
+
+	local v = _WorldOrigin
+	local magnitude = (data.goalPos - data.originPos).Magnitude
+	local cframe = CFrame.lookAt(data.originPos, data.goalPos)
+	local _, v2 = Workspace:FindPartOnRayWithIgnoreList(
+		Ray.new(
+			cframe.Position,
+			CFrame.new(cframe.Position, (cframe * CFrame.new(0, 0, -magnitude)).Position).LookVector * magnitude
+		),
+		raycastParams.FilterDescendantsInstances
+	)
+	local v3 = v2 + createVector(0, 1.5, 0)
+	local _ = (v3 - cframe.Position).Magnitude
+	local v4 = raycastParams
+	local _ = (v3 - cframe.Position).Magnitude
+	local part2 = mockRootPart(
+		hrp,
+		CFrame.lookAt(createVector(0, 0, 0), (data.goalPos - data.originPos).Unit) + data.goalPos,
+		player2
+	)
+
+	for i = 1, 4 do
+		if i == 1 then
+			local clone = kitsuneSkillFAwaken.Slash:Clone()
+			local clone2 = kitsuneSkillFAwaken.SlashHit:Clone()
+			clone.CFrame = part2.CFrame
+			clone.Weld.Part0 = part2
+			clone.Weld.C0 = clone.Weld.Part0.CFrame:ToObjectSpace(clone.Weld.Part1.CFrame) * CFrame.Angles(
+				0,
+				0,
+				-0.7853981633974483
+			) * CFrame.Angles(2.9670597283903604, 0, 0)
+			Util.SetParentOverrideWithColor(clone, v, player2, "KitsuneFruitVFXColor")
+			destroyAfter(clone, 7)
+			Util.SetParentOverrideWithColor(clone2, v, player2, "KitsuneFruitVFXColor")
+			destroyAfter(clone2, 7)
+			local position = clone.Position
+			local v6 = 5 or 8
+			local v7 = 6 or 14
+			local v8 = 0.15 or 0.2
+			local v9 = 0.25 or 0.7
+
+			if (Workspace.CurrentCamera.CFrame.Position - position).Magnitude < DISTANCE_THRESHOLD then
+				Util.CameraShaker:ShakeOnce(v6, v7, v8, v9)
+			end
+
+			ClawSlash(clone, clone2, v4, v, cframe)
+			Util.Sound:Play("Z Attacks- Transformed Z Dash and Spin", clone.Position, nil, 1, 1)
+			Util.Sound:Play("KitsuneM1_1", hrp, nil, 1, 1)
+		elseif i == 2 then
+			local clone = kitsuneSkillFAwaken.Slash:Clone()
+			local clone2 = kitsuneSkillFAwaken.SlashHit:Clone()
+			clone.CFrame = part2.CFrame
+			clone.Weld.Part0 = part2
+			clone.Weld.C0 = clone.Weld.Part0.CFrame:ToObjectSpace(clone.Weld.Part1.CFrame) * CFrame.Angles(
+				0,
+				0,
+				1.2217304763960306
+			) * CFrame.Angles(2.9670597283903604, 0, 0)
+			Util.SetParentOverrideWithColor(clone, v, player2, "KitsuneFruitVFXColor")
+			destroyAfter(clone, 7)
+			Util.SetParentOverrideWithColor(clone2, v, player2, "KitsuneFruitVFXColor")
+			destroyAfter(clone2, 7)
+			local position = clone.Position
+			local v6 = 5 or 8
+			local v7 = 6 or 14
+			local v8 = 0.15 or 0.2
+			local v9 = 0.25 or 0.7
+
+			if (Workspace.CurrentCamera.CFrame.Position - position).Magnitude < DISTANCE_THRESHOLD then
+				Util.CameraShaker:ShakeOnce(v6, v7, v8, v9)
+			end
+
+			ClawSlash(clone, clone2, v4, v, cframe)
+			Util.Sound:Play("KitsuneM1_2", hrp, nil, 1, 1)
+			Util.Sound:Play("KitsuneFSpin", hrp, nil, 1, 1)
+		elseif i == 3 then
+			local clone = kitsuneSkillFAwaken.Slash3:Clone()
+			clone.CFrame = part2.CFrame * CFrame.new(0, 1, 0)
+			clone.Weld.Part0 = part2
+			clone.Weld.C0 = clone.Weld.Part0.CFrame:ToObjectSpace(clone.Weld.Part1.CFrame) * CFrame.Angles(
+				-0.17453292519943295,
+				0,
+				0.008726646259971648
+			)
+			Util.SetParentOverrideWithColor(clone, v, player2, "KitsuneFruitVFXColor")
+			local position = clone.Position
+			local v6 = 12 or 8
+			local v7 = 45 or 14
+			local v8 = 0.2
+			local v9 = 0.8 or 0.7
+
+			if (Workspace.CurrentCamera.CFrame.Position - position).Magnitude < DISTANCE_THRESHOLD then
+				Util.CameraShaker:ShakeOnce(v6, v7, v8, v9)
+			end
+
+			destroyAfter(clone, 7)
+			ClawSpin(clone, v, part2)
+		end
+
+		if data.missed then
+			break
+		else
+			task.wait(0.125)
+		end
+	end
+end

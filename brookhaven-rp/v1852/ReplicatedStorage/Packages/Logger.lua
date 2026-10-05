@@ -1,0 +1,1 @@
+return require(script.Parent._Index["voldex_logger@0.0.1"].logger)

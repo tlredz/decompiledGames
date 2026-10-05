@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("That poor ship's been stuck up in the fountain for ages... there must be some way to force it out."):setIslandCompleteDialogue("You blasted that ship clean out of the spout?! Finest sight this city's seen in years."):build()

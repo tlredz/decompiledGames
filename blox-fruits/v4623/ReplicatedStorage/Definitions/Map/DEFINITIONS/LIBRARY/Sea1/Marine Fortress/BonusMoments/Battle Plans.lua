@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Our soldiers are trained to be prepared for ANY attack that might suddenly arrive."):setIslandCompleteDialogue("You gave those invading pirates a beating they won't forget! Nice work out there."):insertTag("Repeatable"):build()

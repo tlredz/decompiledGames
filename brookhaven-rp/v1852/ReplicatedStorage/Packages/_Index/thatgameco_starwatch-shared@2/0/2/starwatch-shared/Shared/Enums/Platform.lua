@@ -1,0 +1,13 @@
+return {
+	ANDROID = 0,
+	IPHONEOS = 1,
+	NX = 2,
+	HUAWEI = 3,
+	PS4 = 4,
+	WIN = 5,
+	MACOSX = 6,
+	PS5 = 7,
+	XBOX = 8,
+	MOBILE_UNKNOWN = 9,
+	CONSOLE_UNKNOWN = 10
+}

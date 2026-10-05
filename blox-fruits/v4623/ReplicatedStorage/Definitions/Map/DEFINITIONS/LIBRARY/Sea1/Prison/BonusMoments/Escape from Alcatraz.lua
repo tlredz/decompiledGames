@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Keep an eye out, some prisoners have been plotting an escape."):setRewardDialogue("That's the three of them back where they belong. The Warden's happy to let this place stay overrun, but you helped me restore a little order. You have my thanks, and a reward for your trouble."):setIslandCompleteDialogue("Those escape plans didn't get those prisoners very far. The prison's a little more secure thanks to you!"):build()

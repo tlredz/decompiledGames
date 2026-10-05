@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local CutsceneController = require(ReplicatedStorage.client.legacyControllers:WaitForChild("CutsceneController"))
+ReplicatedStorage:WaitForChild("events"):WaitForChild("LocalCutscene").OnClientEvent:Connect(function(p)
+	CutsceneController:StartCutscene(p, game.Players.LocalPlayer)
+end)

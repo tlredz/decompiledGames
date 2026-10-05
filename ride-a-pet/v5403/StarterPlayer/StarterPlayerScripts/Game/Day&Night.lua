@@ -1,0 +1,8 @@
+local Lighting = game:GetService("Lighting")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local DayNight = require(ReplicatedStorage:WaitForChild("GameServices"):WaitForChild("DayNight"))
+Lighting.ClockTime = DayNight.Now()
+RunService.RenderStepped:Connect(function()
+	Lighting.ClockTime = DayNight.Now()
+end)

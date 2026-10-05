@@ -1,0 +1,236 @@
+return {
+	{ "IconCorners", "CornerRadius", UDim.new(1, 0) },
+	{ "Selection", "RotationSpeed", 1 },
+	{ "Selection", "Size", UDim2.new(1, 0, 1, 1) },
+	{ "Selection", "Position", UDim2.new(0, 0, 0, 0) },
+	{
+		"SelectionGradient",
+		"Color",
+		ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(86, 86, 86))
+		})
+	},
+	{
+		"IconImage",
+		"Image",
+		"",
+		"Deselected"
+	},
+	{
+		"IconLabel",
+		"Text",
+		"",
+		"Deselected"
+	},
+	{
+		"IconLabel",
+		"Position",
+		UDim2.fromOffset(0, 0),
+		"Deselected"
+	},
+	{
+		"Widget",
+		"MinimumWidth",
+		44,
+		"Deselected"
+	},
+	{
+		"Widget",
+		"MinimumHeight",
+		44,
+		"Deselected"
+	},
+	{
+		"Widget",
+		"BorderSize",
+		4,
+		"Deselected"
+	},
+	{
+		"IconButton",
+		"BackgroundColor3",
+		Color3.fromRGB(0, 0, 0),
+		"Deselected"
+	},
+	{
+		"IconButton",
+		"BackgroundTransparency",
+		0.3,
+		"Deselected"
+	},
+	{
+		"IconButton",
+		"BackgroundColor3",
+		Color3.fromRGB(0, 0, 0),
+		"Deselected"
+	},
+	{
+		"IconImageScale",
+		"Value",
+		0.63,
+		"Deselected"
+	},
+	{
+		"IconImageCorner",
+		"CornerRadius",
+		UDim.new(0, 0),
+		"Deselected"
+	},
+	{
+		"IconImage",
+		"ImageColor3",
+		Color3.fromRGB(255, 255, 255),
+		"Deselected"
+	},
+	{
+		"IconImage",
+		"ImageTransparency",
+		0,
+		"Deselected"
+	},
+	{
+		"IconLabel",
+		"TextColor3",
+		Color3.fromRGB(255, 255, 255),
+		"Deselected"
+	},
+	{
+		"IconLabel",
+		"FontFace",
+		Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium, Enum.FontStyle.Normal),
+		"Deselected"
+	},
+	{
+		"IconLabel",
+		"TextSize",
+		16,
+		"Deselected"
+	},
+	{
+		"IconOverlay",
+		"BackgroundTransparency",
+		1,
+		"Deselected"
+	},
+	{
+		"IconGradient",
+		"Enabled",
+		false,
+		"Deselected"
+	},
+	{
+		"ClickRegion",
+		"Active",
+		true,
+		"Deselected"
+	},
+	{
+		"Menu",
+		"Active",
+		false,
+		"Deselected"
+	},
+	{
+		"ContentsList",
+		"HorizontalAlignment",
+		Enum.HorizontalAlignment.Center,
+		"Deselected"
+	},
+	{
+		"Dropdown",
+		"BackgroundColor3",
+		Color3.fromRGB(0, 0, 0),
+		"Deselected"
+	},
+	{
+		"Dropdown",
+		"BackgroundTransparency",
+		0.3,
+		"Deselected"
+	},
+	{
+		"Dropdown",
+		"MaxIcons",
+		4,
+		"Deselected"
+	},
+	{
+		"Menu",
+		"MaxIcons",
+		4,
+		"Deselected"
+	},
+	{
+		"Notice",
+		"Position",
+		UDim2.new(1, -12, 0, -1),
+		"Deselected"
+	},
+	{
+		"Notice",
+		"Size",
+		UDim2.new(0, 20, 0, 20),
+		"Deselected"
+	},
+	{
+		"NoticeLabel",
+		"TextSize",
+		13,
+		"Deselected"
+	},
+	{
+		"PaddingLeft",
+		"Size",
+		UDim2.new(0, 9, 1, 0),
+		"Deselected"
+	},
+	{
+		"PaddingRight",
+		"Size",
+		UDim2.new(0, 11, 1, 0),
+		"Deselected"
+	},
+	{
+		"IconHolder",
+		"BackgroundTransparency",
+		1,
+		"Deselected"
+	},
+	{
+		"IconButton",
+		"BackgroundTransparency",
+		0.1,
+		"Selected"
+	},
+	{
+		"IconButton",
+		"BackgroundColor3",
+		Color3.fromRGB(245, 245, 245),
+		"Selected"
+	},
+	{
+		"IconImage",
+		"ImageColor3",
+		Color3.fromRGB(57, 60, 65),
+		"Selected"
+	},
+	{
+		"IconLabel",
+		"TextColor3",
+		Color3.fromRGB(57, 60, 65),
+		"Selected"
+	},
+	{
+		"IconHolder",
+		"BackgroundTransparency",
+		1,
+		"Selected"
+	},
+	{
+		"IconHolder",
+		"BackgroundTransparency",
+		0.9,
+		"Viewing"
+	}
+}

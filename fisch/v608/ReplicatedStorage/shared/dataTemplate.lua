@@ -1,0 +1,3 @@
+return {
+	visits = 0
+}

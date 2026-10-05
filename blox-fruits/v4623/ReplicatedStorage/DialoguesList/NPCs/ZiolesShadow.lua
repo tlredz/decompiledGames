@@ -1,0 +1,7 @@
+local DialogueController = require(game.ReplicatedStorage.DialogueController)
+local v = DialogueController.new()
+v:setTitle("Zioles")
+v:addPage(function(object)
+	object:addText("Just moved to the big city. Come find me at middle town.")
+end)
+return v:build()

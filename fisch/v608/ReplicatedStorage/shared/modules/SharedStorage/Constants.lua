@@ -1,0 +1,4 @@
+return table.freeze({
+	STORAGE_CRATE_COLLECTION_SERVICE_TAG = "StorageCrate",
+	STORAGE_CRATE_INSTANCE_OWNER_ATTRIBUTE = "Owner"
+})

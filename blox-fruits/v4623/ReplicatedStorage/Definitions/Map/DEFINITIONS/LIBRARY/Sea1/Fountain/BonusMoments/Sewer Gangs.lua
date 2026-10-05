@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Strange noises have been coming from the sewers at night..."):setIslandCompleteDialogue("You took out Megalo's underground gang! The city sleeps easier tonight."):insertTag("Repeatable"):build()

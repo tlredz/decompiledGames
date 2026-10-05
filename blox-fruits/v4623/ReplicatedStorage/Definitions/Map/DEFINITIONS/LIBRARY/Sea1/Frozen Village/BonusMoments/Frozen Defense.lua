@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, cursed energy gets trapped in the ice around here. We're not sure what's causing it..."):setRaidHint("The winds blow strange near Frozen Village..."):setIslandCompleteDialogue("So it was you who took down that cursed Yeti? You are capable of anything! Can you make it summer by any chance?"):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

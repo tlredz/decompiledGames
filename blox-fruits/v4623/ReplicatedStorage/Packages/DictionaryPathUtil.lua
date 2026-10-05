@@ -1,0 +1,1 @@
+return require(script.Parent._Index["nightcycle_dictionary-path-util@1.0.2"]["dictionary-path-util"])

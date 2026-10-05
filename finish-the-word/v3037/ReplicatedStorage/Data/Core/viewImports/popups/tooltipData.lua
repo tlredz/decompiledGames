@@ -1,0 +1,20 @@
+return {
+	"Bee starts the strike turn; Shark is supposed to make it hurt.",
+	"Rime can accidentally feed enemy Lumi during New Moon.",
+	"Imp makes mistakes fatal!",
+	"Prefix goblin!",
+	"Now with vowels.",
+	"Probably a word!",
+	"Dictionary noises!",
+	"Ask your keyboard!",
+	"Bee prepared.",
+	"The timer is real.",
+	"Hydrate your brain.",
+	"Loading legal syllables.",
+	"Longer than it looks!",
+	"Do not eat the letters.",
+	"Ranked means ranked.",
+	"One more queue!",
+	"Words, allegedly.",
+	"Frosty was here."
+}

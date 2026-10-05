@@ -1,0 +1,29 @@
+local None = require(script.Parent.Parent:WaitForChild("Object"):WaitForChild("None"))
+require(script.Parent.Parent.Parent:WaitForChild("es7-types"))
+
+local function fn(p, p2)
+	return type(p) .. tostring(p) < type(p2) .. tostring(p2)
+end
+
+return function(list, callback)
+	local fn2 = fn
+
+	if callback ~= nil and callback ~= None then
+		if typeof(callback) ~= "function" then
+			error("invalid argument to Array.sort: compareFunction must be a function")
+		end
+
+		fn2 = function(p, p2)
+			local v = callback(p, p2)
+
+			if typeof(v) ~= "number" then
+				error(("invalid result from compare function, expected number but got %s"):format((typeof(v))))
+			end
+
+			return v < 0
+		end
+	end
+
+	table.sort(list, fn2)
+	return list
+end

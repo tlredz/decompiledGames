@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("The currents feel uneasy around Underwater City..."):setIslandCompleteDialogue("You pulled the black pearl and faced the Lord himself... The deep will remember your name."):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

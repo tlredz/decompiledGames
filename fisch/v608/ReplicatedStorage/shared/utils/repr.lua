@@ -1,0 +1,439 @@
+local v = {
+	pretty = false,
+	robloxFullName = false,
+	robloxProperFullName = true,
+	robloxClassName = true,
+	tabs = false,
+	semicolons = false,
+	spaces = 3,
+	sortKeys = true,
+	richText = false
+}
+local v2 = {
+	["and"] = true,
+	["break"] = true,
+	["do"] = true,
+	["else"] = true,
+	["elseif"] = true,
+	["end"] = true,
+	["false"] = true,
+	["for"] = true,
+	["function"] = true,
+	["if"] = true,
+	["in"] = true,
+	["local"] = true,
+	["nil"] = true,
+	["not"] = true,
+	["or"] = true,
+	["repeat"] = true,
+	["return"] = true,
+	["then"] = true,
+	["true"] = true,
+	["until"] = true,
+	["while"] = true
+}
+
+local function isLuaIdentifier(value)
+	if not (type(value) == "string" and value:len() ~= 0) then
+		return false
+	end
+
+	return not value:find("[^%d%a_]") and not tonumber(value:sub(1, 1)) and not v2[value]
+end
+
+local properFullName
+
+properFullName = function(instance, _)
+	if instance == nil or instance == game then
+		return ""
+	end
+
+	local name = instance.Name
+	local v3 = true
+	local v4
+
+	if type(name) == "string" and name:len() ~= 0 and not (name:find("[^%d%a_]") or tonumber(name:sub(1, 1))) then
+		v4 = not v2[name]
+	else
+		v4 = false
+	end
+
+	if not v4 then
+		name = ("[%q]"):format(name)
+		v3 = false
+	end
+
+	if instance.Parent and instance.Parent ~= game then
+		return properFullName(instance.Parent) .. (v3 and "." or "") .. name
+	end
+
+	return name
+end
+
+local v3 = 0
+local v4 = nil
+local v5 = nil
+local repr
+
+repr = function(cframe, p)
+	local v6 = p or v
+
+	local function rich(p2, p3)
+		if v6.richText then
+			return (`<font color="#{p3:ToHex()}">{p2}</font>`)
+		end
+
+		return p2
+	end
+
+	local color = Color3.fromRGB(255, 198, 0)
+	local v7 = not v6.richText and "%d" or `<font color="#{color:ToHex()}">%d</font>`
+	v5 = (" "):rep(v6.spaces or v.spaces)
+
+	if v6.tabs then
+		v5 = "\t"
+	end
+
+	local v8 = v5:rep(v3)
+
+	if v3 == 0 then
+		v4 = {}
+	end
+
+	local color2 = v3 == 0 and Color3.fromRGB(0, 162, 255) or Color3.fromRGB(51, 228, 255)
+
+	if type(cframe) == "string" then
+		local color3 = Color3.fromRGB(173, 241, 149)
+		return (not v6.richText and "%q" or `<font color="#{color3:ToHex()}">%q</font>`):format(cframe)
+	end
+
+	if type(cframe) == "number" then
+		if cframe == 1e999 then
+			return "math.huge"
+		elseif cframe == -1e999 then
+			return "-math.huge"
+		end
+
+		local v9 = tonumber(cframe)
+		local color3 = Color3.fromRGB(255, 198, 0)
+
+		if v6.richText then
+			return (`<font color="#{color3:ToHex()}">{v9}</font>`)
+		end
+
+		return v9
+	else
+		if type(cframe) == "boolean" then
+			return (tostring(cframe))
+		end
+
+		if type(cframe) == "nil" then
+			return "nil"
+		end
+
+		if type(cframe) == "table" and type(cframe.__tostring) == "function" then
+			return (tostring(cframe.__tostring(cframe)))
+		end
+
+		if type(cframe) == "table" and getmetatable(cframe) and type(getmetatable(cframe).__tostring) == "function" then
+			return (tostring(getmetatable(cframe).__tostring(cframe)))
+		end
+
+		if type(cframe) == "table" then
+			if v4[cframe] then
+				return "{CYCLIC}"
+			end
+
+			v4[cframe] = true
+
+			if not next(cframe) then
+				return "{ }"
+			end
+
+			local color3 = Color3.fromRGB(255, 247, 0)
+			local v9 = (not v6.richText and "{" or `<font color="#{color3:ToHex()}">\{</font>`) .. (not v6.pretty and "" or "\n" .. v5 .. v8 or "")
+			local flag = true
+
+			for k, _ in pairs(cframe) do
+				if type(k) == "number" then
+					continue
+				end
+
+				flag = false
+				break
+			end
+
+			if flag then
+				for i = 1, #cframe do
+					if i ~= 1 then
+						v9 ..= (v6.semicolons and ";" or ",") .. (not v6.pretty and " " or "\n" .. v5 .. v8 or " ")
+					end
+
+					v3 += 1
+					v9 ..= repr(cframe[i], v6)
+					v3 -= 1
+				end
+			else
+				local v11 = {}
+				local v12 = {}
+
+				for k, item in pairs(cframe) do
+					v3 += 1
+					local v14 = type(k) == "string" and k:len() ~= 0 and not (k:find("[^%d%a_]") or tonumber(k:sub(1, 1))) and not v2[k] and k or "[" .. repr(
+						k,
+						v6
+					) .. "]"
+					local v15 = repr(item, v6)
+					table.insert(v11, v14)
+					v12[v14] = v15
+					v3 -= 1
+				end
+
+				if v6.sortKeys then
+					table.sort(v11)
+				end
+
+				local v13 = true
+
+				for _, v14 in pairs(v11) do
+					if not v13 then
+						v9 ..= (v6.semicolons and ";" or ",") .. (not v6.pretty and " " or "\n" .. v5 .. v8 or " ")
+					end
+
+					v9 ..= (`{not v6.richText and "%s" or `<font color="#{color2:ToHex()}">%s</font>`} = %s`):format(
+						v14,
+						v12[v14]
+					)
+					v13 = false
+				end
+			end
+
+			v4[cframe] = false
+
+			if v6.pretty then
+				v9 ..= "\n" .. v8
+			end
+
+			local color4 = Color3.fromRGB(255, 247, 0)
+			return v9 .. (not v6.richText and "}" or `<font color="#{color4:ToHex()}">}</font>`)
+		else
+			if not typeof then
+				return "<" .. type(cframe) .. ">"
+			end
+
+			if typeof(cframe) == "Instance" then
+				return (v6.robloxFullName and (v6.robloxProperFullName and properFullName(cframe) or cframe:GetFullName()) or cframe.Name) .. (v6.robloxClassName and (" (%s)"):format(cframe.ClassName) or "")
+			end
+
+			if typeof(cframe) == "Axes" then
+				local v9 = {}
+
+				if cframe.X then
+					table.insert(v9, repr(Enum.Axis.X, v6))
+				end
+
+				if cframe.Y then
+					table.insert(v9, repr(Enum.Axis.Y, v6))
+				end
+
+				if cframe.Z then
+					table.insert(v9, repr(Enum.Axis.Z, v6))
+				end
+
+				return ("Axes.new(%s)"):format(table.concat(v9, ", "))
+			else
+				if typeof(cframe) == "BrickColor" then
+					return ("BrickColor.new(%q)"):format(cframe.Name)
+				end
+
+				if typeof(cframe) == "CFrame" then
+					return ("CFrame.new(%s)"):format(table.concat({ cframe:GetComponents() }, ", "))
+				end
+
+				if typeof(cframe) == "Color3" then
+					return (`Color3.new({v7}, {v7}, {v7})`):format(
+						math.floor(cframe.R * 255),
+						math.floor(cframe.G * 255),
+						(math.floor(cframe.B * 255))
+					)
+				end
+
+				if typeof(cframe) == "ColorSequence" then
+					if #cframe.Keypoints > 2 then
+						return ("ColorSequence.new(%s)"):format(repr(cframe.Keypoints, v6))
+					end
+
+					if cframe.Keypoints[1].Value == cframe.Keypoints[2].Value then
+						return ("ColorSequence.new(%s)"):format(repr(cframe.Keypoints[1].Value, v6))
+					end
+
+					return ("ColorSequence.new(%s, %s)"):format(
+						repr(cframe.Keypoints[1].Value, v6),
+						repr(cframe.Keypoints[2].Value, v6)
+					)
+				else
+					if typeof(cframe) == "ColorSequenceKeypoint" then
+						return ("ColorSequenceKeypoint.new(%d, %s)"):format(cframe.Time, repr(cframe.Value, v6))
+					end
+
+					if typeof(cframe) == "Enums" then
+						return "Enums"
+					end
+
+					if typeof(cframe) == "Enum" then
+						return ("Enum.%s"):format((tostring(cframe)))
+					end
+
+					if typeof(cframe) == "EnumItem" then
+						return ("Enum.%s.%s"):format(tostring(cframe.EnumType), cframe.Name)
+					end
+
+					if typeof(cframe) == "Faces" then
+						local v9 = {}
+
+						for _, v10 in pairs(Enum.NormalId:GetEnumItems()) do
+							if cframe[v10.Name] then
+								table.insert(v9, repr(v10, v6))
+							end
+						end
+
+						return ("Faces.new(%s)"):format(table.concat(v9, ", "))
+					elseif typeof(cframe) == "NumberRange" then
+						if cframe.Min == cframe.Max then
+							return ("NumberRange.new(%d)"):format(cframe.Min)
+						end
+
+						return ("NumberRange.new(%d, %d)"):format(cframe.Min, cframe.Max)
+					elseif typeof(cframe) == "NumberSequence" then
+						if #cframe.Keypoints > 2 then
+							return ("NumberSequence.new(%s)"):format(repr(cframe.Keypoints, v6))
+						end
+
+						if cframe.Keypoints[1].Value == cframe.Keypoints[2].Value then
+							return ("NumberSequence.new(%d)"):format(cframe.Keypoints[1].Value)
+						end
+
+						return ("NumberSequence.new(%d, %d)"):format(
+							cframe.Keypoints[1].Value,
+							cframe.Keypoints[2].Value
+						)
+					elseif typeof(cframe) == "NumberSequenceKeypoint" then
+						if cframe.Envelope == 0 then
+							return ("NumberSequenceKeypoint.new(%d, %d)"):format(cframe.Time, cframe.Value)
+						end
+
+						return ("NumberSequenceKeypoint.new(%d, %d, %d)"):format(
+							cframe.Time,
+							cframe.Value,
+							cframe.Envelope
+						)
+					else
+						if typeof(cframe) == "PathWaypoint" then
+							return ("PathWaypoint.new(%s, %s)"):format(
+								repr(cframe.Position, v6),
+								repr(cframe.Action, v6)
+							)
+						end
+
+						if typeof(cframe) == "PhysicalProperties" then
+							return ("PhysicalProperties.new(%d, %d, %d, %d, %d)"):format(
+								cframe.Density,
+								cframe.Friction,
+								cframe.Elasticity,
+								cframe.FrictionWeight,
+								cframe.ElasticityWeight
+							)
+						end
+
+						if typeof(cframe) == "Random" then
+							return "<Random>"
+						end
+
+						if typeof(cframe) == "Ray" then
+							return ("Ray.new(%s, %s)"):format(repr(cframe.Origin, v6), repr(cframe.Direction, v6))
+						end
+
+						if typeof(cframe) == "RBXScriptConnection" then
+							return "<RBXScriptConnection>"
+						end
+
+						if typeof(cframe) == "RBXScriptSignal" then
+							return "<RBXScriptSignal>"
+						end
+
+						if typeof(cframe) == "Rect" then
+							return ("Rect.new(%d, %d, %d, %d)"):format(
+								cframe.Min.X,
+								cframe.Min.Y,
+								cframe.Max.X,
+								cframe.Max.Y
+							)
+						end
+
+						if typeof(cframe) == "Region3int16" then
+							return ("Region3int16.new(%s, %s)"):format(repr(cframe.Min, v6), repr(cframe.Max, v6))
+						end
+
+						if typeof(cframe) == "TweenInfo" then
+							return ("TweenInfo.new(%d, %s, %s, %d, %s, %d)"):format(
+								cframe.Time,
+								repr(cframe.EasingStyle, v6),
+								repr(cframe.EasingDirection, v6),
+								cframe.RepeatCount,
+								repr(cframe.Reverses, v6),
+								cframe.DelayTime
+							)
+						end
+
+						if typeof(cframe) == "UDim" then
+							return (`UDim.new({v7}, {v7})`):format(cframe.Scale, cframe.Offset)
+						end
+
+						if typeof(cframe) == "UDim2" then
+							local color3 = Color3.fromRGB(97, 161, 241)
+							return (`{not v6.richText and "UDim2" or `<font color="#{color3:ToHex()}">UDim2</font>`}.new({v7}, {v7}, {v7}, {v7})`):format(
+								math.floor(cframe.X.Scale * 100) / 100,
+								cframe.X.Offset,
+								math.floor(cframe.Y.Scale * 10) / 100,
+								cframe.Y.Offset
+							)
+						end
+
+						if typeof(cframe) == "Vector2" then
+							local color3 = Color3.fromRGB(97, 161, 241)
+							return (`{not v6.richText and "Vector2" or `<font color="#{color3:ToHex()}">Vector2</font>`}.new({v7}, {v7})`):format(
+								cframe.X,
+								cframe.Y
+							)
+						end
+
+						if typeof(cframe) == "Vector2int16" then
+							return ("Vector2int16.new(%d, %d)"):format(cframe.X, cframe.Y)
+						end
+
+						if typeof(cframe) == "Vector3" then
+							local color3 = Color3.fromRGB(97, 161, 241)
+							return (`{not v6.richText and "Vector3" or `<font color="#{color3:ToHex()}">Vector3</font>`}.new({v7}, {v7}, {v7})`):format(
+								cframe.X,
+								cframe.Y,
+								cframe.Z
+							)
+						end
+
+						if typeof(cframe) == "Vector3int16" then
+							return ("Vector3int16.new(%d, %d, %d)"):format(cframe.X, cframe.Y, cframe.Z)
+						end
+
+						if typeof(cframe) == "DateTime" then
+							return ("DateTime.fromIsoDate(%q)"):format(cframe:ToIsoDate())
+						end
+
+						return "<Roblox:" .. typeof(cframe) .. ">"
+					end
+				end
+			end
+		end
+	end
+end
+
+return repr

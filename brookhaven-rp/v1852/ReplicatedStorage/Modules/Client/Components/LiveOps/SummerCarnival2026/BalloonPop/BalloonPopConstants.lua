@@ -1,0 +1,4 @@
+return {
+	BALLOON_INFLATED_SIZE_ATTRIBUTE = "InflatedSize",
+	SHOOT_COOLDOWN = 0.5
+}

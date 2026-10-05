@@ -1,0 +1,20 @@
+return table.freeze({
+	ar = "ظهر {Egg} في {Area}{Emoji}!",
+	de = "{Egg} ist in {Area}{Emoji} erschienen!",
+	en = "A {Egg} spawned in {Area}{Emoji}!",
+	es = "¡Ha aparecido {Egg} en {Area}{Emoji}!",
+	fr = "{Egg} est apparu dans {Area}{Emoji} !",
+	hi = "{Area}{Emoji} में {Egg} आया है!",
+	id = "{Egg} muncul di {Area}{Emoji}!",
+	it = "{Egg} è apparso in {Area}{Emoji}!",
+	ja = "{Area}{Emoji}に{Egg}が出現しました！",
+	ko = "{Area}{Emoji}에 {Egg} 등장!",
+	pl = "{Egg} pojawił się w {Area}{Emoji}!",
+	pt = "{Egg} apareceu em {Area}{Emoji}!",
+	ru = "{Egg} появился в {Area}{Emoji}!",
+	th = "{Egg} ปรากฏตัวใน {Area}{Emoji}!",
+	tr = "{Area}{Emoji} bölgesinde {Egg} ortaya çıktı!",
+	vi = "{Egg} đã xuất hiện ở {Area}{Emoji}!",
+	["zh-cn"] = "{Area}{Emoji}出现了{Egg}！",
+	["zh-tw"] = "{Area}{Emoji}出現了{Egg}！"
+})

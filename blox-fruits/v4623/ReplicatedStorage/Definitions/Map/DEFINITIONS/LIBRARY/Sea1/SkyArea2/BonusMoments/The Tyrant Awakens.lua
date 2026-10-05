@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, dark clouds gather around the temple..."):setRewardDialogue("Even the Lightning God's apprentice couldn't rule the skies forever! Job well done."):setIslandCompleteDialogue("You broke the clouds and grounded the Tyrant's apprentice?! Unbelievable!"):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

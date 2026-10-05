@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Looking for money? Dream big, friend! Maybe money will rain from the sky some day, haha!"):setRewardDialogue("Looks like that guard finally lost his precious treasure. Nicely done!"):setIslandCompleteDialogue("Oh ho you finally got those pesky bandits to share the Skylands treasure? It's about time!"):insertTag("Repeatable"):insertTag("ResetOnDeath"):build()

@@ -1,0 +1,8 @@
+local GuiService = game:GetService("GuiService")
+local menuState = script.Parent:WaitForChild("MenuState")
+GuiService.MenuOpened:Connect(function()
+	menuState:FireServer(true)
+end)
+GuiService.MenuClosed:Connect(function()
+	menuState:FireServer(false)
+end)

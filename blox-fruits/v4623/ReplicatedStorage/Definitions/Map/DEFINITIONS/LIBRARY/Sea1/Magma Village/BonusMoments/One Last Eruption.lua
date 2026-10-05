@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, you can hear the volcano rumble..."):setRaidHint("The earth's been quaking near Magma Village..."):setRewardDialogue("Even in the LITERAL heat of battle, you managed to defeat the Magma General. Props to you!"):setIslandCompleteDialogue("Even in the LITERAL heat of battle, you managed to defeat the Magma General. Props to you!"):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

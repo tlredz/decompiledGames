@@ -1,0 +1,1 @@
+return (_G.import("collection")("AuraCollection", script))

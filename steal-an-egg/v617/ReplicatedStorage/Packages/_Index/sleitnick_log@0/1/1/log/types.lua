@@ -1,0 +1,2 @@
+-- Roblox could not compile this script:
+-- :44: Expected '(', '{' or <string> when parsing function call, got ','

@@ -1,0 +1,3 @@
+return {
+	GAMEPASS_ID = 1142100573
+}

@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, you can smell an ominous scent coming from the Chef's kitchen."):setRaidHint("The sea grows restless near Pirate Village..."):setRewardDialogue("You cooked the recipe AND the Chef? Remind me to stay on your good side."):setIslandCompleteDialogue("You cooked the recipe AND the Chef? Remind me to stay on your good side."):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

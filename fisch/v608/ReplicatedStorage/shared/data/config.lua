@@ -1,0 +1,4 @@
+return {
+	DAY_CYCLE_MINS = 24,
+	YEAR_LENGTH_DAYS = 8
+}

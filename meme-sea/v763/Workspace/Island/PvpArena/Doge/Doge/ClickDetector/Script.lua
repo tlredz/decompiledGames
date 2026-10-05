@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local PlaySound = require(ReplicatedStorage:WaitForChild("ModuleScript"):WaitForChild("PlaySound"))
+script.Parent.MouseClick:Connect(function(_)
+	PlaySound.PlaySound(game.Players.LocalPlayer, game.ReplicatedStorage.Sound_Effect.Honk)
+end)

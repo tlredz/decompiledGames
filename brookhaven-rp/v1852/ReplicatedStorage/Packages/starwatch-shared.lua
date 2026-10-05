@@ -1,0 +1,1 @@
+return require(script.Parent._Index["thatgameco_starwatch-shared@2.0.2"]["starwatch-shared"])

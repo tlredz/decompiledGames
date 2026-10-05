@@ -1,0 +1,8 @@
+local UserInputService = game:GetService("UserInputService")
+local focusState = script.Parent:WaitForChild("FocusState")
+UserInputService.WindowFocused:Connect(function()
+	focusState:FireServer(true)
+end)
+UserInputService.WindowFocusReleased:Connect(function()
+	focusState:FireServer(false)
+end)

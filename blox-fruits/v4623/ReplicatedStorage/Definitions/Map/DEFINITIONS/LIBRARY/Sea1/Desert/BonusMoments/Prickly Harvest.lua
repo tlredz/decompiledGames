@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("The Desert Merchant gets awfully excited when the cacti around here start to bloom."):setRewardDialogue("Here, take this. It's the least I can do for your valiant efforts for saving Hasan, and helping me out as well."):setIslandCompleteDialogue("Now THAT'S how you make the perfect summer beverage. You'll let me try some, right?"):insertTag("Repeatable"):build()

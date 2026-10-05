@@ -1,0 +1,21 @@
+return {
+	White = Color3.new(1, 1, 1),
+	Black = Color3.new(0, 0, 0),
+	Red = Color3.new(1, 0.4, 0.4),
+	Green = Color3.new(0.4, 1, 0.4),
+	Lime = Color3.new(0, 1, 0),
+	Robux = Color3.new(0.109804, 0.745098, 0),
+	Purple = Color3.new(1, 0, 1),
+	Blue = Color3.new(0.55, 0.6, 1),
+	Cyan = Color3.new(0.4, 0.85, 1),
+	Orange = Color3.new(1, 0.5, 0.2),
+	Yellow = Color3.new(1, 0.9, 0.2),
+	Mythical = Color3.fromRGB(238, 47, 50),
+	Premium = Color3.fromRGB(221, 188, 0),
+	Legendary = Color3.fromRGB(213, 43, 228),
+	Rare = Color3.fromRGB(140, 82, 255),
+	Uncommon = Color3.fromRGB(92, 140, 211),
+	Common = Color3.fromRGB(179, 179, 179),
+	Maroon = Color3.fromRGB(141, 7, 7),
+	BrightPurple = Color3.new(0.866667, 0.756863, 1)
+}

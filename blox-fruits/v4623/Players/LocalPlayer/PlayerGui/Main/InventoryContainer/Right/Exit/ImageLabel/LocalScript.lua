@@ -1,0 +1,6 @@
+script.Parent.MouseEnter:Connect(function()
+	script.Parent.ImageColor3 = Color3.fromRGB(141, 0, 2)
+end)
+script.Parent.MouseLeave:Connect(function()
+	script.Parent.ImageColor3 = Color3.fromRGB(179, 0, 2)
+end)

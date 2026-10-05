@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["haedrix_safe-flags@0.1.1"]["safe-flags"])

@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Long ago the gods stole a treasure from the people and hid it away..."):setRewardDialogue("You brought the secret of lightning back into the people's hands! We'll have to make you an honorary Skylander."):setIslandCompleteDialogue("The secret of lightning, back in the people's hands! Skylanders are carrying themselves more proudly now."):build()

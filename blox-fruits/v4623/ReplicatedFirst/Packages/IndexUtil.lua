@@ -1,0 +1,1 @@
+return require(script.Parent._Index["nightcycle_index-util@2.5.0"]["index-util"])

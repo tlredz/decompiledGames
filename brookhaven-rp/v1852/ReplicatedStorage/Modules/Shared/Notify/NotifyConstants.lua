@@ -1,0 +1,3 @@
+return {
+	DefaultDuration = 7
+}

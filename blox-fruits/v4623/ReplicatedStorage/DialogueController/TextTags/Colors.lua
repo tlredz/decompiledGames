@@ -1,0 +1,21 @@
+return {
+	White = "#ffffff",
+	Black = "#000000",
+	Red = "#ff6666",
+	Green = "#66ff66",
+	Lime = "#00ff00",
+	Robux = "#1cbe00",
+	Purple = "#ff00ff",
+	Blue = "#8c99ff",
+	Cyan = "#66d9ff",
+	Orange = "#ff8033",
+	Yellow = "#ffe633",
+	Mythical = "#ee2f32",
+	Premium = "#ddbc00",
+	Legendary = "#d52be4",
+	Rare = "#8c52ff",
+	Uncommon = "#5c8cd3",
+	Common = "#b3b3b3",
+	Maroon = "#8d0707",
+	BrightPurple = "#ddc1ff"
+}

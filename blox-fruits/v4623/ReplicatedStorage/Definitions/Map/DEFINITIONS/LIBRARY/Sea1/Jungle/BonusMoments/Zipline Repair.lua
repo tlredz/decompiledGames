@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("It's a long way between these islands. There has to be a faster way across..."):setIslandCompleteDialogue("Now that’s a shortcut! The explorers needed a zipline like this. Thanks!"):build()

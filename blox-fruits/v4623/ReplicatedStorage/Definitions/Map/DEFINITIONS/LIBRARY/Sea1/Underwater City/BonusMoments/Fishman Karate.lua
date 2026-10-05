@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("The rocks behind the palace catch the light funny at certain angles..."):setRewardDialogue("So you are the one who bent the light and opened the sealed door. Few ever find their way to me. You have the spirit for this art. Take my training, warrior, you have earned it."):setIslandCompleteDialogue("You bent the light and opened the sealed door?! The Water Kung Fu Teacher finally has someone to teach his secret art to."):build()

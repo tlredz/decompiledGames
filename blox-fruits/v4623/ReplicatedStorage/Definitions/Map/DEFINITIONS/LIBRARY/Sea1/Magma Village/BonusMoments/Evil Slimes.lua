@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Those geysers have been acting strangely lately..."):setRewardDialogue("Nice work! It looks like those slimes finally met their match. That's one less problem to deal with."):setIslandCompleteDialogue("Nice work! It looks like those slimes finally met their match. That's one less problem to deal with."):build()

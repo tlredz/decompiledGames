@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["voldex_math-util@0.0.1"]["math-util"])

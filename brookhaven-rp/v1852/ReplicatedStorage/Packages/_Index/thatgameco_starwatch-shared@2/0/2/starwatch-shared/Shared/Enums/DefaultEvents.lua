@@ -1,0 +1,20 @@
+return {
+	DEATH = "death",
+	JUMP = "jump",
+	SPAWN = "spawn",
+	DESPAWN = "STARWATCH_RESERVED_DESPAWN",
+	TAKE_DAMAGE = "takeDamage",
+	HEAL = "heal",
+	TOOL_EQUIPPED = "toolEquipped",
+	TOOL_UNEQUIPPED = "toolUnequipped",
+	PURCHASE = "purchase",
+	SIT = "sit",
+	SWIM = "swim",
+	CLIMB = "climb",
+	FREEFALL = "freefall",
+	VEHICLE_ENTER = "vehicleEnter",
+	VEHICLE_EXIT = "vehicleExit",
+	VEHICLE_THROTTLE = "vehicleThrottle",
+	VEHICLE_BRAKE = "vehicleBrake",
+	CHAT = "chat"
+}

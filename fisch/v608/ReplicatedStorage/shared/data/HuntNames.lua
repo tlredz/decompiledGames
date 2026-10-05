@@ -1,0 +1,22 @@
+return {
+	MossjawHunt = "Mossjaw",
+	BrineStorm = "Brine Storm",
+	KrakenHunt = "Kraken",
+	MegHunt = "Megalodon",
+	MoonlitMirage = "Moonlit Mirage",
+	ScyllaHunt = "Scylla",
+	ReefTitan = "Reef Titan",
+	FrostwyrmHunt = "Frostwyrm",
+	["The Sanctum Hunt"] = "Leviathan",
+	["The Sanctum Profane Hunt"] = "Profane Leviathan",
+	DepthsAbsoluteDarkness = "Absolute Darkness",
+	ColossalBlueDragon = "Colossal Blue Dragon",
+	ColossalAncientDragon = "Colossal Ancient Dragon",
+	ColossalEtherealDragon = "Colossal Ethereal Dragon",
+	SkeletalLeviathanHunt = "Skeletal Leviathan",
+	WyvernHunt = "Wyvern",
+	NectarBloom = "Nectar Bloom",
+	RotbloomHunt = "Rotbloom",
+	FlowerGuardianHunt = "Flower Guardian",
+	GoliathSiphonophoreHunt = "Goliath Siphonophore"
+}

@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("We used to have an Ability Teacher on this island, but when we needed him most, he vanished."):setIslandCompleteDialogue("I was just... meditating. That's all. You can learn a thing or two youngster! Stay awhile, and let me teach you some skills."):build()

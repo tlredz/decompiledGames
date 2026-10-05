@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("That old Captain is looking for a sharp eye. Earning his trust is the hard part."):setIslandCompleteDialogue("The Experienced Captain trusts your eyes on the horizon. That's high praise!"):build()

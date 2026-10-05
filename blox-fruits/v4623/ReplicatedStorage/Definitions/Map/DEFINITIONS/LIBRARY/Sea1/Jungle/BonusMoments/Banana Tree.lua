@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, bananas start growing all around the Gorilla King's territory."):setIslandCompleteDialogue("You survived against the Gorilla King's fury! That's bananas."):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

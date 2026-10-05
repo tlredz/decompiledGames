@@ -1,0 +1,133 @@
+local __DEV__ = _G.__DEV__
+local inspect = require(script.Parent:WaitForChild("inspect"))
+local isArray = require(script.Parent:WaitForChild("Array"):WaitForChild("isArray"))
+local forEach = require(script.Parent:WaitForChild("Array"):WaitForChild("forEach"))
+local fromString = require(script.Parent:WaitForChild("Array"):WaitForChild("from"):WaitForChild("fromString"))
+require(script.Parent.Parent:WaitForChild("es7-types"))
+local Set = {
+	__iter = function(p)
+		return next, p._array
+	end,
+	__tostring = function(p)
+		local v = "Set "
+
+		if #p._array > 0 then
+			v ..= "(" .. tostring(#p._array) .. ") "
+		end
+
+		return v .. inspect(p._array)
+	end
+}
+Set.__index = Set
+
+function Set.new(value)
+	local map = {}
+	local array
+
+	if value == nil then
+		array = {}
+	else
+		local clone = nil
+
+		if typeof(value) == "table" then
+			if isArray(value) then
+				clone = table.clone(value)
+			else
+				local metatable = getmetatable(value)
+
+				if metatable and rawget(metatable, "__iter") then
+					clone = value
+				elseif __DEV__ then
+					error("cannot create array from an object-like table")
+				end
+			end
+		elseif typeof(value) == "string" then
+			clone = fromString(value)
+		else
+			error(("cannot create array from value of type `%s`"):format((typeof(value))))
+		end
+
+		if clone then
+			array = table.create(#clone)
+
+			for _, v3 in clone do
+				if map[v3] then
+					continue
+				end
+
+				map[v3] = true
+				table.insert(array, v3)
+			end
+		else
+			array = {}
+		end
+	end
+
+	return (setmetatable({
+		size = #array,
+		_map = map,
+		_array = array
+	}, Set))
+end
+
+function Set:add(p)
+	if not self._map[p] then
+		self.size += 1
+		self._map[p] = true
+		table.insert(self._array, p)
+	end
+
+	return self
+end
+
+function Set:clear()
+	self.size = 0
+	table.clear(self._map)
+	table.clear(self._array)
+end
+
+function Set:delete(p)
+	if not self._map[p] then
+		return false
+	end
+
+	self.size -= 1
+	self._map[p] = nil
+	local index = table.find(self._array, p)
+
+	if index then
+		table.remove(self._array, index)
+	end
+
+	return true
+end
+
+function Set:forEach(callback, p2)
+	if typeof(callback) ~= "function" then
+		error("callback is not a function")
+	end
+
+	forEach(self._array, function(p3)
+		if p2 == nil then
+			callback(p3, p3, self)
+		else
+			callback(p2, p3, p3, self)
+		end
+	end)
+end
+
+function Set:has(p2)
+	return self._map[p2] ~= nil
+end
+
+function Set:ipairs()
+	if __DEV__ then
+		warn(debug.traceback([[
+`for _,_ in mySet:ipairs() do` is deprecated and will be removed in a future release, please use `for _,_ in mySet do` instead
+]], 2))
+	end
+
+	return ipairs(self._array)
+end
+
+return Set

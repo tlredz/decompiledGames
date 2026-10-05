@@ -1,0 +1,1 @@
+return require(script.Parent._Index["voldex_remotes@0.0.10"].remotes)

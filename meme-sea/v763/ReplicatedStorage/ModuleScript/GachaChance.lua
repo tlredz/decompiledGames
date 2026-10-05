@@ -1,0 +1,42 @@
+return {
+	Gacha = {
+		["Bomb Power"] = 18,
+		["Fly Power"] = 18,
+		["Invisible Power"] = 18,
+		["Barrier Power"] = 7,
+		["Spin Power"] = 7,
+		["Diamond Power"] = 7,
+		["Paw Power"] = 3,
+		["Flame Power"] = 3,
+		["Ice Power"] = 3,
+		["Gold Power"] = 3,
+		["Moai Power"] = 3,
+		["Water Power"] = 3,
+		["Snow Power"] = 3,
+		["Sand Power"] = 3,
+		["Dark Power"] = 0.25,
+		["Dough Power"] = 0.25,
+		["Floppa Power"] = 0.25,
+		["Dog Power"] = 0.25
+	},
+	Spawn = {
+		["Bomb Power"] = 2,
+		["Fly Power"] = 2,
+		["Invisible Power"] = 2,
+		["Barrier Power"] = 3,
+		["Spin Power"] = 3,
+		["Diamond Power"] = 3,
+		["Paw Power"] = 8,
+		["Flame Power"] = 8,
+		["Ice Power"] = 8,
+		["Gold Power"] = 8,
+		["Moai Power"] = 8,
+		["Water Power"] = 8,
+		["Snow Power"] = 8,
+		["Sand Power"] = 8,
+		["Dark Power"] = 5,
+		["Dough Power"] = 5,
+		["Floppa Power"] = 5,
+		["Dog Power"] = 5
+	}
+}

@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Every so often, the alarms on this island go off. It's piercing."):setRaidHint("The Marine Fortress is on high alert..."):setRewardDialogue("Y-you... defeated the Vice Admiral?! Here, just take this! I don't get paid enough as a Marine to deal with threats like you!"):setIslandCompleteDialogue("Some of the marines were seen snickering at the Vice Admiral's defeat. Well done putting him in his place!"):insertTag("Repeatable"):insertTag("AwakenedBossBattle"):build()

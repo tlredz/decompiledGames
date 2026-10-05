@@ -1,0 +1,3 @@
+local Builders = require(game.ReplicatedStorage.Definitions.Map.Builders)
+require(game.ReplicatedStorage.Definitions.Map.Types)
+return Builders.BonusMoment.Builder.new(script.Name, script.Parent.Parent.Name, script.Parent.Parent.Parent.Name):setRumorDialogue("Some of those rising bubbles carry you higher than you'd think..."):setIslandCompleteDialogue("You cleared the evil from the cave above the city. The water feels lighter already."):build()

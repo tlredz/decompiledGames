@@ -1,0 +1,1 @@
+return require(script.Parent._Index["dig_parallel@1.0.5"].parallel)

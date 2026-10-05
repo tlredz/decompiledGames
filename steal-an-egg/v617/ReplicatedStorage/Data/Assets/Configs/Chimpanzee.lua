@@ -1,0 +1,111 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Rarity = require(ReplicatedStorage.Data.Rarity)
+
+local function makeAnimation(animationId: string)
+	local animation = Instance.new("Animation")
+
+	local function setAnimationId()
+		animation.AnimationId = animationId
+	end
+
+	if not pcall(setAnimationId) then
+		warn((`Animation {animationId} is not shared with this experience`))
+	end
+
+	return animation
+end
+
+local v = {
+	_id = "Chimpanzee",
+	DisplayName = "Chimpanzee",
+	Icon = "rbxassetid://74635759656969",
+	Egg = table.freeze({
+		DisplayName = "Chimpanzee Egg",
+		Icon = "rbxassetid://112484055753399",
+		GrowthTime = 30,
+		WeightKg = 3,
+		HideRarity = nil,
+		IgnoreSizeGrowthMultiplier = nil
+	}),
+	WhiteImage = nil,
+	MutationIcons = nil,
+	EarningRate = 90,
+	IndexSpeedReward = 7200,
+	DropWeight = 0,
+	VisualOdds = 190000,
+	ModelWeight = 65,
+	Animations = 0,
+	WalkAnimationReferenceSpeed = nil,
+	Rarity = 0,
+	BaseModelScale = 1,
+	LimitedEggViewportScale = 1,
+	LimitedEggViewportVerticalOffset = 0,
+	BaseModelColor = 0,
+	PossibleModelColors = 0,
+	PlaceSound = nil,
+	WalkSound = 0,
+	RandomIdleSound = 0,
+	LuckyBlockDropTable = nil,
+	LuckyBlockDropTableType = nil,
+	LuckyBlockLevelRange = nil,
+	LuckyBlockOpenDuration = nil,
+	DontRoll = nil,
+	CannotFuse = nil,
+	GenderLocked = nil,
+	AlbinosColorFullWhite = nil
+}
+local animation = Instance.new("Animation")
+local animationId2 = "rbxassetid://79828503574644"
+
+local function setAnimationId()
+	animation.AnimationId = animationId2
+end
+
+if not pcall(setAnimationId) then
+	warn("Animation rbxassetid://79828503574644 is not shared with this experience")
+end
+
+local v2 = {
+	Idle = animation,
+	Walk = 0,
+	TransitionFadeDuration = nil
+}
+local animation2 = Instance.new("Animation")
+local animationId3 = "rbxassetid://118780292967097"
+
+local function setAnimationId2()
+	animation2.AnimationId = animationId3
+end
+
+if not pcall(setAnimationId2) then
+	warn("Animation rbxassetid://118780292967097 is not shared with this experience")
+end
+
+v2.Walk = animation2
+v.Animations = table.freeze(v2)
+v.Rarity = Rarity.Rarities.Rare
+v.BaseModelColor = Color3.new(0.33725491166114807, 0.2235294133424759, 0.14509804546833038)
+v.PossibleModelColors = table.freeze({
+	table.freeze({ Color3.new(0.33725491166114807, 0.2235294133424759, 0.14509804546833038), 650 }),
+	table.freeze({ Color3.new(0.21568627655506134, 0.16470588743686676, 0.125490203499794), 180 }),
+	table.freeze({ Color3.new(0.47058823704719543, 0.3333333432674408, 0.21568627655506134), 125 }),
+	table.freeze({ Color3.new(0.6078431606292725, 0.4901960790157318, 0.37254902720451355), 45 }),
+	table.freeze({ Color3.new(1, 1, 1), 10 })
+})
+v.WalkSound = table.freeze({
+	Data = table.freeze({
+		Looped = true,
+		MaxDistance = 20,
+		Speed = 1,
+		Volume = 1.5
+	}),
+	SoundId = 123431841520512
+})
+v.RandomIdleSound = table.freeze({
+	Data = table.freeze({
+		MaxDistance = 20,
+		Volume = 1.5
+	}),
+	SoundId = 102428875173675
+})
+return (table.freeze(v))
