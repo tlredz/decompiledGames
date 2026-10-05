@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["red-blox_signal@1.0.0"].signal)

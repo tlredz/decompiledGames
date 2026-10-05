@@ -1,0 +1,10 @@
+return {
+	DATA_STORE = "TotalXPV2",
+	SCORE_UPDATE = 1,
+	LEADERBOARD_UPDATE = 300,
+	NAME_OF_STAT = "",
+	USE_LEADERSTATS = true,
+	NAME_LEADERSTATS = "TotalXP",
+	SHOW_1ST_PLACE_AVATAR = true,
+	DO_DEBUG = false
+}

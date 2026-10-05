@@ -1,0 +1,23 @@
+return {
+	Name = "Twisted Connie",
+	Rarity = "Uncommon",
+	Icon = "rbxassetid://91802161679934",
+	VisionRadius = 60,
+	InstantRadius = 25,
+	WalkSpeed = 8,
+	RunSpeed = 18,
+	InterestTime = 3,
+	HearingRadius = 100,
+	Damage = 1,
+	WaitTime = 4,
+	WaitDuration = 0.5,
+	LineOfSight = 0.4,
+	KillRadius = 3.3,
+	HitCooldown = 2,
+	ChaseAbility = false,
+	AbilityCooldown = nil,
+	ActivatedWalkSpeed = 15,
+	ActivatedRunSpeed = 24,
+	GeneratorWaitTime = 20,
+	NoChase = true
+}

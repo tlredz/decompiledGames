@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ParticleAndTrailsHandler = require(ReplicatedStorage.SharedUtils.ParticleAndTrailsHandler)
+ParticleAndTrailsHandler:AddTag("SkinParticle")
+ParticleAndTrailsHandler:AddTag("SkinTrail")
+ParticleAndTrailsHandler:AddTag("SkinBeam")

@@ -1,0 +1,41 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local Utility = require(ReplicatedStorage.Modules.Utility)
+local Maul = require(Players.LocalPlayer.PlayerScripts.Modules:WaitForChild("ViewModels"):WaitForChild("Maul"))
+local object = setmetatable({}, Maul)
+object.__index = object
+
+function object.new(...)
+	local self = setmetatable(Maul.new(...), object)
+	self:_Init()
+	return self
+end
+
+function object.SlamSoundEffect(_, p, _)
+	Utility:CreateSound("rbxassetid://72483809453170", 1 + 0.25 * math.random(), 0.9 + 0.2 * math.random(), p, true, 10)
+	Utility:CreateSound(
+		"rbxassetid://129922197154277",
+		1 + 0.25 * math.random(),
+		0.9 + 0.2 * math.random(),
+		p,
+		true,
+		10
+	)
+	Utility:CreateSound(
+		"rbxassetid://84868739299715",
+		1.25 + 0.25 * math.random(),
+		0.75 + 0.125 * math.random(),
+		p,
+		true,
+		10
+	)
+end
+
+function object.PlayHitmarkerSound(object2, p, p2)
+	Maul.PlayHitmarkerSound(object2, p, p2)
+	object2:_CreateHitmarkerSound("rbxassetid://84868739299715", 1.25 / p2, 1 + 0.25 * math.random(), script, true, 2)
+end
+
+function object:_Init() end
+
+return object

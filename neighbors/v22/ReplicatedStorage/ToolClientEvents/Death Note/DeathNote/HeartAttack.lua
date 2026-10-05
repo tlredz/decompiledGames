@@ -1,0 +1,8 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Debris = game:GetService("Debris")
+local Tool = require(ReplicatedStorage.Modules.Tool)
+return Tool.Event(function(_, instance, p)
+	local clone = ReplicatedStorage.Assets.Tools["Death Note"].VisualEffects.Attachment:Clone()
+	clone.Parent = instance:FindFirstChild("UpperTorso")
+	Debris:AddItem(clone, p)
+end)

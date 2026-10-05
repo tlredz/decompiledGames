@@ -1,0 +1,15 @@
+==================== DECOMPILE ERRORS ====================
+Game: [🌗] Steal a Brainrot (v2584)
+Total problems: 3
+
+#1 [DECOMPILE] ReplicatedStorage.UserGenerated.IO.Crypto.AES.Modes
+    file:  decompiledGames/steal-a-brainrot/v2584/ReplicatedStorage/UserGenerated/IO/Crypto/AES/Modes.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] ReplicatedStorage.Packages.Net.Net
+    file:  decompiledGames/steal-a-brainrot/v2584/ReplicatedStorage/Packages/Net/Net.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [SYNTAX] ReplicatedStorage.Controllers.EventController.Events.Mygame43
+    file:  decompiledGames/steal-a-brainrot/v2584/ReplicatedStorage/Controllers/EventController/Events/Mygame43.lua
+    error: JbNedzXKRBcMcleuGOyhnzbcb:123: Expected identifier when parsing expression, got `FocusMyGame43_{

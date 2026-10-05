@@ -1,0 +1,6 @@
+local mode = script.Parent:WaitForChild("Mode")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local WindowService = require(ReplicatedStorage:WaitForChild("Modules"):WaitForChild("WindowService"))
+mode:WaitForChild("Button").Activated:Connect(function()
+	WindowService:ToggleFrame("ModeBrowser")
+end)

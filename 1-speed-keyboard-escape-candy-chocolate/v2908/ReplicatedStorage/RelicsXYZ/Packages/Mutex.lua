@@ -1,0 +1,1 @@
+return require(script.Parent._Index["maximumadhd_mutex@1.0.2"].mutex)

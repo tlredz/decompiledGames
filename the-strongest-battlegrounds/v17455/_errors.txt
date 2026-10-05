@@ -1,0 +1,27 @@
+==================== DECOMPILE ERRORS ====================
+Game: The Strongest Battlegrounds (v17455)
+Total problems: 6
+
+#1 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Replication.User Error Interface
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/Players/LocalPlayer/PlayerScripts/Replication/User Error Interface.lua
+    error: Failed to buffer the request body: length limit exceeded (HTTP 413)
+
+#2 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Replication.User Error Interface
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/StarterPlayer/StarterPlayerScripts/Replication/User Error Interface.lua
+    error: copied from decompiledGames/the-strongest-battlegrounds/v17455/Players/LocalPlayer/PlayerScripts/Replication/User Error Interface.lua, which had status FAILED
+
+#3 [DECOMPILE] ReplicatedStorage.Emotes.VFX.VfxMods.Auxiliary
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/ReplicatedStorage/Emotes/VFX/VfxMods/Auxiliary.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] ReplicatedStorage.Emotes.VFX.VfxMods.Utilities
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/ReplicatedStorage/Emotes/VFX/VfxMods/Utilities.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] ReplicatedStorage.Emotes.VFX.VfxMods.Utilities.VFXHandle
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/ReplicatedStorage/Emotes/VFX/VfxMods/Utilities/VFXHandle.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] ReplicatedStorage.VoxelDestruction.RegionModule
+    file:  decompiledGames/the-strongest-battlegrounds/v17455/ReplicatedStorage/VoxelDestruction/RegionModule.lua
+    error: HttpError: Timedout

@@ -1,0 +1,21 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+require(ReplicatedStorage:WaitForChild("Modules"):WaitForChild("WindowService"))
+local ReplicatedStorage2 = game:GetService("ReplicatedStorage")
+local shop = ReplicatedStorage2:WaitForChild("Remotes"):WaitForChild("Shop")
+local BoxModule = require(game.ReplicatedStorage.Modules.BoxModule)
+local ReplicatedStorage3 = game:GetService("ReplicatedStorage")
+local MysteryBoxService = require(ReplicatedStorage3:WaitForChild("ClientServices"):WaitForChild("MysteryBoxService"))
+game.ReplicatedStorage.Remotes.Shop.BoxController.Event:connect(function(items)
+	MysteryBoxService:PlayOpeningAnimation(items)
+
+	for _, item in items do
+		shop.NewItemReceived:Fire(item.RewardedItemId, "Weapons")
+		game.ReplicatedStorage.Remotes.Inventory.UpdateSalvageClient:Fire()
+		game.ReplicatedStorage.Remotes.Shop.CrateComplete:FireServer(item.RewardedItemId)
+	end
+end)
+game.ReplicatedStorage.Remotes.Shop.EggController.Event:connect(function(p, p2)
+	BoxModule.HatchEgg(p, p2)
+	shop.NewItemReceived:Fire(p2, "Pets")
+	game.ReplicatedStorage.Remotes.Shop.CrateComplete:FireServer(p2)
+end)

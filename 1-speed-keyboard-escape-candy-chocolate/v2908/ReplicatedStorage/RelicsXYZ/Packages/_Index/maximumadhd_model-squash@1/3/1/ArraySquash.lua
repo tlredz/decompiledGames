@@ -1,0 +1,1 @@
+return require(script.Parent.Parent["maximumadhd_array-squash@1.0.0"]["array-squash"])

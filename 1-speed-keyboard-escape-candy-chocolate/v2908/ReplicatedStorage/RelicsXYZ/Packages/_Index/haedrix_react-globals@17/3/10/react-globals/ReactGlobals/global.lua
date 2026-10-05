@@ -1,0 +1,138 @@
+local parent = script.Parent.Parent
+local SafeFlags = require(parent.SafeFlags)
+
+if not SafeFlags.createGetFFlag("ReactIsolatedGlobalsEnabled")() then
+	return _G
+end
+
+local function loadFromGlobal(p: string, p2)
+	local v = _G[p]
+
+	if v == nil then
+		return p2
+	end
+
+	return v
+end
+
+local __DEV__ = _G.__DEV__
+
+if __DEV__ == nil then
+	__DEV__ = false
+end
+
+local __PROFILE__ = _G.__PROFILE__
+
+if __PROFILE__ == nil then
+	__PROFILE__ = false
+end
+
+local __EXPERIMENTAL__ = _G.__EXPERIMENTAL__
+
+if __EXPERIMENTAL__ == nil then
+	__EXPERIMENTAL__ = false
+end
+
+local __DEBUG__ = _G.__DEBUG__
+
+if __DEBUG__ == nil then
+	__DEBUG__ = false
+end
+
+local __YOLO__ = _G.__YOLO__
+
+if __YOLO__ == nil then
+	__YOLO__ = false
+end
+
+local __DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__ = _G.__DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__
+
+if __DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__ == nil then
+	__DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__ = false
+end
+
+local __REACT_DEVTOOLS_GLOBAL_HOOK__ = _G.__REACT_DEVTOOLS_GLOBAL_HOOK__
+
+if __REACT_DEVTOOLS_GLOBAL_HOOK__ == nil then
+	__REACT_DEVTOOLS_GLOBAL_HOOK__ = nil
+end
+
+local __REACT_DEVTOOLS_ATTACH__ = _G.__REACT_DEVTOOLS_ATTACH__
+
+if __REACT_DEVTOOLS_ATTACH__ == nil then
+	__REACT_DEVTOOLS_ATTACH__ = nil
+end
+
+local __REACT_DEVTOOLS_APPEND_COMPONENT_STACK__ = _G.__REACT_DEVTOOLS_APPEND_COMPONENT_STACK__
+
+if __REACT_DEVTOOLS_APPEND_COMPONENT_STACK__ == nil then
+	__REACT_DEVTOOLS_APPEND_COMPONENT_STACK__ = false
+end
+
+local __REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__ = _G.__REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__
+
+if __REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__ == nil then
+	__REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__ = false
+end
+
+local __REACT_DEVTOOLS_COMPONENT_FILTERS__ = _G.__REACT_DEVTOOLS_COMPONENT_FILTERS__
+
+if __REACT_DEVTOOLS_COMPONENT_FILTERS__ == nil then
+	__REACT_DEVTOOLS_COMPONENT_FILTERS__ = nil
+end
+
+local __LOCALSTORAGE__ = _G.__LOCALSTORAGE__
+
+if __LOCALSTORAGE__ == nil then
+	__LOCALSTORAGE__ = nil
+end
+
+local __SESSIONSTORAGE__ = _G.__SESSIONSTORAGE__
+
+if __SESSIONSTORAGE__ == nil then
+	__SESSIONSTORAGE__ = nil
+end
+
+local __COMPAT_WARNINGS__ = _G.__COMPAT_WARNINGS__
+
+if __COMPAT_WARNINGS__ == nil then
+	__COMPAT_WARNINGS__ = false
+end
+
+local __TESTEZ_RUNNING_TEST__ = _G.__TESTEZ_RUNNING_TEST__
+
+if __TESTEZ_RUNNING_TEST__ == nil then
+	__TESTEZ_RUNNING_TEST__ = false
+end
+
+local __ROACT_17_MOCK_SCHEDULER__ = _G.__ROACT_17_MOCK_SCHEDULER__
+
+if __ROACT_17_MOCK_SCHEDULER__ == nil then
+	__ROACT_17_MOCK_SCHEDULER__ = false
+end
+
+local __ROACT_17_INLINE_ACT__ = _G.__ROACT_17_INLINE_ACT__
+
+if __ROACT_17_INLINE_ACT__ == nil then
+	__ROACT_17_INLINE_ACT__ = false
+end
+
+return {
+	__DEV__ = __DEV__,
+	__PROFILE__ = __PROFILE__,
+	__EXPERIMENTAL__ = __EXPERIMENTAL__,
+	__DEBUG__ = __DEBUG__,
+	__YOLO__ = __YOLO__,
+	__DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__ = __DISABLE_ALL_WARNINGS_EXCEPT_PROP_VALIDATION__,
+	__REACT_DEVTOOLS_GLOBAL_HOOK__ = __REACT_DEVTOOLS_GLOBAL_HOOK__,
+	__REACT_DEVTOOLS_ATTACH__ = __REACT_DEVTOOLS_ATTACH__,
+	__REACT_DEVTOOLS_APPEND_COMPONENT_STACK__ = __REACT_DEVTOOLS_APPEND_COMPONENT_STACK__,
+	__REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__ = __REACT_DEVTOOLS_BREAK_ON_CONSOLE_ERRORS__,
+	__REACT_DEVTOOLS_COMPONENT_FILTERS__ = __REACT_DEVTOOLS_COMPONENT_FILTERS__,
+	__LOCALSTORAGE__ = __LOCALSTORAGE__,
+	__SESSIONSTORAGE__ = __SESSIONSTORAGE__,
+	__COMPAT_WARNINGS__ = __COMPAT_WARNINGS__,
+	__TESTEZ_RUNNING_TEST__ = __TESTEZ_RUNNING_TEST__,
+	__ROACT_17_MOCK_SCHEDULER__ = __ROACT_17_MOCK_SCHEDULER__,
+	__ROACT_17_INLINE_ACT__ = __ROACT_17_INLINE_ACT__
+}

@@ -1,0 +1,45 @@
+require(script.Parent.Types)
+return {
+	summer = {
+		title = "~Quests~",
+		buttonEmoji = "📜",
+		buttonColor = Color3.fromRGB(240, 150, 20),
+		modalGradient = ColorSequence.new(Color3.fromRGB(255, 214, 120), Color3.fromRGB(255, 138, 61)),
+		modalStroke = Color3.fromRGB(74, 46, 0),
+		modalPatternTransparency = 0.7,
+		titleColor = Color3.fromRGB(255, 255, 255),
+		titleStroke = Color3.fromRGB(74, 46, 0),
+		cardGradient = ColorSequence.new(Color3.fromRGB(195, 169, 126), Color3.fromRGB(148, 113, 73)),
+		cardStroke = Color3.fromRGB(255, 255, 255),
+		barColor = Color3.fromRGB(94, 64, 28),
+		fillGradient = ColorSequence.new(Color3.fromRGB(255, 214, 120), Color3.fromRGB(255, 170, 60)),
+		rewardTextColor = Color3.fromRGB(255, 240, 150),
+		skipGradient = ColorSequence.new(Color3.fromRGB(255, 200, 60), Color3.fromRGB(211, 124, 0)),
+		skipStroke = Color3.fromRGB(120, 70, 0),
+		claimGradient = ColorSequence.new(Color3.fromRGB(96, 222, 96), Color3.fromRGB(24, 138, 24)),
+		claimStroke = Color3.fromRGB(255, 244, 150),
+		refreshGradient = ColorSequence.new(Color3.fromRGB(90, 190, 255), Color3.fromRGB(20, 110, 200)),
+		refreshStroke = Color3.fromRGB(10, 60, 120)
+	},
+	halloween = {
+		title = "~Halloween Quests~",
+		buttonEmoji = "🎃",
+		buttonColor = Color3.fromRGB(211, 100, 15),
+		modalGradient = ColorSequence.new(Color3.fromRGB(92, 40, 140), Color3.fromRGB(34, 12, 58)),
+		modalStroke = Color3.fromRGB(230, 100, 10),
+		modalPatternTransparency = 0.85,
+		titleColor = Color3.fromRGB(255, 160, 40),
+		titleStroke = Color3.fromRGB(30, 8, 50),
+		cardGradient = ColorSequence.new(Color3.fromRGB(120, 62, 180), Color3.fromRGB(72, 30, 115)),
+		cardStroke = Color3.fromRGB(255, 150, 50),
+		barColor = Color3.fromRGB(25, 8, 40),
+		fillGradient = ColorSequence.new(Color3.fromRGB(255, 190, 60), Color3.fromRGB(240, 105, 0)),
+		rewardTextColor = Color3.fromRGB(255, 200, 90),
+		skipGradient = ColorSequence.new(Color3.fromRGB(255, 160, 40), Color3.fromRGB(215, 85, 0)),
+		skipStroke = Color3.fromRGB(90, 30, 0),
+		claimGradient = ColorSequence.new(Color3.fromRGB(140, 235, 70), Color3.fromRGB(50, 150, 20)),
+		claimStroke = Color3.fromRGB(230, 255, 160),
+		refreshGradient = ColorSequence.new(Color3.fromRGB(200, 120, 255), Color3.fromRGB(125, 50, 205)),
+		refreshStroke = Color3.fromRGB(45, 10, 80)
+	}
+}

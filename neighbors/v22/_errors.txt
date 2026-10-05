@@ -1,0 +1,867 @@
+==================== DECOMPILE ERRORS ====================
+Game: Portuguese (v22)
+Total problems: 216
+
+#1 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Tool/Client
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Tool/Client.Tool/DizzyHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client/Tool/DizzyHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Tool/Client.Tool/PepperSprayHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client/Tool/PepperSprayHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Gameplay.GrassSkipClient
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Gameplay/GrassSkipClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Gameplay.FloatingUGC/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Gameplay/FloatingUGC/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.UI.ProximityPromptHandler.Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/UI/ProximityPromptHandler/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#7 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.UI.Comment.CommentChatHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/UI/Comment/CommentChatHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#8 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Optimization.PrefabMaterialHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Optimization/PrefabMaterialHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#9 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Optimization.PlayerHiddenHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Optimization/PlayerHiddenHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#10 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Tools.ToolPrompt/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tools/ToolPrompt/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#11 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.VR.VRClientBackend
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/VR/VRClientBackend.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#12 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Neighbors.House/DoorHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/DoorHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#13 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Neighbors.House/FakeLightHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/FakeLightHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#14 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Neighbors.LocalHouse/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/LocalHouse/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#15 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Neighbors.House/LockedDoorHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/LockedDoorHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#16 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Backend.HiddenPlayerHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Backend/HiddenPlayerHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#17 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Neighbors.House/GarageHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/GarageHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#18 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Scripts.Patches.PlayerAndCharacterDestroyFix
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Patches/PlayerAndCharacterDestroyFix.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#19 [DECOMPILE] Players.LocalPlayer.PlayerGui.HouseCustomization.Customization.Customization/Client
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Customization/Customization/Client.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#20 [DECOMPILE] Players.LocalPlayer.PlayerGui.HouseCustomization.Navigation.Customization/Navigation
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Navigation/Customization/Navigation.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#21 [DECOMPILE] Players.LocalPlayer.PlayerGui.HouseCustomization.MaterialPicker.Picker
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/MaterialPicker/Picker.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#22 [DECOMPILE] Players.LocalPlayer.PlayerGui.HouseCustomization.ColorPicker.Picker
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/ColorPicker/Picker.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#23 [DECOMPILE] Players.LocalPlayer.PlayerGui.HouseCustomization.Old.SavesClientHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Old/SavesClientHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#24 [DECOMPILE] Players.LocalPlayer.PlayerGui.Tools.Death Note.DeathNoteHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Tools/Death Note/DeathNoteHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#25 [DECOMPILE] Players.LocalPlayer.PlayerGui.Activity.Activities.RockPaperScissors.RockPaperScissors/Visuals
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Activity/Activities/RockPaperScissors/RockPaperScissors/Visuals.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#26 [DECOMPILE] Players.LocalPlayer.PlayerGui.Dialogue.Dialogue.DialogueHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Dialogue/Dialogue/DialogueHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#27 [DECOMPILE] Players.LocalPlayer.PlayerGui.MainMenu.Menu.MainMenuHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/Menu/MainMenuHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#28 [DECOMPILE] Players.LocalPlayer.PlayerGui.MainMenu.Menu.MainMenu/Console
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/Menu/MainMenu/Console.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#29 [DECOMPILE] Players.LocalPlayer.PlayerGui.MainMenu.ConnectedFrame.PlayerControlsHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/ConnectedFrame/PlayerControlsHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#30 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.Pages.AddComment
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Pages/AddComment.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#31 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.Pages.AddComment.Features.Config.Dropdown
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Pages/AddComment/Features/Config/Dropdown.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#32 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.Comments/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Comments/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#33 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.AddComment.Comments/Add
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Comments/Add.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#34 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.AddComment.Bottom.Config.Negative.Comments/Add/Negative
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Negative/Comments/Add/Negative.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#35 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.AddComment.Bottom.Config.Type.Comments/Add/Type
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Type/Comments/Add/Type.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#36 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.Components.Slot
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Components/Slot.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#37 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.Comments.Components.Filter
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Components/Filter.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#38 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Comment.NewComment.Comment/Notification
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/NewComment/Comment/Notification.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#39 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Sidetab.Sidebar/Gamepad
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Sidetab/Sidebar/Gamepad.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#40 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Shop.Hotbar.Robux.Robux/Hotbar
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/Hotbar/Robux/Robux/Hotbar.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#41 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Shop.Pages.Items.ItemsPageHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/Pages/Items/ItemsPageHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#42 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Shop.ItemSkinsPage.Frame.ItemSkinsHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/ItemSkinsPage/Frame/ItemSkinsHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#43 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Party.Party/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Party/Party/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#44 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Donation.Donation.Donation/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Donation/Donation/Donation/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#45 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Donation.DonationHistory.DonationHistory/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Donation/DonationHistory/DonationHistory/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#46 [DECOMPILE] Players.LocalPlayer.PlayerGui.Neighbors.Profile.ProfileClient
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Profile/ProfileClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#47 [DECOMPILE] Players.LocalPlayer.PlayerGui.PianoGui.PianoGui/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/PianoGui/PianoGui/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#48 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Worlds/ServerList
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Worlds/ServerList.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#49 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Friends.Worlds/Friends
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Friends/Worlds/Friends.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#50 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Info.FilterMenu.World/FilterMenu
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/World/FilterMenu.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#51 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Info.FilterMenu.CreateServer.CreateServerHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/CreateServer/CreateServerHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#52 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Info.FilterMenu.ServerFilter.ServerFilter/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/ServerFilter/ServerFilter/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#53 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Navigation.Worlds/Navigation
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Navigation/Worlds/Navigation.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#54 [DECOMPILE] Players.LocalPlayer.PlayerGui.Worlds.Frame.Worlds/Gamepad
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Worlds/Gamepad.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#55 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#56 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.CustomServerUnban.CustomServer/Unban
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CustomServerUnban/CustomServer/Unban.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#57 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.CustomServerBan.CustomServerBanHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CustomServerBan/CustomServerBanHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#58 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.AdultServer.AdultServer/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/AdultServer/AdultServer/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#59 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.OpenWorld.OpenWorld/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/OpenWorld/OpenWorld/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#60 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.Houses.Houses/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Houses/Houses/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#61 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.DonationHelp.DonationHelp/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DonationHelp/DonationHelp/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#62 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.ShopPrompt.ShopPrompt/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/ShopPrompt/ShopPrompt/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#63 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.Gift.Gift/List
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Gift/Gift/List.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#64 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.DrawingClear.DrawingClear/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DrawingClear/DrawingClear/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#65 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.LanguageSetting.LanguagePreference/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/LanguageSetting/LanguagePreference/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#66 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.CountrySetting.CountrySettingHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CountrySetting/CountrySettingHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#67 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.AgeCheckPrompt.AgeCheck/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/AgeCheckPrompt/AgeCheck/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#68 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.PromptNotification.GenericPrompt/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/PromptNotification/GenericPrompt/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#69 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.GameEvents.GameEvents/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/GameEvents/GameEvents/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#70 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.MatchRequestPrompt.MatchRequestPrompt/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/MatchRequestPrompt/MatchRequestPrompt/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#71 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.ProfileTags.ProfileTags/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/ProfileTags/ProfileTags/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#72 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.UpdateLog.UpdateLog/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/UpdateLog/UpdateLog/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#73 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.DeleteComment.DeleteComment/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DeleteComment/DeleteComment/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#74 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#75 [CACHED_ERROR] Players.LocalPlayer.PlayerGui.Prompts2.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/Background/PromptBackgroundHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua, which had status FAILED
+
+#76 [DECOMPILE] Players.LocalPlayer.PlayerGui.PickGameModeConnectUi.Frame.Players.PickGamemode
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/PickGameModeConnectUi/Frame/Players/PickGamemode.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#77 [CACHED_ERROR] Players.LocalPlayer.PlayerGui.Prompts2.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/Prompts/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua, which had status FAILED
+
+#78 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts2.RenameHouse.RenameHouse/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/RenameHouse/RenameHouse/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#79 [DECOMPILE] Players.LocalPlayer.PlayerGui.Prompts2.DeleteHouse.DeleteHouse/Prompt
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/DeleteHouse/DeleteHouse/Prompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#80 [DECOMPILE] Players.LocalPlayer.PlayerGui.DecalPicker.Background.LocalScript
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/DecalPicker/Background/LocalScript.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#81 [CACHED_ERROR] Players.LocalPlayer.PlayerGui.Prompts3.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts3/Background/PromptBackgroundHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua, which had status FAILED
+
+#82 [DECOMPILE] Players.LocalPlayer.PlayerGui.CustomServer.CustomServer.CustomServerHandler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/CustomServer/CustomServer/CustomServerHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#83 [CACHED_ERROR] Players.LocalPlayer.PlayerGui.Prompts3.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts3/Prompts/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua, which had status FAILED
+
+#84 [DECOMPILE] Players.LocalPlayer.PlayerGui.CustomServer.CustomServer.Pages.Bans.CustomServer/Bans
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/CustomServer/CustomServer/Pages/Bans/CustomServer/Bans.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#85 [DECOMPILE] Players.LocalPlayer.PlayerGui.RollAnimation.RollAnimation/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/RollAnimation/RollAnimation/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#86 [DECOMPILE] Players.LocalPlayer.PlayerGui.Notifications.Notification/Handler
+    file:  decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Notifications/Notification/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#87 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Tool/Client
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Tool/Client.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client.lua, which had status FAILED
+
+#88 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Tool/Client.Tool/DizzyHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Tool/Client/Tool/DizzyHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client/Tool/DizzyHandler.lua, which had status FAILED
+
+#89 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Tool/Client.Tool/PepperSprayHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Tool/Client/Tool/PepperSprayHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tool/Client/Tool/PepperSprayHandler.lua, which had status FAILED
+
+#90 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Gameplay.GrassSkipClient
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Gameplay/GrassSkipClient.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Gameplay/GrassSkipClient.lua, which had status FAILED
+
+#91 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Gameplay.FloatingUGC/Handler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Gameplay/FloatingUGC/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Gameplay/FloatingUGC/Handler.lua, which had status FAILED
+
+#92 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.UI.ProximityPromptHandler.Prompt
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/UI/ProximityPromptHandler/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/UI/ProximityPromptHandler/Prompt.lua, which had status FAILED
+
+#93 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.UI.Comment.CommentChatHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/UI/Comment/CommentChatHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/UI/Comment/CommentChatHandler.lua, which had status FAILED
+
+#94 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Optimization.PrefabMaterialHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Optimization/PrefabMaterialHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Optimization/PrefabMaterialHandler.lua, which had status FAILED
+
+#95 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Optimization.PlayerHiddenHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Optimization/PlayerHiddenHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Optimization/PlayerHiddenHandler.lua, which had status FAILED
+
+#96 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Tools.ToolPrompt/Handler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Tools/ToolPrompt/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Tools/ToolPrompt/Handler.lua, which had status FAILED
+
+#97 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.VR.VRClientBackend
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/VR/VRClientBackend.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/VR/VRClientBackend.lua, which had status FAILED
+
+#98 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Neighbors.House/DoorHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Neighbors/House/DoorHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/DoorHandler.lua, which had status FAILED
+
+#99 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Neighbors.House/FakeLightHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Neighbors/House/FakeLightHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/FakeLightHandler.lua, which had status FAILED
+
+#100 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Neighbors.LocalHouse/Handler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Neighbors/LocalHouse/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/LocalHouse/Handler.lua, which had status FAILED
+
+#101 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Neighbors.House/LockedDoorHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Neighbors/House/LockedDoorHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/LockedDoorHandler.lua, which had status FAILED
+
+#102 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Neighbors.House/GarageHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Neighbors/House/GarageHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Neighbors/House/GarageHandler.lua, which had status FAILED
+
+#103 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Backend.HiddenPlayerHandler
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Backend/HiddenPlayerHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Backend/HiddenPlayerHandler.lua, which had status FAILED
+
+#104 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Scripts.Patches.PlayerAndCharacterDestroyFix
+    file:  decompiledGames/portuguese/v22/StarterPlayer/StarterPlayerScripts/Scripts/Patches/PlayerAndCharacterDestroyFix.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerScripts/Scripts/Patches/PlayerAndCharacterDestroyFix.lua, which had status FAILED
+
+#105 [CACHED_ERROR] StarterGui.HouseCustomization.Customization.Customization/Client
+    file:  decompiledGames/portuguese/v22/StarterGui/HouseCustomization/Customization/Customization/Client.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Customization/Customization/Client.lua, which had status FAILED
+
+#106 [CACHED_ERROR] StarterGui.HouseCustomization.Navigation.Customization/Navigation
+    file:  decompiledGames/portuguese/v22/StarterGui/HouseCustomization/Navigation/Customization/Navigation.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Navigation/Customization/Navigation.lua, which had status FAILED
+
+#107 [CACHED_ERROR] StarterGui.HouseCustomization.MaterialPicker.Picker
+    file:  decompiledGames/portuguese/v22/StarterGui/HouseCustomization/MaterialPicker/Picker.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/MaterialPicker/Picker.lua, which had status FAILED
+
+#108 [CACHED_ERROR] StarterGui.HouseCustomization.ColorPicker.Picker
+    file:  decompiledGames/portuguese/v22/StarterGui/HouseCustomization/ColorPicker/Picker.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/ColorPicker/Picker.lua, which had status FAILED
+
+#109 [CACHED_ERROR] StarterGui.HouseCustomization.Old.SavesClientHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/HouseCustomization/Old/SavesClientHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/HouseCustomization/Old/SavesClientHandler.lua, which had status FAILED
+
+#110 [CACHED_ERROR] StarterGui.Tools.Death Note.DeathNoteHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Tools/Death Note/DeathNoteHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Tools/Death Note/DeathNoteHandler.lua, which had status FAILED
+
+#111 [CACHED_ERROR] StarterGui.Activity.Activities.RockPaperScissors.RockPaperScissors/Visuals
+    file:  decompiledGames/portuguese/v22/StarterGui/Activity/Activities/RockPaperScissors/RockPaperScissors/Visuals.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Activity/Activities/RockPaperScissors/RockPaperScissors/Visuals.lua, which had status FAILED
+
+#112 [CACHED_ERROR] StarterGui.Dialogue.Dialogue.DialogueHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Dialogue/Dialogue/DialogueHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Dialogue/Dialogue/DialogueHandler.lua, which had status FAILED
+
+#113 [CACHED_ERROR] StarterGui.MainMenu.Menu.MainMenuHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/MainMenu/Menu/MainMenuHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/Menu/MainMenuHandler.lua, which had status FAILED
+
+#114 [CACHED_ERROR] StarterGui.MainMenu.Menu.MainMenu/Console
+    file:  decompiledGames/portuguese/v22/StarterGui/MainMenu/Menu/MainMenu/Console.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/Menu/MainMenu/Console.lua, which had status FAILED
+
+#115 [CACHED_ERROR] StarterGui.MainMenu.ConnectedFrame.PlayerControlsHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/MainMenu/ConnectedFrame/PlayerControlsHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/MainMenu/ConnectedFrame/PlayerControlsHandler.lua, which had status FAILED
+
+#116 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.Comments/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/Comments/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Comments/Handler.lua, which had status FAILED
+
+#117 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.Pages.AddComment
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/Pages/AddComment.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Pages/AddComment.lua, which had status FAILED
+
+#118 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.Pages.AddComment.Features.Config.Dropdown
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/Pages/AddComment/Features/Config/Dropdown.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Pages/AddComment/Features/Config/Dropdown.lua, which had status FAILED
+
+#119 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.AddComment.Comments/Add
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/AddComment/Comments/Add.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Comments/Add.lua, which had status FAILED
+
+#120 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.AddComment.Bottom.Config.Negative.Comments/Add/Negative
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Negative/Comments/Add/Negative.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Negative/Comments/Add/Negative.lua, which had status FAILED
+
+#121 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.AddComment.Bottom.Config.Type.Comments/Add/Type
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Type/Comments/Add/Type.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/AddComment/Bottom/Config/Type/Comments/Add/Type.lua, which had status FAILED
+
+#122 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.Components.Slot
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/Components/Slot.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Components/Slot.lua, which had status FAILED
+
+#123 [CACHED_ERROR] StarterGui.Neighbors.Comment.Comments.Components.Filter
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/Comments/Components/Filter.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/Comments/Components/Filter.lua, which had status FAILED
+
+#124 [CACHED_ERROR] StarterGui.Neighbors.Comment.NewComment.Comment/Notification
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Comment/NewComment/Comment/Notification.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Comment/NewComment/Comment/Notification.lua, which had status FAILED
+
+#125 [CACHED_ERROR] StarterGui.Neighbors.Sidetab.Sidebar/Gamepad
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Sidetab/Sidebar/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Sidetab/Sidebar/Gamepad.lua, which had status FAILED
+
+#126 [CACHED_ERROR] StarterGui.Neighbors.Shop.Hotbar.Robux.Robux/Hotbar
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Shop/Hotbar/Robux/Robux/Hotbar.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/Hotbar/Robux/Robux/Hotbar.lua, which had status FAILED
+
+#127 [CACHED_ERROR] StarterGui.Neighbors.Shop.Pages.Items.ItemsPageHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Shop/Pages/Items/ItemsPageHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/Pages/Items/ItemsPageHandler.lua, which had status FAILED
+
+#128 [CACHED_ERROR] StarterGui.Neighbors.Shop.ItemSkinsPage.Frame.ItemSkinsHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Shop/ItemSkinsPage/Frame/ItemSkinsHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Shop/ItemSkinsPage/Frame/ItemSkinsHandler.lua, which had status FAILED
+
+#129 [CACHED_ERROR] StarterGui.Neighbors.Party.Party/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Party/Party/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Party/Party/Handler.lua, which had status FAILED
+
+#130 [CACHED_ERROR] StarterGui.Neighbors.Donation.Donation.Donation/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Donation/Donation/Donation/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Donation/Donation/Donation/Handler.lua, which had status FAILED
+
+#131 [CACHED_ERROR] StarterGui.Neighbors.Donation.DonationHistory.DonationHistory/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Donation/DonationHistory/DonationHistory/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Donation/DonationHistory/DonationHistory/Handler.lua, which had status FAILED
+
+#132 [CACHED_ERROR] StarterGui.Neighbors.Profile.ProfileClient
+    file:  decompiledGames/portuguese/v22/StarterGui/Neighbors/Profile/ProfileClient.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Neighbors/Profile/ProfileClient.lua, which had status FAILED
+
+#133 [CACHED_ERROR] StarterGui.PianoGui.PianoGui/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/PianoGui/PianoGui/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/PianoGui/PianoGui/Handler.lua, which had status FAILED
+
+#134 [CACHED_ERROR] StarterGui.Worlds.Frame.Worlds/ServerList
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Worlds/ServerList.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Worlds/ServerList.lua, which had status FAILED
+
+#135 [CACHED_ERROR] StarterGui.Worlds.Frame.Worlds/Gamepad
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Worlds/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Worlds/Gamepad.lua, which had status FAILED
+
+#136 [CACHED_ERROR] StarterGui.Worlds.Frame.Friends.Worlds/Friends
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Friends/Worlds/Friends.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Friends/Worlds/Friends.lua, which had status FAILED
+
+#137 [CACHED_ERROR] StarterGui.Worlds.Frame.Info.FilterMenu.World/FilterMenu
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Info/FilterMenu/World/FilterMenu.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/World/FilterMenu.lua, which had status FAILED
+
+#138 [CACHED_ERROR] StarterGui.Worlds.Frame.Info.FilterMenu.CreateServer.CreateServerHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Info/FilterMenu/CreateServer/CreateServerHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/CreateServer/CreateServerHandler.lua, which had status FAILED
+
+#139 [CACHED_ERROR] StarterGui.Worlds.Frame.Info.FilterMenu.ServerFilter.ServerFilter/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Info/FilterMenu/ServerFilter/ServerFilter/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Info/FilterMenu/ServerFilter/ServerFilter/Handler.lua, which had status FAILED
+
+#140 [CACHED_ERROR] StarterGui.Worlds.Frame.Navigation.Worlds/Navigation
+    file:  decompiledGames/portuguese/v22/StarterGui/Worlds/Frame/Navigation/Worlds/Navigation.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Worlds/Frame/Navigation/Worlds/Navigation.lua, which had status FAILED
+
+#141 [CACHED_ERROR] StarterGui.Prompts.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/Prompts/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua, which had status FAILED
+
+#142 [CACHED_ERROR] StarterGui.Prompts.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/Background/PromptBackgroundHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua, which had status FAILED
+
+#143 [CACHED_ERROR] StarterGui.Prompts.CustomServerBan.CustomServerBanHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/CustomServerBan/CustomServerBanHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CustomServerBan/CustomServerBanHandler.lua, which had status FAILED
+
+#144 [CACHED_ERROR] StarterGui.Prompts.CustomServerUnban.CustomServer/Unban
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/CustomServerUnban/CustomServer/Unban.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CustomServerUnban/CustomServer/Unban.lua, which had status FAILED
+
+#145 [CACHED_ERROR] StarterGui.Prompts.AdultServer.AdultServer/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/AdultServer/AdultServer/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/AdultServer/AdultServer/Prompt.lua, which had status FAILED
+
+#146 [CACHED_ERROR] StarterGui.Prompts.OpenWorld.OpenWorld/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/OpenWorld/OpenWorld/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/OpenWorld/OpenWorld/Prompt.lua, which had status FAILED
+
+#147 [CACHED_ERROR] StarterGui.Prompts.Houses.Houses/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/Houses/Houses/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Houses/Houses/Prompt.lua, which had status FAILED
+
+#148 [CACHED_ERROR] StarterGui.Prompts.DonationHelp.DonationHelp/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/DonationHelp/DonationHelp/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DonationHelp/DonationHelp/Handler.lua, which had status FAILED
+
+#149 [CACHED_ERROR] StarterGui.Prompts.ShopPrompt.ShopPrompt/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/ShopPrompt/ShopPrompt/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/ShopPrompt/ShopPrompt/Handler.lua, which had status FAILED
+
+#150 [CACHED_ERROR] StarterGui.Prompts.Gift.Gift/List
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/Gift/Gift/List.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Gift/Gift/List.lua, which had status FAILED
+
+#151 [CACHED_ERROR] StarterGui.Prompts.DrawingClear.DrawingClear/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/DrawingClear/DrawingClear/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DrawingClear/DrawingClear/Prompt.lua, which had status FAILED
+
+#152 [CACHED_ERROR] StarterGui.Prompts.LanguageSetting.LanguagePreference/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/LanguageSetting/LanguagePreference/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/LanguageSetting/LanguagePreference/Handler.lua, which had status FAILED
+
+#153 [CACHED_ERROR] StarterGui.Prompts.CountrySetting.CountrySettingHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/CountrySetting/CountrySettingHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/CountrySetting/CountrySettingHandler.lua, which had status FAILED
+
+#154 [CACHED_ERROR] StarterGui.Prompts.AgeCheckPrompt.AgeCheck/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/AgeCheckPrompt/AgeCheck/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/AgeCheckPrompt/AgeCheck/Prompt.lua, which had status FAILED
+
+#155 [CACHED_ERROR] StarterGui.Prompts.PromptNotification.GenericPrompt/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/PromptNotification/GenericPrompt/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/PromptNotification/GenericPrompt/Handler.lua, which had status FAILED
+
+#156 [CACHED_ERROR] StarterGui.Prompts.GameEvents.GameEvents/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/GameEvents/GameEvents/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/GameEvents/GameEvents/Handler.lua, which had status FAILED
+
+#157 [CACHED_ERROR] StarterGui.Prompts.MatchRequestPrompt.MatchRequestPrompt/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/MatchRequestPrompt/MatchRequestPrompt/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/MatchRequestPrompt/MatchRequestPrompt/Handler.lua, which had status FAILED
+
+#158 [CACHED_ERROR] StarterGui.Prompts.ProfileTags.ProfileTags/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/ProfileTags/ProfileTags/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/ProfileTags/ProfileTags/Prompt.lua, which had status FAILED
+
+#159 [CACHED_ERROR] StarterGui.Prompts.UpdateLog.UpdateLog/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/UpdateLog/UpdateLog/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/UpdateLog/UpdateLog/Handler.lua, which had status FAILED
+
+#160 [CACHED_ERROR] StarterGui.Prompts.DeleteComment.DeleteComment/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts/DeleteComment/DeleteComment/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/DeleteComment/DeleteComment/Handler.lua, which had status FAILED
+
+#161 [CACHED_ERROR] StarterGui.PickGameModeConnectUi.Frame.Players.PickGamemode
+    file:  decompiledGames/portuguese/v22/StarterGui/PickGameModeConnectUi/Frame/Players/PickGamemode.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/PickGameModeConnectUi/Frame/Players/PickGamemode.lua, which had status FAILED
+
+#162 [CACHED_ERROR] StarterGui.Prompts2.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts2/Prompts/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua, which had status FAILED
+
+#163 [CACHED_ERROR] StarterGui.Prompts2.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts2/Background/PromptBackgroundHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua, which had status FAILED
+
+#164 [CACHED_ERROR] StarterGui.Prompts2.RenameHouse.RenameHouse/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts2/RenameHouse/RenameHouse/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/RenameHouse/RenameHouse/Prompt.lua, which had status FAILED
+
+#165 [CACHED_ERROR] StarterGui.Prompts2.DeleteHouse.DeleteHouse/Prompt
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts2/DeleteHouse/DeleteHouse/Prompt.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts2/DeleteHouse/DeleteHouse/Prompt.lua, which had status FAILED
+
+#166 [CACHED_ERROR] StarterGui.DecalPicker.Background.LocalScript
+    file:  decompiledGames/portuguese/v22/StarterGui/DecalPicker/Background/LocalScript.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/DecalPicker/Background/LocalScript.lua, which had status FAILED
+
+#167 [CACHED_ERROR] StarterGui.CustomServer.CustomServer.CustomServerHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/CustomServer/CustomServer/CustomServerHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/CustomServer/CustomServer/CustomServerHandler.lua, which had status FAILED
+
+#168 [CACHED_ERROR] StarterGui.CustomServer.CustomServer.Pages.Bans.CustomServer/Bans
+    file:  decompiledGames/portuguese/v22/StarterGui/CustomServer/CustomServer/Pages/Bans/CustomServer/Bans.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/CustomServer/CustomServer/Pages/Bans/CustomServer/Bans.lua, which had status FAILED
+
+#169 [CACHED_ERROR] StarterGui.Prompts3.Prompts/Gamepad
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts3/Prompts/Gamepad.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Prompts/Gamepad.lua, which had status FAILED
+
+#170 [CACHED_ERROR] StarterGui.Prompts3.Background.PromptBackgroundHandler
+    file:  decompiledGames/portuguese/v22/StarterGui/Prompts3/Background/PromptBackgroundHandler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Prompts/Background/PromptBackgroundHandler.lua, which had status FAILED
+
+#171 [CACHED_ERROR] StarterGui.RollAnimation.RollAnimation/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/RollAnimation/RollAnimation/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/RollAnimation/RollAnimation/Handler.lua, which had status FAILED
+
+#172 [CACHED_ERROR] StarterGui.Notifications.Notification/Handler
+    file:  decompiledGames/portuguese/v22/StarterGui/Notifications/Notification/Handler.lua
+    error: copied from decompiledGames/portuguese/v22/Players/LocalPlayer/PlayerGui/Notifications/Notification/Handler.lua, which had status FAILED
+
+#173 [DECOMPILE] ReplicatedStorage.Assets.Data.Worlds.Places
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Assets/Data/Worlds/Places.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#174 [DECOMPILE] ReplicatedStorage.Assets.Data.HouseCustomization.Materials
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Assets/Data/HouseCustomization/Materials.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#175 [DECOMPILE] ReplicatedStorage.Assets.UI.Graffiti.GraffitiUIHandler
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Assets/UI/Graffiti/GraffitiUIHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#176 [DECOMPILE] ReplicatedStorage.Modules.UI
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/UI.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#177 [DECOMPILE] ReplicatedStorage.Modules.Ragdoll.Ragdoll/Client
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Ragdoll/Ragdoll/Client.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#178 [DECOMPILE] ReplicatedStorage.Modules.Ragdoll.Ragdoll/Client.RagdollObject
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Ragdoll/Ragdoll/Client/RagdollObject.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#179 [DECOMPILE] ReplicatedStorage.Modules.PartyClient
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/PartyClient.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#180 [DECOMPILE] ReplicatedStorage.Modules.Monetization
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Monetization.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#181 [DECOMPILE] ReplicatedStorage.Modules.AgeCheck
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/AgeCheck.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#182 [DECOMPILE] ReplicatedStorage.Modules.Piano.Player
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Piano/Player.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#183 [DECOMPILE] ReplicatedStorage.Modules.Piano.IK
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Piano/IK.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#184 [DECOMPILE] ReplicatedStorage.Modules.Color
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Color.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#185 [DECOMPILE] ReplicatedStorage.Modules.ShopUtil
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/ShopUtil.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#186 [DECOMPILE] ReplicatedStorage.Modules.Donation
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Donation.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#187 [DECOMPILE] ReplicatedStorage.Modules.Tip
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Tip.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#188 [DECOMPILE] ReplicatedStorage.Modules.Language
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Language.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#189 [DECOMPILE] ReplicatedStorage.Modules.AutoCompleteController
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/AutoCompleteController.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#190 [DECOMPILE] ReplicatedStorage.Modules.Prompts.CustomServerLanguage
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Prompts/CustomServerLanguage.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#191 [DECOMPILE] ReplicatedStorage.Modules.Prompts.CustomServerRegion
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Prompts/CustomServerRegion.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#192 [DECOMPILE] ReplicatedStorage.Modules.Prompts.ServerFilterCountry
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Prompts/ServerFilterCountry.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#193 [DECOMPILE] ReplicatedStorage.Modules.Prompts.ServerFilterTags
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Prompts/ServerFilterTags.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#194 [SYNTAX] ReplicatedStorage.Modules.Zone
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Zone.lua
+    error: MObyMwoISxESWHTqzLWEhsSjh:854: Ambiguous syntax: this looks like an argument list for a function call, but could also be a start of new statement; use ';' to separate statements
+
+#195 [DECOMPILE] ReplicatedStorage.Modules.HashLib
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/HashLib.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#196 [DECOMPILE] ReplicatedStorage.Modules.ItemGenerator
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/ItemGenerator.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#197 [DECOMPILE] ReplicatedStorage.Modules.Tool
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Tool.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#198 [DECOMPILE] ReplicatedStorage.Modules.Particle2D
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Particle2D.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#199 [DECOMPILE] ReplicatedStorage.Modules.DecalPicker
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/DecalPicker.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#200 [DECOMPILE] ReplicatedStorage.Modules.GameConfig.Server
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/GameConfig/Server.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#201 [DECOMPILE] ReplicatedStorage.Modules.Gamepad.Gamepad/Handler
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Gamepad/Gamepad/Handler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#202 [DECOMPILE] ReplicatedStorage.Modules.ConfirmationPrompt
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/ConfirmationPrompt.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#203 [DECOMPILE] ReplicatedStorage.Modules.HouseInteractables.Sliding Door
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/HouseInteractables/Sliding Door.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#204 [DECOMPILE] ReplicatedStorage.Modules.HouseInteractables.BaseInteractable
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/HouseInteractables/BaseInteractable.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#205 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.House
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/House.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#206 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.House.BaseModel
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/House/BaseModel.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#207 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.Prefab
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/Prefab.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#208 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.Customization
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/Customization.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#209 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.Interactable
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/Interactable.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#210 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.Seat
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/Seat.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#211 [DECOMPILE] ReplicatedStorage.Features.Optimization.OptimizedStarterGui.StarterGui/Client
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Features/Optimization/OptimizedStarterGui/StarterGui/Client.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#212 [DECOMPILE] ReplicatedStorage.Modules.Neighbors.PlayerData
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/Modules/Neighbors/PlayerData.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#213 [DECOMPILE] ReplicatedStorage.ToolClientEvents.Freeze Ray.FreezeRay/Freeze
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/ToolClientEvents/Freeze Ray/FreezeRay/Freeze.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#214 [DECOMPILE] ReplicatedStorage.ToolClientEvents.Baseball Bat.Lightsword/Hit
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/ToolClientEvents/Baseball Bat/Lightsword/Hit.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#215 [DECOMPILE] ReplicatedStorage.ToolClientEvents.Baseball Bat.HomeRun
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/ToolClientEvents/Baseball Bat/HomeRun.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#216 [DECOMPILE] ReplicatedStorage.ToolClientScripts.Heat Vision
+    file:  decompiledGames/portuguese/v22/ReplicatedStorage/ToolClientScripts/Heat Vision.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

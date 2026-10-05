@@ -1,0 +1,30 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Ragdoll = require(ReplicatedStorage.Modules.Finishers.Ragdoll)
+local Utility = require(ReplicatedStorage.Modules.Utility)
+local object = setmetatable({}, Ragdoll)
+object.__index = object
+
+function object.new(...)
+	local self = setmetatable(Ragdoll.new(...), object)
+	self:_Init()
+	return self
+end
+
+function object:PlayClient(...)
+	Ragdoll.PlayClient(self, ...)
+	local clones = {}
+
+	for _, child in pairs(script.Particles:GetChildren()) do
+		local clone = child:Clone()
+		clone.Parent = self._is_humanoid and self._subject.RootPart or self._subject
+		table.insert(self._destroy_these, clone)
+		table.insert(clones, clone)
+	end
+
+	Utility:PlayParticles(clones)
+	self:CreateSound("rbxassetid://123015928077499", 1.25, 1 + 0.1 * math.random(), nil, true, 5)
+end
+
+function object:_Init() end
+
+return object

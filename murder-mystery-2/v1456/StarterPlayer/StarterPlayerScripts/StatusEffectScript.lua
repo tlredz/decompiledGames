@@ -1,0 +1,1 @@
+local function onStatusEffectApplied(_: string, _: number) end

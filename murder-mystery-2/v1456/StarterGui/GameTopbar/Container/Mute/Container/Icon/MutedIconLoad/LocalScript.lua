@@ -1,0 +1,1 @@
+game.Debris:AddItem(script.Parent, 5)

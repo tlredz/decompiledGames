@@ -1,0 +1,3 @@
+return {
+	STAMINA_RECOVERY_THRESHOLD = 10
+}

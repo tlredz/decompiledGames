@@ -1,0 +1,1 @@
+task.defer(script.Parent.Destroy, script.Parent)

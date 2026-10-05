@@ -1,0 +1,7 @@
+return {
+	RANGE = 15,
+	UPDATE_RATE = 0.01,
+	MIN_SPEED = 40,
+	DETECTION_RADIUS = 3,
+	CLEAN_COOLDOWN = 0.5
+}

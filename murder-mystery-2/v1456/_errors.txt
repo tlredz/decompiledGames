@@ -1,0 +1,23 @@
+==================== DECOMPILE ERRORS ====================
+Game: Murder Mystery 2 (v1456)
+Total problems: 5
+
+#1 [SYNTAX] Players.LocalPlayer.PlayerGui.CrossPlatform.Shop.ShopScript.ShopService.ShopScriptArchive
+    file:  decompiledGames/murder-mystery-2/v1456/Players/LocalPlayer/PlayerGui/CrossPlatform/Shop/ShopScript/ShopService/ShopScriptArchive.lua
+    error: cBhGpMTGWRaXPTawiMEwBTMoN:30: Ambiguous syntax: this looks like an argument list for a function call, but could also be a start of new statement; use ';' to separate statements
+
+#2 [CACHED_ERROR] StarterGui.CrossPlatform.Shop.ShopScript.ShopService.ShopScriptArchive
+    file:  decompiledGames/murder-mystery-2/v1456/StarterGui/CrossPlatform/Shop/ShopScript/ShopService/ShopScriptArchive.lua
+    error: copied from decompiledGames/murder-mystery-2/v1456/Players/LocalPlayer/PlayerGui/CrossPlatform/Shop/ShopScript/ShopService/ShopScriptArchive.lua, which had status SYNTAX_ERROR
+
+#3 [SYNTAX] InventoryPhone
+    file:  decompiledGames/murder-mystery-2/v1456/InventoryPhone.lua
+    error: cBhGpeAvqLzsZTVjXPcrWLtMV:32: Expected identifier when parsing expression, got ';'
+
+#4 [SYNTAX] Inventory
+    file:  decompiledGames/murder-mystery-2/v1456/Inventory.lua
+    error: cBhGpfmsBMDOLjXlXabmzkbsB:32: Expected identifier when parsing expression, got ';'
+
+#5 [SYNTAX] ReplicatedStorage.Modules.ViewProfileModule
+    file:  decompiledGames/murder-mystery-2/v1456/ReplicatedStorage/Modules/ViewProfileModule.lua
+    error: cBhGpMlmIGvjyZYwsFltRyhJl:104: Expected identifier when parsing expression, got ';'

@@ -1,0 +1,12 @@
+local module = require("../../roblox_packages/conch")
+local module2 = require("../../roblox_packages/vide")
+local module3 = require("../app")
+local module4 = require("../state")
+return function(p)
+	module4.opened(true)
+	module.register_default_commands()
+	module._.create_local_user()
+	return module2.mount(function()
+		return module3()
+	end, p)
+end

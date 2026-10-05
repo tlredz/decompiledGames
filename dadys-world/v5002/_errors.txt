@@ -1,0 +1,27 @@
+==================== DECOMPILE ERRORS ====================
+Game: Game (v5002)
+Total problems: 6
+
+#1 [DECOMPILE] ReplicatedStorage.SharedUtils.ToonAnimate
+    file:  decompiledGames/game/v5002/ReplicatedStorage/SharedUtils/ToonAnimate.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] ReplicatedStorage.Forbidden2.AI
+    file:  decompiledGames/game/v5002/ReplicatedStorage/Forbidden2/AI.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] ReplicatedStorage.Modules.ClientCast
+    file:  decompiledGames/game/v5002/ReplicatedStorage/Modules/ClientCast.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] ReplicatedStorage.Modules.ClientCast.ClientConnection
+    file:  decompiledGames/game/v5002/ReplicatedStorage/Modules/ClientCast/ClientConnection.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] ReplicatedStorage.Modules.ClientCast.ClientHandler
+    file:  decompiledGames/game/v5002/ReplicatedStorage/Modules/ClientCast/ClientHandler.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] ReplicatedStorage.Parts.RenderModules.ScrapsGrab
+    file:  decompiledGames/game/v5002/ReplicatedStorage/Parts/RenderModules/ScrapsGrab.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

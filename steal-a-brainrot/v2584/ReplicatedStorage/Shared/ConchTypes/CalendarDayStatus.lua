@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Conch = require(ReplicatedStorage.Packages.Conch)
+require(ReplicatedStorage.Datas.Animals)
+require(ReplicatedStorage.Datas.Items)
+return Conch.register_type("CalendarDayStatus", Conch.args.enum_new({ "Available", "Claimed", "Missed" }))

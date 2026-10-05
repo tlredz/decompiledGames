@@ -1,0 +1,67 @@
+local enumMapping = {
+	Enum.AccessoryType,
+	Enum.ActionType,
+	Enum.AlignType,
+	Enum.AnimationPriority,
+	Enum.Axis,
+	Enum.BodyPartR15,
+	Enum.BorderMode,
+	Enum.CameraType,
+	Enum.CellMaterial,
+	Enum.ChatColor,
+	Enum.ChatStyle,
+	Enum.CollisionFidelity,
+	Enum.ContextActionPriority,
+	Enum.DialogBehaviorType,
+	Enum.EasingDirection,
+	Enum.EasingStyle,
+	Enum.ExplosionType,
+	Enum.FillDirection,
+	Enum.FormFactor,
+	Enum.FriendStatus,
+	Enum.GameAvatarType,
+	Enum.GamepadType,
+	Enum.GearType,
+	Enum.Genre,
+	Enum.HorizontalAlignment,
+	Enum.HumanoidCollisionType,
+	Enum.HumanoidDisplayDistanceType,
+	Enum.HumanoidHealthDisplayType,
+	Enum.HumanoidRigType,
+	Enum.HumanoidStateType,
+	Enum.InputType,
+	Enum.KeyCode,
+	Enum.Material,
+	Enum.MeshType,
+	Enum.NameOcclusion,
+	Enum.NormalId,
+	Enum.ParticleEmitterShape,
+	Enum.PathStatus,
+	Enum.Platform,
+	Enum.PrimitiveType,
+	Enum.ProximityPromptStyle,
+	Enum.RaycastFilterType,
+	Enum.RollOffMode,
+	Enum.ScaleType,
+	Enum.ScrollingDirection,
+	Enum.SizeConstraint,
+	Enum.SortOrder,
+	Enum.SurfaceType,
+	Enum.Technology,
+	Enum.TextXAlignment,
+	Enum.TextYAlignment,
+	Enum.TextureMode,
+	Enum.UserInputState,
+	Enum.UserInputType,
+	Enum.VerticalAlignment,
+	Enum.ZIndexBehavior
+}
+local Mappings = {}
+
+for k, v2 in enumMapping do
+	enumMapping[k] = tostring(v2)
+end
+
+Mappings.enumMapping = enumMapping
+Mappings.bools = { true, false }
+return Mappings

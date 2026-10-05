@@ -1,0 +1,1 @@
+script.Parent.CoinIcon.Image = script.Parent.CoinIcon_N.Image

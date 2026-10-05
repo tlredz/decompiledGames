@@ -1,0 +1,41 @@
+return {
+	Chainsaw = { "rbxassetid://16359327230" },
+	Scythe = { "rbxassetid://16492958314" },
+	Molotov = { "rbxassetid://14812827622", "rbxassetid://14812827928", "rbxassetid://16812389263" },
+	Flashbang = { "rbxassetid://14778230670" },
+	Bow = { "rbxassetid://13744359504" },
+	["Smoke Grenade"] = { "rbxassetid://16540273321" },
+	Trowel = { "rbxassetid://17138809559", "rbxassetid://14522189766" },
+	Flamethrower = { "rbxassetid://17209245734", "rbxassetid://17209245422" },
+	Minigun = { "rbxassetid://17246880027" },
+	Exogun = { "rbxassetid://17245106793" },
+	["Subspace Tripmine"] = { "rbxassetid://11956590" },
+	Satchel = { "rbxassetid://104924027407060", "rbxassetid://128061013194700" },
+	Elixir = { "rbxassetid://95384128224111", "rbxassetid://104637136404553", "rbxassetid://139202431534769" },
+	Scepter = { "rbxassetid://104637136404553", "rbxassetid://81429998577064" },
+	Gunblade = { "rbxassetid://16492958314" },
+	Katana = { "rbxassetid://14776414133", "rbxassetid://14776437962" },
+	["Jump Pad"] = { "rbxassetid://85163949920258", "rbxassetid://17835965985" },
+	["RNG Dice"] = {
+		"rbxassetid://95740132815107",
+		"rbxassetid://136831234910767",
+		"rbxassetid://134135466396929",
+		"rbxassetid://78813062969940",
+		"rbxassetid://136044794858753",
+		"rbxassetid://77716075365102"
+	},
+	Distortion = { "rbxassetid://90138246017443" },
+	Warper = {
+		"rbxassetid://114274252176516",
+		"rbxassetid://119325209237441",
+		"rbxassetid://86785771664692",
+		"rbxassetid://81610952487049"
+	},
+	Warpstone = { "rbxassetid://123181974576488" },
+	["Grenade Launcher"] = { "rbxassetid://13483008798" },
+	Maul = { "rbxassetid://72483809453170", "rbxassetid://129922197154277" },
+	Spear = { "rbxassetid://78976757664560", "rbxassetid://86096630213185" },
+	Grappler = { "rbxassetid://92178332551602", "rbxassetid://105623111691289" },
+	["Paintball Gun"] = { "rbxassetid://102872919640755", "rbxassetid://16835701807", "rbxassetid://13455969017" },
+	["Riot Shield"] = { "rbxassetid://131693414206770", "rbxassetid://113753363821942" }
+}

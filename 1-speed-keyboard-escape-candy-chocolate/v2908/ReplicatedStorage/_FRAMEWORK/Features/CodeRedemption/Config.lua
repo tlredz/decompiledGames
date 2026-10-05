@@ -1,0 +1,32 @@
+return {
+	ENABLED = true,
+	MIN_CODE_LENGTH = 4,
+	MAX_CODE_LENGTH = 32,
+	GENERATED_CODE_LENGTH = 10,
+	GENERATED_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789",
+	MAX_LABEL_LENGTH = 60,
+	MAX_REWARDS_PER_CODE = 10,
+	MAX_WINS_PER_REWARD = 1000000,
+	MAX_ITEM_AMOUNT = 100,
+	MAX_USES = 1000000,
+	MAX_EXPIRY_HOURS = 8760,
+	CLAIM_THROTTLE = 1,
+	BUTTON_NAME = "CodeButton",
+	BUTTON_LABEL = "Code",
+	MODAL_VISIBLE_Y = 0.5,
+	IDLE_MESSAGE = "Enter a code to claim its rewards.",
+	SHORT_MESSAGE_TEMPLATE = "A code is at least %d characters.",
+	SENDING_MESSAGE = "Checking your code...",
+	SUCCESS_MESSAGE = "Code redeemed!",
+	RETRY_AFTER_TEMPLATE = "Too many attempts. Try again in %ds.",
+	REASON_MESSAGES = {
+		invalid_code = "This code doesn't exist.",
+		expired = "This code has expired.",
+		inactive = "This code is no longer active.",
+		sold_out = "This code has been fully claimed.",
+		already_claimed = "You already claimed this code.",
+		claim_window_exceeded = "This code is too old to be claimed on your account.",
+		rate_limited = "Too many attempts. Wait a moment and try again.",
+		internal = "Something went wrong. Try again in a moment."
+	}
+}

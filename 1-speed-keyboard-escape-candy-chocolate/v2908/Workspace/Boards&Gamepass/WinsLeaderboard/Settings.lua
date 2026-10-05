@@ -1,0 +1,10 @@
+return {
+	DATA_STORE = "WinsV2",
+	SCORE_UPDATE = 1,
+	LEADERBOARD_UPDATE = 230,
+	NAME_OF_STAT = "",
+	USE_LEADERSTATS = true,
+	NAME_LEADERSTATS = "Wins",
+	SHOW_1ST_PLACE_AVATAR = true,
+	DO_DEBUG = false
+}

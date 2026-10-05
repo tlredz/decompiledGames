@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ContentProvider = game:GetService("ContentProvider")
+task.spawn(ContentProvider.PreloadAsync, ContentProvider, script.Parent:GetDescendants())
+local cupidsWings = ReplicatedStorage:WaitForChild("Assets"):WaitForChild("Tools"):WaitForChild("CupidsWings")
+task.spawn(ContentProvider.PreloadAsync, ContentProvider, cupidsWings:GetDescendants())

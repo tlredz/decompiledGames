@@ -1,0 +1,15 @@
+==================== DECOMPILE ERRORS ====================
+Game: [X5] +1 Speed Keyboard Escape | Candy & Chocolate (v2908)
+Total problems: 3
+
+#1 [SYNTAX] ReplicatedStorage._FRAMEWORK.Features.Admins.AdminAbuseEvent.MapAdminAbuse
+    file:  decompiledGames/1-speed-keyboard-escape-candy-chocolate/v2908/ReplicatedStorage/_FRAMEWORK/Features/Admins/AdminAbuseEvent/MapAdminAbuse.lua
+    error: JKmutZJNjAWKGjKGiwJAJwihz:184: Expected identifier when parsing expression, got ';'
+
+#2 [SYNTAX] ReplicatedStorage._FRAMEWORK.Features.Admins.AdminAbuseEvent.Modules.LastSummerBoss
+    file:  decompiledGames/1-speed-keyboard-escape-candy-chocolate/v2908/ReplicatedStorage/_FRAMEWORK/Features/Admins/AdminAbuseEvent/Modules/LastSummerBoss.lua
+    error: JKmutopmbojXApwBILShcAzvw:533: Expected identifier when parsing expression, got ';'
+
+#3 [SYNTAX] ReplicatedStorage._FRAMEWORK.Features.Admins.AdminAbuseEvent.Modules.RIAAdminAbuse2026
+    file:  decompiledGames/1-speed-keyboard-escape-candy-chocolate/v2908/ReplicatedStorage/_FRAMEWORK/Features/Admins/AdminAbuseEvent/Modules/RIAAdminAbuse2026.lua
+    error: JKmutAeMldoAIGdiTpdLELHWH:177: Expected identifier when parsing expression, got ';'

@@ -1,0 +1,20 @@
+return {
+	Gems = "rbxassetid://377010926",
+	Coins = "rbxassetid://197012173",
+	Keys = "rbxassetid://3049472374",
+	SnowTokens2020 = "rbxassetid://4521639303",
+	SnowTokens2022 = "rbxassetid://4521639303",
+	Hearts2023 = "rbxassetid://4521639303",
+	Candies2022 = "http://www.roblox.com/asset/?id=11137521765",
+	SnowTokens2023 = "rbxassetid://4521639303",
+	SnowKey2023 = "rbxassetid://15625795123",
+	SnowTokens2024 = "rbxassetid://4521639303",
+	SnowKey2024 = "rbxassetid://15625795123",
+	VampireKey2024 = "rbxassetid://103021827564795",
+	Candies2024 = "rbxassetid://121588790682191",
+	Key = "rbxassetid://3059784291",
+	BeachBalls2025 = "rbxassetid://13932988534",
+	SummerKey2025 = "rbxassetid://134240302664368",
+	HalloweenKey2025 = "rbxassetid://96672799519702",
+	Candies2025 = "rbxassetid://121588790682191"
+}

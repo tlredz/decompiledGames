@@ -1,0 +1,25 @@
+return function(object, p, p2)
+	if not object:_AnimationWait(script.Name, p2, 2.05 / p) then
+		return
+	end
+
+	object:CreateSound("rbxassetid://13158735106", 0.25, 1.5, true, 10)
+
+	if not object:_AnimationWait(script.Name, p2, 1.95 / p) then
+		return
+	end
+
+	object:CreateSound("rbxassetid://13158735106", 0.125, 1, true, 10)
+
+	if not object:_AnimationWait(script.Name, p2, 0.6 / p) then
+		return
+	end
+
+	object:CreateSound("rbxassetid://11956590", 0.375, 1.5, true, 10)
+
+	if not object:_AnimationWait(script.Name, p2, 0.4 / p) then
+		return
+	end
+
+	object:CreateSound("rbxassetid://13158735106", 0.25, 1.5, true, 10)
+end

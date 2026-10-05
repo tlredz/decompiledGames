@@ -1,0 +1,61 @@
+return {
+	DiscoConfig = {
+		BallModel = "DiscoBall",
+		YOffset = 5,
+		SpinRad = 2.6179938779914944,
+		LightSpeed = 0.4
+	},
+	DiscoBallFieldConfig = {
+		Model = "DiscoBall",
+		Count = 3,
+		CycleSec = 6,
+		RetrySec = 0.3,
+		SpawnYOffset = 12,
+		SpawnRadiusMin = 25,
+		SpawnRadiusMax = 130,
+		BobAmplitude = 1.5,
+		BobSpeed = 1.6,
+		SpinRad = 1.5707963267948966,
+		LightSpeed = 0.3,
+		PhaseOffsetSec = 2.3
+	},
+	SpotlightConfig = {
+		Model = "SpotLightDiffuser",
+		Count = 3,
+		CycleSec = 4,
+		RetrySec = 0.3,
+		SpawnYOffset = 20,
+		SpawnRadiusMin = 30,
+		SpawnRadiusMax = 150,
+		LookAtRadiusMin = 20,
+		LookAtRadiusMax = 120,
+		BobAmplitude = 1.2,
+		BobSpeed = 2.4,
+		SweepAngle = 1.2217304763960306,
+		SweepSpeed = 1.1,
+		ShakeAngle = 0.06981317007977318,
+		ShakeSpeedY = 2.2,
+		ShakeSpeedZ = 2.7,
+		LightSpeed = 0.35,
+		PhaseOffsetSec = 1.9
+	},
+	KeycapRainConfig = {
+		SpawnWaveInterval = 10,
+		SpawnPerPlayerMin = 1,
+		SpawnPerPlayerMax = 3,
+		MinBurstKeycaps = 10,
+		SpawnRadiusMin = 50,
+		SpawnRadiusMax = 800,
+		SpawnStaggerSec = 0.25,
+		BurstNotificationDurationSec = 1,
+		WinsVsGoldenRainMult = 2,
+		MaxActiveKeycaps = 120,
+		HueJumpMinSec = 0.08,
+		HueJumpMaxSec = 0.35,
+		SpawnSoundId = "rbxassetid://117243786893013",
+		SpawnSoundVolume = 0.3,
+		SpawnSoundRollOffMin = 20,
+		SpawnSoundRollOffMax = 100
+	},
+	ColorUpdateIntervalSec = 0.08333333333333333
+}

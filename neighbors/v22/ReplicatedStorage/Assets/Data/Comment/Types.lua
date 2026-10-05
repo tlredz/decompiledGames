@@ -1,0 +1,3 @@
+return {
+	Comment = script.Comment
+}

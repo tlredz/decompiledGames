@@ -1,0 +1,89 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SettingsConfig = require(ReplicatedStorage.FeatureConfigs.SettingsConfig)
+return {
+	CustomWalkSpeed = 0,
+	GiftClaimed = false,
+	ManualGoldAccess = false,
+	ManualDiamondAccess = false,
+	ManualCandyAccess = false,
+	ManualAdminAccess = false,
+	ManualInfinityTrailAccess = false,
+	GamepassReceived = {},
+	GiftSent = {},
+	GiftReceived = {},
+	TradeHistory = {},
+	TradeBanned = false,
+	GiftedCosmetics = {},
+	OwnedTrails = {},
+	OwnedAuras = {},
+	OwnedBoombox = false,
+	Items = {},
+	EquippedItems = {},
+	everOwnedItems = {},
+	DataVersion = 0,
+	ItemsShopState = {
+		cycle = 0,
+		purchases = {},
+		override = false,
+		rerolls = 0
+	},
+	EventShopsState = {},
+	OwnedTreadmillSkins = { "DefaultTreadmill" },
+	EquippedTreadmillSkin = "DefaultTreadmill",
+	PersonalTreadmillWasActive = false,
+	firstJoin = 0,
+	timePlayed = 0,
+	PurchaseHistory = {},
+	TikfinityBinds = {},
+	TikfinityMobileSlots = {},
+	SpeedBoostTier = 0,
+	ExtraSpeedBoostTier = 0,
+	EventRsvpClaimed = {},
+	RSVPBoost = {
+		Status = "None",
+		EventId = "",
+		ValidatedAt = 0
+	},
+	SocialCodeClaimed = false,
+	SocialResetAppliedAt = 0,
+	ClaimedCodes = {},
+	ClaimedCodesFloor = 0,
+	CheatHistory = {},
+	CheatHistory2 = {},
+	VIP_ID = false,
+	X2Boost = false,
+	CCPermissions = {
+		treadmill_gifts = {
+			periodStarts = {},
+			given = {}
+		}
+	},
+	RefundedItems = false,
+	MedalRewardClaimed = false,
+	TheHunt20Badge = false,
+	World3Stage15Beaten = false,
+	SeenAutoOpenModals = {},
+	AfkPosition = false,
+	CheckInfinityTrailGlitch = false,
+	CheckInfinityTrailGlitch2 = false,
+	SeenNewBadgeGroups = {},
+	RaceData = {},
+	Settings = SettingsConfig.GetDefaults(),
+	EventQuestsState = {
+		event = "",
+		day = 0,
+		rerolls = 0,
+		quests = {}
+	},
+	FreeServerBoost = {},
+	WorldEventProgress = {},
+	GalaxyProgress = {},
+	GalaxyAscensions = {},
+	WorldsBestStage = {},
+	auditFlags = {
+		canadaEarthCheck = false,
+		dupedItemRemovalCheck = false,
+		duperAuditCheck = 0,
+		invalidUtf8Write = 0
+	}
+}

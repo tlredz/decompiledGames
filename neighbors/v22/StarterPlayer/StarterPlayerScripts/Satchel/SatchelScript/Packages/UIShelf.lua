@@ -1,0 +1,1 @@
+return require(script.Parent._Index["canary-development_uishelf@1.1.5"].uishelf)

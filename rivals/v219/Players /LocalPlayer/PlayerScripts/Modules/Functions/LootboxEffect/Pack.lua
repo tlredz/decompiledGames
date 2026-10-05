@@ -1,0 +1,10 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Utility = require(ReplicatedStorage.Modules.Utility)
+return function(p)
+	Utility:CreateSound("rbxassetid://83402774833713", 1, 1, p.HumanoidRootPart, true)
+	wait(1)
+	Utility:CreateSound("rbxassetid://139804361555491", 1.5, 1, p.HumanoidRootPart, true)
+	Utility:PlayParticles(p.R)
+	wait(0.1)
+	Utility:CreateSound("rbxassetid://78951730047565", 0.75, 1, p.HumanoidRootPart, true)
+end

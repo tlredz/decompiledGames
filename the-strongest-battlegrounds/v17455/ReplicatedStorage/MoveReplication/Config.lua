@@ -1,0 +1,5 @@
+return {
+	ENABLED = true,
+	SERVER_BROADCAST_WHILE_DISABLED = false,
+	SPECTATOR_BUDGET = 6
+}

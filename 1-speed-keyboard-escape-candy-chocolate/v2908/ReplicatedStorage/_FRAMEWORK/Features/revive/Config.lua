@@ -1,0 +1,19 @@
+return {
+	EARLY_STAGE_MAX = 6,
+	UPSELL_RATE = {
+		["v2-10"] = 10,
+		["v2-25"] = 25,
+		["v2-100"] = 100
+	},
+	ENROLL_TIMEOUT = 5,
+	SHORT_PROMPT_SECONDS = 5,
+	UPSELL_SECONDS = 10,
+	REVIVED_SECONDS = 5,
+	BOOST_SECONDS = 30,
+	BONUS_STEP = 5,
+	BONUS_MIN = 10,
+	BONUS_MAX = 30,
+	BONUS_SPEED_CAP = 310,
+	BONUS_ATTRIBUTE = "ReviveSpeedBonus",
+	BONUS_ENDS_ATTRIBUTE = "ReviveSpeedBonusEndsAt"
+}

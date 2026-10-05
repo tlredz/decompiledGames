@@ -1,0 +1,11 @@
+local module = require("../../../tests/test")
+module.describe("useSpring", function()
+	require("@self/useSpring.test")
+end)
+module.describe("useTween", function()
+	require("@self/useTween.test")
+end)
+module.describe("useMotion", function()
+	require("@self/useMotion.test")
+end)
+return {}

@@ -1,0 +1,31 @@
+==================== DECOMPILE ERRORS ====================
+Game: Matchmaking (v219)
+Total problems: 7
+
+#1 [DECOMPILE] Players .LocalPlayer.PlayerScripts.Modules.ELOBar
+    file:  decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/ELOBar.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] Players .LocalPlayer.PlayerScripts.Modules.CameraSecurity
+    file:  decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/CameraSecurity.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] Players .LocalPlayer.PlayerScripts.Modules.Pages.Shop.Pages.Home
+    file:  decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/Pages/Shop/Pages/Home.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Modules.CameraSecurity
+    file:  decompiledGames/matchmaking/v219/StarterPlayer/StarterPlayerScripts/Modules/CameraSecurity.lua
+    error: copied from decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/CameraSecurity.lua, which had status FAILED
+
+#5 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Modules.ELOBar
+    file:  decompiledGames/matchmaking/v219/StarterPlayer/StarterPlayerScripts/Modules/ELOBar.lua
+    error: copied from decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/ELOBar.lua, which had status FAILED
+
+#6 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Modules.Pages.Shop.Pages.Home
+    file:  decompiledGames/matchmaking/v219/StarterPlayer/StarterPlayerScripts/Modules/Pages/Shop/Pages/Home.lua
+    error: copied from decompiledGames/matchmaking/v219/Players /LocalPlayer/PlayerScripts/Modules/Pages/Shop/Pages/Home.lua, which had status FAILED
+
+#7 [DECOMPILE] ReplicatedFirst .Root
+    file:  decompiledGames/matchmaking/v219/ReplicatedFirst /Root.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

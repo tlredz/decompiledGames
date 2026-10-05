@@ -1,0 +1,20 @@
+return {
+	"rbxassetid://86757610778006",
+	"rbxassetid://77160927852658",
+	"rbxassetid://73035588796758",
+	"rbxassetid://93213184749376",
+	"rbxassetid://119077567496605",
+	"rbxassetid://127754313111885",
+	"rbxassetid://85133298359199",
+	"rbxassetid://103783554881287",
+	"rbxassetid://87576482923298",
+	"rbxassetid://72250651672458",
+	"rbxassetid://124275728806912",
+	"rbxassetid://97358188358302",
+	"rbxassetid://78447328872572",
+	"rbxassetid://89339567151645",
+	"rbxassetid://115094041228004",
+	"rbxassetid://83506218648581",
+	"rbxassetid://117792342648454",
+	"rbxassetid://18799643112"
+}

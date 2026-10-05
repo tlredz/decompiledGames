@@ -1,0 +1,20 @@
+return {
+	Directory = game.ServerStorage.Assets.ToolAssets.Jetpack,
+	AnimatedModel = false,
+	SetWeldOffset = function(instance, instance2)
+		local humanoid = instance:FindFirstChildOfClass("Humanoid")
+		local v = instance2.PrimaryPart:FindFirstChild("Handle")
+		local bodyDepthScale = humanoid.BodyDepthScale
+
+		if not v then
+			instance:WaitForChild("UpperTorso")
+			v = Instance.new("Weld")
+			v.Name = "Handle"
+			v.Part1 = instance2:WaitForChild("Handle")
+			v.Part0 = instance.UpperTorso
+			v.Parent = instance2.PrimaryPart
+		end
+
+		v.C0 = CFrame.new(0, 0, bodyDepthScale.Value) * CFrame.Angles(0, 1.5707963267948966, 0)
+	end
+}

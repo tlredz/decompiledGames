@@ -1,0 +1,3 @@
+return {
+	MaxCurrency = 500
+}

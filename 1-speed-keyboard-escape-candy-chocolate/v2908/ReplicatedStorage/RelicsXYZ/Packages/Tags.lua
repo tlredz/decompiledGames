@@ -1,0 +1,1 @@
+return require(script.Parent._Index["maximumadhd_tags@1.0.1"].tags)

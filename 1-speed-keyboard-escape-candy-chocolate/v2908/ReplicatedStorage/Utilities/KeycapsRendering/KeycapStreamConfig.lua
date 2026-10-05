@@ -1,0 +1,21 @@
+return {
+	ChunkSize = 400,
+	ChunkDimensions = 3,
+	NamePattern = "keycap_(.+)",
+	TemplateFolderName = "KeycapTemplates",
+	TemplatePartName = "Keycap",
+	SurfaceAppearanceFolderName = "SurfaceAppearances",
+	StreamedAttributeName = "KeycapStreamed",
+	PositionAttributeName = "Position",
+	RotationAttributeName = "Rotation",
+	BatchRecordLimit = 1500,
+	BatchSendIntervalSec = 0.1,
+	LoadFrameBudgetSec = 0.00175,
+	UnloadFrameBudgetSec = 0.0025,
+	MaxUnloadToLoadTransferSec = 0.00125,
+	ParentBatchSize = 5,
+	MaxInstancesPerChar = 750,
+	StealMaxCameraDistance = 50,
+	PositionScale = 100,
+	SizeScale = 20
+}

@@ -1,0 +1,1 @@
+return buffer.fromstring(script.texture.Value)
