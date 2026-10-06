@@ -1,0 +1,141 @@
+local GJK = require(script:WaitForChild("GJK"))
+local Supports = require(script:WaitForChild("Supports"))
+local Vertices = require(script:WaitForChild("Vertices"))
+local RotatedRegion3 = {}
+RotatedRegion3.__index = RotatedRegion3
+
+local function getCorners(cframe, data)
+	return {
+		cframe:PointToWorldSpace((Vector3.new(-data.x, data.y, data.z))),
+		cframe:PointToWorldSpace((Vector3.new(-data.x, -data.y, data.z))),
+		cframe:PointToWorldSpace((Vector3.new(-data.x, -data.y, -data.z))),
+		cframe:PointToWorldSpace((Vector3.new(data.x, -data.y, -data.z))),
+		cframe:PointToWorldSpace((Vector3.new(data.x, data.y, -data.z))),
+		cframe:PointToWorldSpace((Vector3.new(data.x, data.y, data.z))),
+		cframe:PointToWorldSpace((Vector3.new(data.x, -data.y, data.z))),
+		cframe:PointToWorldSpace((Vector3.new(-data.x, data.y, -data.z)))
+	}
+end
+
+local function worldBoundingBox(list)
+	local v = {}
+	local v2 = {}
+	local zes = {}
+
+	for i = 1, #list do
+		local x = list[i].x
+		local y = list[i].y
+		local z = list[i].z
+		v[i] = x
+		v2[i] = y
+		zes[i] = z
+	end
+
+	return
+		Vector3.new(math.min(unpack(v)), math.min(unpack(v2)), (math.min(unpack(zes)))),
+		(Vector3.new(math.max(unpack(v)), math.max(unpack(v2)), (math.max(unpack(zes)))))
+end
+
+function RotatedRegion3.new(cFrame, size)
+	local object = setmetatable({}, RotatedRegion3)
+	object.CFrame = cFrame
+	object.Size = size
+	object.Shape = "Block"
+	object.Set = Vertices.Block(cFrame, size / 2)
+	object.Support = Supports.PointCloud
+	object.Centroid = cFrame.p
+	return object
+end
+
+RotatedRegion3.Block = RotatedRegion3.new
+
+function RotatedRegion3.Wedge(cFrame, size)
+	local self = setmetatable({}, RotatedRegion3)
+	self.CFrame = cFrame
+	self.Size = size
+	self.Shape = "Wedge"
+	self.Set = Vertices.Wedge(cFrame, size / 2)
+	self.Support = Supports.PointCloud
+	self.Centroid = Vertices.GetCentroid(self.Set)
+	return self
+end
+
+function RotatedRegion3.CornerWedge(cFrame, size)
+	local self = setmetatable({}, RotatedRegion3)
+	self.CFrame = cFrame
+	self.Size = size
+	self.Shape = "CornerWedge"
+	self.Set = Vertices.CornerWedge(cFrame, size / 2)
+	self.Support = Supports.PointCloud
+	self.Centroid = Vertices.GetCentroid(self.Set)
+	return self
+end
+
+function RotatedRegion3.Cylinder(cFrame, size)
+	local object = setmetatable({}, RotatedRegion3)
+	object.CFrame = cFrame
+	object.Size = size
+	object.Shape = "Cylinder"
+	object.Set = { cFrame, size / 2 }
+	object.Support = Supports.Cylinder
+	object.Centroid = cFrame.p
+	return object
+end
+
+function RotatedRegion3.Ball(cFrame, size)
+	local object = setmetatable({}, RotatedRegion3)
+	object.CFrame = cFrame
+	object.Size = size
+	object.Shape = "Ball"
+	object.Set = { cFrame, size / 2 }
+	object.Support = Supports.Ellipsoid
+	object.Centroid = cFrame.p
+	return object
+end
+
+function RotatedRegion3.FromPart(instance)
+	return RotatedRegion3[Vertices.Classify(instance)](instance.CFrame, instance.Size)
+end
+
+function RotatedRegion3.CastPoint(data, p)
+	return GJK.new(data.Set, { p }, data.Centroid, p, data.Support, Supports.PointCloud):IsColliding()
+end
+
+function RotatedRegion3.CastPart(data, p)
+	local v = RotatedRegion3.FromPart(p)
+	return GJK.new(data.Set, v.Set, data.Centroid, v.Centroid, data.Support, v.Support):IsColliding()
+end
+
+function RotatedRegion3.FindPartsInRegion3(instance, _, _)
+	return workspace:GetPartBoundsInBox(instance.CFrame, instance.Size)
+end
+
+function RotatedRegion3:FindPartsInRegion3WithIgnoreList(options, _)
+	local overlapParams = OverlapParams.new()
+	overlapParams.FilterType = Enum.RaycastFilterType.Exclude
+	overlapParams.FilterDescendantsInstances = options or {}
+
+	if self.Shape == "Ball" then
+		return workspace:GetPartBoundsInRadius(self.CFrame.p, self.Size.X / 2, overlapParams)
+	end
+
+	return workspace:GetPartBoundsInBox(self.CFrame, self.Size, overlapParams)
+end
+
+function RotatedRegion3.FindPartsInRegion3WithWhiteList(instance, options, _)
+	local overlapParams = OverlapParams.new()
+	overlapParams.FilterType = Enum.RaycastFilterType.Include
+	overlapParams.FilterDescendantsInstances = options or {}
+
+	if instance.Shape == "Ball" then
+		return workspace:GetPartBoundsInRadius(instance.CFrame.p, instance.Size.X / 2, overlapParams)
+	end
+
+	return workspace:GetPartBoundsInBox(instance.CFrame, instance.Size, overlapParams)
+end
+
+function RotatedRegion3:Cast(p, p2)
+	return self:FindPartsInRegion3WithIgnoreList(type(p) == "table" and p or { p }, p2)
+end
+
+return RotatedRegion3

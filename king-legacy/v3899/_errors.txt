@@ -1,0 +1,75 @@
+==================== DECOMPILE ERRORS ====================
+Game: King Legacy (v3899)
+Total problems: 18
+
+#1 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.PeodizEffects.Modules.PeoEffect1
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/PeodizEffects/Modules/PeoEffect1.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#2 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 3
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 3.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#3 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 4
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 4.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#4 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 5
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 5.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#5 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 6
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 6.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#6 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 7
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 7.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#7 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 8
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 8.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#8 [DECOMPILE] Players.LocalPlayer.PlayerScripts.Services.EffectClient.PolyClient.Modules.ancient_sword_z
+    file:  decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/PolyClient/Modules/ancient_sword_z.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#9 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.PeodizEffects.Modules.PeoEffect1
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/PeodizEffects/Modules/PeoEffect1.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/PeodizEffects/Modules/PeoEffect1.lua, which had status FAILED
+
+#10 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 3
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 3.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 3.lua, which had status FAILED
+
+#11 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 4
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 4.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 4.lua, which had status FAILED
+
+#12 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 5
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 5.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 5.lua, which had status FAILED
+
+#13 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 6
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 6.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 6.lua, which had status FAILED
+
+#14 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 7
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 7.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 7.lua, which had status FAILED
+
+#15 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.BeckHandle.Modules.Storage 8
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 8.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/BeckHandle/Modules/Storage 8.lua, which had status FAILED
+
+#16 [CACHED_ERROR] StarterPlayer.StarterPlayerScripts.Services.EffectClient.PolyClient.Modules.ancient_sword_z
+    file:  decompiledGames/king-legacy/v3899/StarterPlayer/StarterPlayerScripts/Services/EffectClient/PolyClient/Modules/ancient_sword_z.lua
+    error: copied from decompiledGames/king-legacy/v3899/Players/LocalPlayer/PlayerScripts/Services/EffectClient/PolyClient/Modules/ancient_sword_z.lua, which had status FAILED
+
+#17 [DECOMPILE] ReplicatedStorage.Chest.FruitEffect.Toy.firework_fx.ModuleScript
+    file:  decompiledGames/king-legacy/v3899/ReplicatedStorage/Chest/FruitEffect/Toy/firework_fx/ModuleScript.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)
+
+#18 [DECOMPILE] ReplicatedStorage.Chest.Modules.Utility
+    file:  decompiledGames/king-legacy/v3899/ReplicatedStorage/Chest/Modules/Utility.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

@@ -1,0 +1,22 @@
+return {
+	Z = 4,
+	X = 6,
+	C = 12,
+	V = 1,
+	E = 4,
+	ZRequire = 0,
+	XRequire = 100,
+	CRequire = 300,
+	VRequire = 1000,
+	ERequire = 200,
+	ZSecond = 3,
+	XSecond = 5,
+	CSecond = 7,
+	VSecond = 10,
+	ESecond = 3,
+	ZThird = 5,
+	XThird = 10,
+	CThird = 10,
+	VThird = 10,
+	EThird = 6
+}

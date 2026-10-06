@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local service = ReplicatedStorage:WaitForChild("Engine"):WaitForChild("Service")
+local AdminPanel = require(service:WaitForChild("AdminPanel"))
+local CMD = service:WaitForChild("CMD")
+AdminPanel.client.main(CMD)

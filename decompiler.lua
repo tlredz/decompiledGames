@@ -1,6 +1,8 @@
 -- Part of this code was generated using AI.
 
 local SERVER_URL = "https://localhost:3000/decompile"
+local OUTPUT_FILE = ".luau"
+
 local IGNORE_IF_EXISTS = true
 local MAX_CONCURRENT = 10
 
@@ -46,10 +48,7 @@ if currentState then
 end
 
 getgenv().DECOMPILER_STATE = "running"
-
-if not getgenv().ORIGINAL_USER_NAME then
-	getgenv().ORIGINAL_USER_NAME = localPlayer.Name
-end
+getgenv().ORIGINAL_NAMES = ORIGINAL_NAMES or {}
 
 local function arraystable(chars)
 	local tab = {}
@@ -150,21 +149,30 @@ local function ensureFolder(filePath)
 	end
 end
 
-local function renameCharacter(character)
-	if character then
-		character.Name = "LocalPlayer"
+local function applyPlayersName()
+	for key, player in players:GetPlayers() do
+		local originalName = player.Name
+		local fakeName = if player == localPlayer then "LocalPlayer" else `Player{key}`
+		
+		if ORIGINAL_NAMES[player] == nil then
+			ORIGINAL_NAMES[player] = originalName
+		end
+		
+		if player.Character then
+			player.Character.Name = fakeName
+		end
+		
+		player.Name = fakeName
 	end
 end
 
-local function applyLocalPlayerName()
-	localPlayer.Name = "LocalPlayer"
-	renameCharacter(localPlayer.Character)
-end
-
-local function restoreLocalPlayerName()
-	localPlayer.Name = getgenv().ORIGINAL_USER_NAME
-	if localPlayer.Character then
-		localPlayer.Character.Name = getgenv().ORIGINAL_USER_NAME
+local function restorePlayersName()
+	for player, originalName in ORIGINAL_NAMES do
+		if player.Character then
+			player.Character.Name = originalName
+		end
+		
+		player.Name = originalName
 	end
 end
 
@@ -227,7 +235,7 @@ local function truncate(text, max)
 end
 
 local function init()
-	applyLocalPlayerName()
+	applyPlayersName()
 	local charConn = localPlayer.CharacterAdded:Connect(renameCharacter)
 
 	local startClock = os.clock()
@@ -288,7 +296,7 @@ local function init()
 			writtenFiles[filePath] = 0
 		end
 
-		return fullName, filePath, savePath .. `{filePath}.lua`
+		return fullName, filePath, savePath .. filePath .. OUTPUT_FILE
 	end
 
 	local function tryDecompile(item, index, rec, isDuplicate)
@@ -307,14 +315,14 @@ local function init()
 			rec.path = formatFilePath
 			rec.name = fullName
 		end
-
+		
 		if IGNORE_IF_EXISTS and isfile(formatFilePath) then
 			entry.status = "SKIPPED"
 			stats.skipped += 1
 			if not isDuplicate then rec.status = "SKIPPED" end
 			return
 		end
-
+		
 		if isDuplicate and rec.path then
 			local okRead, content = pcall(readfile, rec.path)
 
@@ -336,9 +344,9 @@ local function init()
 				return
 			end
 		end
-
-		print(`[Decompiler] [{index}/{total}] decompiling: {filePath}.lua`)
-
+		
+		print(`[Decompiler] [{index}/{total}] decompiling: {filePath .. OUTPUT_FILE}`)
+		
 		local response = decompile(item.bytecode, fullName)
 		local content
 
@@ -427,7 +435,7 @@ local function init()
 	end
 
 	charConn:Disconnect()
-	restoreLocalPlayerName()
+	restorePlayersName()
 
 	local duration = os.clock() - startClock
 	local failedTotal = stats.failed + stats.syntax + stats.crashed
@@ -515,7 +523,7 @@ end
 local success, err = pcall(init)
 if not success then
 	getgenv().DECOMPILER_STATE = nil
-	restoreLocalPlayerName()
+	restorePlayersName()
 	
 	warn("[Decompiler] crashed: " .. tostring(err))
 	notify("Decompiler", "Crashed: " .. tostring(err))

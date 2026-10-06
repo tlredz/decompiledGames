@@ -1,0 +1,71 @@
+return {
+	["Sea BeastV3"] = {
+		"rbxassetid://119576559183680",
+		"rbxassetid://115625326781152",
+		"rbxassetid://94434872009841",
+		"rbxassetid://116017251168091",
+		"rbxassetid://120381852599372",
+		"rbxassetid://123634528802626",
+		"rbxassetid://133326415582853",
+		"rbxassetid://135120773462269",
+		"rbxassetid://74522011802966"
+	},
+	AnimalV3 = {
+		"rbxassetid://72382054913097",
+		"rbxassetid://91222234955309",
+		"rbxassetid://120278516640621",
+		"rbxassetid://134907088731591",
+		"rbxassetid://103518563311073",
+		"rbxassetid://86431351659693",
+		"rbxassetid://107445813540027",
+		"rbxassetid://75755450783606",
+		"rbxassetid://82624270274655"
+	},
+	DemonV3 = {
+		"rbxassetid://95904808333718",
+		"rbxassetid://132346251242554",
+		"rbxassetid://72149919052796",
+		"rbxassetid://138000812758651",
+		"rbxassetid://71151164634870",
+		"rbxassetid://102392206631396",
+		"rbxassetid://134836502403815",
+		"rbxassetid://105949608628708",
+		"rbxassetid://132102643034255"
+	},
+	["Sea Beast"] = {
+		"rbxassetid://16991583334",
+		"rbxassetid://16991583165",
+		"rbxassetid://16991582974",
+		"rbxassetid://16991582856",
+		"rbxassetid://16991582713",
+		"rbxassetid://16991582586",
+		"rbxassetid://16991582233",
+		"rbxassetid://16991582022",
+		"rbxassetid://16991581798",
+		"rbxassetid://16991581537",
+		"rbxassetid://16991581157",
+		"rbxassetid://16991580817",
+		"rbxassetid://16991580585",
+		"rbxassetid://16991580411",
+		"rbxassetid://16991580091",
+		"rbxassetid://16991579806"
+	},
+	["Triple Saber"] = {
+		"rbxassetid://17110156214",
+		"rbxassetid://17110156932",
+		"rbxassetid://17110157391",
+		"rbxassetid://17110161278",
+		"rbxassetid://17110162915",
+		"rbxassetid://17110163776",
+		"rbxassetid://17110169583",
+		"rbxassetid://17110170513",
+		"rbxassetid://17110171292",
+		"rbxassetid://17110171834",
+		"rbxassetid://17110172552",
+		"rbxassetid://17110173456",
+		"rbxassetid://17110174434",
+		"rbxassetid://17110177325",
+		"rbxassetid://17110187447",
+		"rbxassetid://17110188637"
+	}
+}

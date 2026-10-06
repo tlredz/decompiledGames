@@ -1,0 +1,1 @@
+return require(script.Parent._Index["hollower233_cloud-config@0.1.2"]["cloud-config"])

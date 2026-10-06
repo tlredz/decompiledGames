@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local goldStarServerFunction = ReplicatedStorage:WaitForChild("StudioLiteFolder"):WaitForChild("GoldStarServerFunction")
+script.Parent.MouseButton1Click:Connect(function()
+	goldStarServerFunction:InvokeServer((tonumber(script.Parent.Parent.Name:sub(5, 5))))
+end)

@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UIToolkit = require(ReplicatedStorage.Packages.UIToolkit)
+UIToolkit.client.initClickSound()
+UIToolkit.client.initDeviceAdapt()
+UIToolkit.client.initFeedbackButton()

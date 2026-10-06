@@ -1,0 +1,341 @@
+local createVector = vector.create
+local VRService = game:GetService("VRService")
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+local Lighting = game:GetService("Lighting")
+local RunService = game:GetService("RunService")
+local UserGameSettings = UserSettings():GetService("UserGameSettings")
+local CameraInput = require(script.Parent:WaitForChild("CameraInput"))
+local ZoomController = require(script.Parent:WaitForChild("ZoomController"))
+local CommonUtils = require(script.Parent.Parent:WaitForChild("CommonUtils"))
+local userFlag = CommonUtils.get("FlagUtil").getUserFlag("UserVRRemoveLuaEdgeBlur")
+local cameraGamepadResetAction = script.Parent.Parent:WaitForChild("InputContexts"):WaitForChild("CameraContext"):WaitForChild("CameraGamepadResetAction")
+local BaseCamera = require(script.Parent:WaitForChild("BaseCamera"))
+local object = setmetatable({}, BaseCamera)
+object.__index = object
+
+function object.new()
+	local object2 = setmetatable(BaseCamera.new(), object)
+	object2.gamepadZoomLevels = { 0, 7 }
+	object2.headScale = 1
+	object2:SetCameraToSubjectDistance(7)
+	object2.VRFadeResetTimer = 0
+	object2.VREdgeBlurTimer = 0
+	object2.needsReset = true
+	object2.recentered = false
+	object2.gamepadResetConnection = cameraGamepadResetAction.Pressed:Connect(function()
+		object2:GamepadReset()
+	end)
+	object2:Reset()
+	return object2
+end
+
+function object:Reset()
+	self.stepRotateTimeout = 0
+end
+
+function object.GetModuleName(_)
+	return "VRBaseCamera"
+end
+
+function object:GamepadZoomPress()
+	BaseCamera.GamepadZoomPress(self)
+	self:GamepadReset()
+	self:ResetZoom()
+end
+
+function object:GamepadReset()
+	self.stepRotateTimeout = 0
+	self.needsReset = true
+end
+
+function object:ResetZoom()
+	ZoomController.SetZoomParameters(self.currentSubjectDistance, 0)
+	ZoomController.ReleaseSpring()
+end
+
+function object:OnEnabledChanged()
+	BaseCamera.OnEnabledChanged(self)
+
+	if self.enabled then
+		cameraGamepadResetAction.Enabled = true
+		self.thirdPersonOptionChanged = VRService:GetPropertyChangedSignal("ThirdPersonFollowCamEnabled"):Connect(function()
+			self:Reset()
+		end)
+		self.vrRecentered = VRService.UserCFrameChanged:Connect(function(p, _)
+			if p == Enum.UserCFrame.Floor then
+				self.recentered = true
+			end
+		end)
+	else
+		if self.inFirstPerson then
+			self:GamepadZoomPress()
+		end
+
+		if self.thirdPersonOptionChanged then
+			self.thirdPersonOptionChanged:Disconnect()
+			self.thirdPersonOptionChanged = nil
+		end
+
+		if self.vrRecentered then
+			self.vrRecentered:Disconnect()
+			self.vrRecentered = nil
+		end
+
+		if self.cameraHeadScaleChangedConn then
+			self.cameraHeadScaleChangedConn:Disconnect()
+			self.cameraHeadScaleChangedConn = nil
+		end
+
+		cameraGamepadResetAction.Enabled = false
+
+		if not userFlag then
+			self.VREdgeBlurTimer = 0
+			self:UpdateEdgeBlur(localPlayer, 1)
+		end
+
+		local vRFade = Lighting:FindFirstChild("VRFade")
+
+		if vRFade then
+			vRFade.Brightness = 0
+		end
+	end
+end
+
+function object:OnCurrentCameraChanged()
+	BaseCamera.OnCurrentCameraChanged(self)
+
+	if self.cameraHeadScaleChangedConn then
+		self.cameraHeadScaleChangedConn:Disconnect()
+		self.cameraHeadScaleChangedConn = nil
+	end
+
+	local currentCamera = workspace.CurrentCamera
+
+	if currentCamera then
+		self.cameraHeadScaleChangedConn = currentCamera:GetPropertyChangedSignal("HeadScale"):Connect(function()
+			self:OnHeadScaleChanged()
+		end)
+		self:OnHeadScaleChanged()
+	end
+end
+
+function object:OnHeadScaleChanged()
+	local headScale = workspace.CurrentCamera.HeadScale
+
+	for k, gamepadZoomLevel in self.gamepadZoomLevels do
+		self.gamepadZoomLevels[k] = gamepadZoomLevel * headScale / self.headScale
+	end
+
+	self:SetCameraToSubjectDistance(self:GetCameraToSubjectDistance() * headScale / self.headScale)
+	self.headScale = headScale
+end
+
+function object:GetVRFocus(p, p2)
+	local lastCameraFocus = self.lastCameraFocus or p
+	self.cameraTranslationConstraints = Vector3.new(
+		self.cameraTranslationConstraints.x,
+		math.min(1, self.cameraTranslationConstraints.y + p2),
+		self.cameraTranslationConstraints.z
+	)
+	local vector2 = Vector3.new(0, self:GetCameraHeight(), 0)
+	return (CFrame.new(Vector3.new(p.x, lastCameraFocus.y, p.z):Lerp(p + vector2, self.cameraTranslationConstraints.y)))
+end
+
+function object:StartFadeFromBlack()
+	if UserGameSettings.VignetteEnabled == false then
+		return
+	end
+
+	local v = Lighting:FindFirstChild("VRFade")
+
+	if not v then
+		v = Instance.new("ColorCorrectionEffect")
+		v.Name = "VRFade"
+		v.Parent = Lighting
+	end
+
+	v.Brightness = -1
+	self.VRFadeResetTimer = 0.1
+end
+
+function object:UpdateFadeFromBlack(p2: number)
+	local vRFade = Lighting:FindFirstChild("VRFade")
+
+	if self.VRFadeResetTimer > 0 then
+		self.VRFadeResetTimer = math.max(self.VRFadeResetTimer - p2, 0)
+		local vRFade2 = Lighting:FindFirstChild("VRFade")
+
+		if vRFade2 and vRFade2.Brightness < 0 then
+			vRFade2.Brightness = math.min(vRFade2.Brightness + p2 * 10, 0)
+		end
+	elseif vRFade then
+		vRFade.Brightness = 0
+	end
+end
+
+function object:StartVREdgeBlur(p2, p3)
+	if not p3 and UserGameSettings.VignetteEnabled == false then
+		return
+	end
+
+	local adornee = workspace.CurrentCamera:FindFirstChild("VRBlurPart")
+
+	if not adornee then
+		adornee = Instance.new("Part")
+		adornee.Name = "VRBlurPart"
+		adornee.Parent = workspace.CurrentCamera
+		adornee.CanTouch = false
+		adornee.CanCollide = false
+		adornee.CanQuery = false
+		adornee.Anchored = true
+		adornee.Size = createVector(0.44, 0.47, 1)
+		adornee.Transparency = 1
+		adornee.CastShadow = false
+		RunService.RenderStepped:Connect(function(_)
+			local userCFrame = VRService:GetUserCFrame(Enum.UserCFrame.Head)
+			local v2 = workspace.CurrentCamera.CFrame * (CFrame.new(userCFrame.Position * workspace.CurrentCamera.HeadScale) * (userCFrame - userCFrame.Position))
+			adornee.CFrame = v2 * CFrame.Angles(0, 3.141592653589793, 0) + v2.LookVector * (1.05 * workspace.CurrentCamera.HeadScale)
+			adornee.Size = createVector(0.44, 0.47, 1) * workspace.CurrentCamera.HeadScale
+		end)
+	end
+
+	local vRBlurScreen = p2.PlayerGui:FindFirstChild("VRBlurScreen")
+	local v2
+
+	if vRBlurScreen then
+		v2 = vRBlurScreen:FindFirstChild("VRBlur")
+	end
+
+	if not v2 then
+		local parent = vRBlurScreen or Instance.new("SurfaceGui")
+		parent.Name = "VRBlurScreen"
+		parent.Parent = p2.PlayerGui
+		parent.Adornee = adornee
+		v2 = Instance.new("ImageLabel")
+		v2.Name = "VRBlur"
+		v2.Parent = parent
+		v2.Image = "rbxasset://textures/ui/VR/edgeBlur.png"
+		v2.AnchorPoint = Vector2.new(0.5, 0.5)
+		v2.Position = UDim2.new(0.5, 0, 0.5, 0)
+		local v4 = workspace.CurrentCamera.ViewportSize.X * 2.3 / 512
+		local v5 = workspace.CurrentCamera.ViewportSize.Y * 2.3 / 512
+		v2.Size = UDim2.fromScale(v4, v5)
+		v2.BackgroundTransparency = 1
+		v2.Active = true
+		v2.ScaleType = Enum.ScaleType.Stretch
+	end
+
+	v2.Visible = true
+	v2.ImageTransparency = 0
+	self.VREdgeBlurTimer = 0.14
+end
+
+function object:UpdateEdgeBlur(p2, p3)
+	local vRBlurScreen = p2.PlayerGui:FindFirstChild("VRBlurScreen")
+	local vRBlur
+
+	if vRBlurScreen then
+		vRBlur = vRBlurScreen:FindFirstChild("VRBlur")
+	end
+
+	if vRBlur then
+		if self.VREdgeBlurTimer > 0 then
+			self.VREdgeBlurTimer -= p3
+			local vRBlurScreen2 = p2.PlayerGui:FindFirstChild("VRBlurScreen")
+			local vRBlur2 = vRBlurScreen2 and vRBlurScreen2:FindFirstChild("VRBlur")
+
+			if vRBlur2 then
+				vRBlur2.ImageTransparency = 1 - math.clamp(self.VREdgeBlurTimer, 0.01, 0.14) * 7.142857142857142
+			end
+		else
+			vRBlur.Visible = false
+		end
+	end
+end
+
+function object:GetCameraHeight()
+	if self.inFirstPerson then
+		return 0
+	end
+
+	return 0.25881904510252074 * self.currentSubjectDistance
+end
+
+function object:GetSubjectCFrame()
+	local lastSubjectCFrame = BaseCamera.GetSubjectCFrame(self)
+	local currentCamera = workspace.CurrentCamera
+	local cameraSubject = currentCamera and currentCamera.CameraSubject
+
+	if not cameraSubject then
+		return lastSubjectCFrame
+	end
+
+	if cameraSubject:IsA("Humanoid") and cameraSubject:GetState() == Enum.HumanoidStateType.Dead and cameraSubject == self.lastSubject then
+		lastSubjectCFrame = self.lastSubjectCFrame
+	end
+
+	if lastSubjectCFrame then
+		self.lastSubjectCFrame = lastSubjectCFrame
+	end
+
+	return lastSubjectCFrame
+end
+
+function object:GetSubjectPosition()
+	local lastSubjectPosition = BaseCamera.GetSubjectPosition(self)
+	local currentCamera = game.Workspace.CurrentCamera
+	local cameraSubject = currentCamera and currentCamera.CameraSubject
+
+	if not cameraSubject then
+		return nil
+	end
+
+	if cameraSubject:IsA("Humanoid") then
+		if cameraSubject:GetState() == Enum.HumanoidStateType.Dead and cameraSubject == self.lastSubject then
+			lastSubjectPosition = self.lastSubjectPosition
+		end
+	elseif cameraSubject:IsA("VehicleSeat") then
+		lastSubjectPosition = cameraSubject.CFrame.Position + cameraSubject.CFrame:vectorToWorldSpace(createVector(
+			0,
+			4,
+			0
+		))
+	end
+
+	self.lastSubjectPosition = lastSubjectPosition
+	return lastSubjectPosition
+end
+
+function object:getRotation(p)
+	local rotation = CameraInput.getRotation(p)
+
+	if UserGameSettings.VRSmoothRotationEnabled then
+		return rotation.X
+	end
+
+	if math.abs(rotation.X) > 0.03 then
+		if self.stepRotateTimeout > 0 then
+			self.stepRotateTimeout -= p
+		end
+
+		if self.stepRotateTimeout <= 0 then
+			local v2 = (rotation.X < 0 and -1 or 1) * 0.5235987755982988
+			self:StartFadeFromBlack()
+			self.stepRotateTimeout = 0.25
+			return v2
+		end
+	elseif math.abs(rotation.X) < 0.02 then
+		self.stepRotateTimeout = 0
+	end
+
+	return 0
+end
+
+function object.HandleSubjectDistance(object2, object3)
+	if object3 and object3.IsInFirstPerson and object3:IsInFirstPerson() then
+		object2:SetCameraToSubjectDistance(0)
+	end
+end
+
+return object

@@ -1,0 +1,1 @@
+return require(script.Parent._Index["hollower233_serverteleport@0.1.4"].serverteleport)

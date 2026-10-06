@@ -1,0 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local BoothClient = require(ReplicatedStorage.Engine.Service.BoothClient)
+BoothClient.Init()
+local BoothSignClient = require(ReplicatedStorage.Engine.Service.BoothSignClient)
+BoothSignClient.Init()

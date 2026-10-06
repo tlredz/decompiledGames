@@ -1,0 +1,216 @@
+==================== DECOMPILE REPORT ====================
+Game:            Avatar Creator
+PlaceId:         136656968143195
+Place version:   611
+Started at:      2026-10-06 10:48:27
+Finished at:     2026-10-06 10:48:39
+Duration:        12.3s
+Output folder:   decompiledGames/avatar-creator/v611/
+Server:          https://anatomist-tuition-mankind.ngrok-free.dev/decompile
+
+-------------------------- TOTALS --------------------------
+Scripts found:        191
+No bytecode (unqueued): 10
+Queued:               181
+Decompiled OK:        123
+Reused (same name+bytecode): 58
+Syntax errors:        0
+Failed:               0
+Crashed:              0
+Skipped (file exists): 0
+Success rate:         100.0% (of 123 decompiled)
+
+------------------------- SCRIPTS --------------------------
+[OK] Workspace.Player3.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player7.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player7/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player4.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player4/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player6.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player6/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player5.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player5/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player8.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player8/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.Player2.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/Player2/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[CACHED] Workspace.LocalPlayer.Animate (LocalScript, 20944 bytes) -> decompiledGames/avatar-creator/v611/Workspace/LocalPlayer/Animate.luau | copied from decompiledGames/avatar-creator/v611/Workspace/Player3/Animate.luau
+[OK] Players.LocalPlayer.PlayerScripts.AtelierController (LocalScript, 11990 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/AtelierController.luau
+[OK] Players.LocalPlayer.PlayerScripts.CatalogUtilityVisibility (LocalScript, 1412 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/CatalogUtilityVisibility.luau
+[OK] Players.LocalPlayer.PlayerScripts.AutoRejoinController (LocalScript, 2323 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/AutoRejoinController.luau
+[OK] Players.LocalPlayer.PlayerScripts.TopNavShine (LocalScript, 1279 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/TopNavShine.luau
+[OK] Players.LocalPlayer.PlayerScripts.GamepassPerkController (LocalScript, 7442 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/GamepassPerkController.luau
+[OK] Players.LocalPlayer.PlayerScripts.ItemSoundController (LocalScript, 2279 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ItemSoundController.luau
+[OK] Players.LocalPlayer.PlayerScripts.MobileJumpSafeLayout (LocalScript, 10073 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MobileJumpSafeLayout.luau
+[OK] Players.LocalPlayer.PlayerScripts.ButtonHoverSound (LocalScript, 1429 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ButtonHoverSound.luau
+[OK] Players.LocalPlayer.PlayerScripts.GlobalPurchaseChat (LocalScript, 1062 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/GlobalPurchaseChat.luau
+[OK] Players.LocalPlayer.PlayerScripts.MobileScreenCoordinator (LocalScript, 4935 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MobileScreenCoordinator.luau
+[OK] Players.LocalPlayer.PlayerScripts.StarterPackController (LocalScript, 7054 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/StarterPackController.luau
+[OK] Players.LocalPlayer.PlayerScripts.MenuOverlapProtection (LocalScript, 3562 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MenuOverlapProtection.luau
+[OK] Players.LocalPlayer.PlayerScripts.SimpleBoothController (LocalScript, 4280 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/SimpleBoothController.luau
+[OK] Players.LocalPlayer.PlayerScripts.BoothTransferController (LocalScript, 6951 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/BoothTransferController.luau
+[OK] Players.LocalPlayer.PlayerScripts.ClearMenuBackdrops (LocalScript, 1952 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ClearMenuBackdrops.luau
+[OK] Players.LocalPlayer.PlayerScripts.RbxCharacterSounds (LocalScript, 12355 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/RbxCharacterSounds.luau
+[OK] Players.LocalPlayer.PlayerScripts.RbxCharacterSounds.AtomicBinding (ModuleScript, 5323 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/RbxCharacterSounds/AtomicBinding.luau
+[OK] Players.LocalPlayer.PlayerGui.ScreenGui.Frame.CatelogButton.FreeBadge.BadgeStyle (LocalScript, 203 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/ScreenGui/Frame/CatelogButton/FreeBadge/BadgeStyle.luau
+[OK] Players.LocalPlayer.PlayerGui.ScreenGui.OutfitsController (LocalScript, 5131 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/ScreenGui/OutfitsController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.CatalogController (LocalScript, 52019 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/CatalogController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.LivePreviewController (LocalScript, 5939 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/LivePreviewController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.EquippedStripController (LocalScript, 7341 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/EquippedStripController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.BodyEditorController (LocalScript, 13913 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/BodyEditorController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.Root.Panel.CatalogHome.CategoryCarousel (LocalScript, 2289 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/Panel/CatalogHome/CategoryCarousel.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.Root.Panel.CatalogHome.CategoryShineController (LocalScript, 2267 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/Panel/CatalogHome/CategoryShineController.luau
+[OK] Players.LocalPlayer.PlayerGui.CatalogGui.Root.LivePreview.DefaultBackdropController (LocalScript, 1352 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/LivePreview/DefaultBackdropController.luau
+[OK] Players.LocalPlayer.PlayerGui.CommunityGui.CommunityController (LocalScript, 19097 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CommunityGui/CommunityController.luau
+[OK] Players.LocalPlayer.PlayerGui.WearingGui.WearingController (LocalScript, 9178 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/WearingGui/WearingController.luau
+[OK] Players.LocalPlayer.PlayerGui.WearingGui.OutfitHubController (LocalScript, 11238 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/WearingGui/OutfitHubController.luau
+[OK] Players.LocalPlayer.PlayerGui.PreferencesGui.PreferencesController (LocalScript, 7204 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/PreferencesController.luau
+[OK] Players.LocalPlayer.PlayerGui.PreferencesGui.MapController (LocalScript, 5970 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/MapController.luau
+[OK] Players.LocalPlayer.PlayerGui.PreferencesGui.MusicController (LocalScript, 4874 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/MusicController.luau
+[OK] Players.LocalPlayer.PlayerGui.EditorToolsGui.EditorToolsController (LocalScript, 5668 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/EditorToolsGui/EditorToolsController.luau
+[OK] Players.LocalPlayer.PlayerGui.LeaderboardGui.LeaderboardController (LocalScript, 23580 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/LeaderboardGui/LeaderboardController.luau
+[OK] Players.LocalPlayer.PlayerGui.RobloxSaveOutfitGui.RobloxSaveOutfitController (LocalScript, 8063 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/RobloxSaveOutfitGui/RobloxSaveOutfitController.luau
+[OK] Players.LocalPlayer.PlayerGui.SaveOutfitShortcutGui.ShortcutController (LocalScript, 409 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/SaveOutfitShortcutGui/ShortcutController.luau
+[OK] Players.LocalPlayer.PlayerGui.SaveOutfitShortcutGui.ResetAvatarController (LocalScript, 4768 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/SaveOutfitShortcutGui/ResetAvatarController.luau
+[OK] Players.LocalPlayer.PlayerGui.BackgroundPreviewGui.BackgroundPreviewController (LocalScript, 12249 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/BackgroundPreviewGui/BackgroundPreviewController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.UGCClaimController (LocalScript, 18774 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/UGCClaimController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.CoinShopPurchases (LocalScript, 16523 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/CoinShopPurchases.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.InviteFriendsController (LocalScript, 1990 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/InviteFriendsController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.GroupJoinController (LocalScript, 5088 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/GroupJoinController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.FavoriteRewardController (LocalScript, 2044 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/FavoriteRewardController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.UGCVIPController (LocalScript, 7391 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/UGCVIPController.luau
+[OK] Players.LocalPlayer.PlayerGui.UGCClaimGui.RewardGiftUI (ModuleScript, 13729 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/RewardGiftUI.luau
+[OK] Players.LocalPlayer.PlayerGui.GamepassStoreGui.StoreController (LocalScript, 4464 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/StoreController.luau
+[OK] Players.LocalPlayer.PlayerGui.GamepassStoreGui.GamepassPurchases (LocalScript, 2797 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/GamepassPurchases.luau
+[OK] Players.LocalPlayer.PlayerGui.GamepassStoreGui.VIPGiftController (LocalScript, 11869 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/VIPGiftController.luau
+[OK] Players.LocalPlayer.PlayerGui.GiveawayGui.GiveawayController (LocalScript, 12302 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GiveawayGui/GiveawayController.luau
+[OK] Players.LocalPlayer.PlayerGui.FirstVisitTutorialGui.TutorialController (LocalScript, 10209 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/FirstVisitTutorialGui/TutorialController.luau
+[OK] Players.LocalPlayer.PlayerGui.FirstVisitTutorialGui.ResponsiveLayout (ModuleScript, 912 bytes) -> decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/FirstVisitTutorialGui/ResponsiveLayout.luau
+[OK] StarterPlayer.PlayerModule (ModuleScript, 2276 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule.luau
+[OK] StarterPlayer.PlayerModule.PlayerScriptsLoader (Script, 22 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/PlayerScriptsLoader.luau
+[OK] StarterPlayer.PlayerModule.ServerAuthority (ModuleScript, 1603 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ServerAuthority.luau
+[OK] StarterPlayer.PlayerModule.ServerAuthority.ServerAuthorityClient (Script, 69 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ServerAuthority/ServerAuthorityClient.luau
+[OK] StarterPlayer.PlayerModule.CameraModule (ModuleScript, 16363 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.Poppercam (ModuleScript, 2963 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/Poppercam.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.CameraUtils (ModuleScript, 7389 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/CameraUtils.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VRCameraTeleportDetector (ModuleScript, 477 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VRCameraTeleportDetector.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.LegacyCamera (ModuleScript, 3084 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/LegacyCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.CameraToggleStateController (ModuleScript, 1849 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/CameraToggleStateController.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VehicleCamera (ModuleScript, 5426 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VehicleCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VehicleCamera.VehicleCameraCore (ModuleScript, 4330 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VehicleCamera/VehicleCameraCore.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VehicleCamera.VehicleCameraConfig (ModuleScript, 525 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VehicleCamera/VehicleCameraConfig.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.TransparencyController (ModuleScript, 5553 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/TransparencyController.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.BaseCamera (ModuleScript, 18239 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/BaseCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.BaseOcclusion (ModuleScript, 851 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/BaseOcclusion.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.CameraInput (ModuleScript, 5536 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/CameraInput.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VRCameraTeleportDetector.spec (ModuleScript, 2029 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VRCameraTeleportDetector/spec.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.ClassicCamera (ModuleScript, 6459 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/ClassicCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VRVehicleCamera (ModuleScript, 10057 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VRVehicleCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VRBaseCamera (ModuleScript, 9620 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VRBaseCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.CameraUI (ModuleScript, 529 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/CameraUI.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.OrbitalCamera (ModuleScript, 8003 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/OrbitalCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.Invisicam (ModuleScript, 14626 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/Invisicam.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.VRCamera (ModuleScript, 12870 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/VRCamera.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.MouseLockController (ModuleScript, 3857 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/MouseLockController.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.ZoomController (ModuleScript, 2639 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/ZoomController.luau
+[OK] StarterPlayer.PlayerModule.CameraModule.ZoomController.Popper (ModuleScript, 12012 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CameraModule/ZoomController/Popper.luau
+[OK] StarterPlayer.PlayerModule.ControlModule (ModuleScript, 29000 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.TouchJump (ModuleScript, 7477 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/TouchJump.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.InputSlots (ModuleScript, 7220 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/InputSlots.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.DynamicThumbstick (ModuleScript, 25874 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/DynamicThumbstick.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.VehicleController (ModuleScript, 1915 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/VehicleController.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.ActionController (ModuleScript, 1350 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/ActionController.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.InputReplication (ModuleScript, 13228 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/InputReplication.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.ClassicThumbstick (ModuleScript, 12173 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/ClassicThumbstick.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.ClickToMoveDisplay (ModuleScript, 13283 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/ClickToMoveDisplay.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.ClickToMoveController (ModuleScript, 43779 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/ClickToMoveController.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.AvatarAbilitiesInterface (ModuleScript, 10155 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/AvatarAbilitiesInterface.luau
+[OK] StarterPlayer.PlayerModule.ControlModule.TouchAbilities (ModuleScript, 9579 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/ControlModule/TouchAbilities.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils (ModuleScript, 416 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.CameraWrapper.spec (ModuleScript, 970 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/CameraWrapper/spec.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.PlayerModuleEventBus (ModuleScript, 110 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/PlayerModuleEventBus.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.ConnectionUtil (ModuleScript, 823 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/ConnectionUtil.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.EventBus (ModuleScript, 558 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/EventBus.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.ConnectionUtil.spec (ModuleScript, 1871 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/ConnectionUtil/spec.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.CharacterUtil (ModuleScript, 2949 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/CharacterUtil.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.CameraWrapper (ModuleScript, 1678 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/CameraWrapper.luau
+[OK] StarterPlayer.PlayerModule.CommonUtils.FlagUtil (ModuleScript, 169 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/PlayerModule/CommonUtils/FlagUtil.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.AtelierController (LocalScript, 11990 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/AtelierController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/AtelierController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.CatalogUtilityVisibility (LocalScript, 1412 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/CatalogUtilityVisibility.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/CatalogUtilityVisibility.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.AutoRejoinController (LocalScript, 2323 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/AutoRejoinController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/AutoRejoinController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.TopNavShine (LocalScript, 1279 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/TopNavShine.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/TopNavShine.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.GamepassPerkController (LocalScript, 7442 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/GamepassPerkController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/GamepassPerkController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.ItemSoundController (LocalScript, 2279 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/ItemSoundController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ItemSoundController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.MobileJumpSafeLayout (LocalScript, 10073 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/MobileJumpSafeLayout.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MobileJumpSafeLayout.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.ButtonHoverSound (LocalScript, 1429 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/ButtonHoverSound.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ButtonHoverSound.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.GlobalPurchaseChat (LocalScript, 1062 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/GlobalPurchaseChat.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/GlobalPurchaseChat.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.MobileScreenCoordinator (LocalScript, 4935 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/MobileScreenCoordinator.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MobileScreenCoordinator.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.StarterPackController (LocalScript, 7054 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/StarterPackController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/StarterPackController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.MenuOverlapProtection (LocalScript, 3562 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/MenuOverlapProtection.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/MenuOverlapProtection.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.SimpleBoothController (LocalScript, 4280 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/SimpleBoothController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/SimpleBoothController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.BoothTransferController (LocalScript, 6951 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/BoothTransferController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/BoothTransferController.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.ClearMenuBackdrops (LocalScript, 1952 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/ClearMenuBackdrops.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/ClearMenuBackdrops.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.RbxCharacterSounds (LocalScript, 12355 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/RbxCharacterSounds.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/RbxCharacterSounds.luau
+[CACHED] StarterPlayer.StarterPlayerScripts.RbxCharacterSounds.AtomicBinding (ModuleScript, 5323 bytes) -> decompiledGames/avatar-creator/v611/StarterPlayer/StarterPlayerScripts/RbxCharacterSounds/AtomicBinding.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerScripts/RbxCharacterSounds/AtomicBinding.luau
+[CACHED] StarterGui.WearingGui.WearingController (LocalScript, 9178 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/WearingGui/WearingController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/WearingGui/WearingController.luau
+[CACHED] StarterGui.WearingGui.OutfitHubController (LocalScript, 11238 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/WearingGui/OutfitHubController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/WearingGui/OutfitHubController.luau
+[CACHED] StarterGui.PreferencesGui.PreferencesController (LocalScript, 7204 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/PreferencesGui/PreferencesController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/PreferencesController.luau
+[CACHED] StarterGui.PreferencesGui.MapController (LocalScript, 5970 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/PreferencesGui/MapController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/MapController.luau
+[CACHED] StarterGui.PreferencesGui.MusicController (LocalScript, 4874 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/PreferencesGui/MusicController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/PreferencesGui/MusicController.luau
+[CACHED] StarterGui.EditorToolsGui.EditorToolsController (LocalScript, 5668 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/EditorToolsGui/EditorToolsController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/EditorToolsGui/EditorToolsController.luau
+[CACHED] StarterGui.LeaderboardGui.LeaderboardController (LocalScript, 23580 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/LeaderboardGui/LeaderboardController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/LeaderboardGui/LeaderboardController.luau
+[CACHED] StarterGui.RobloxSaveOutfitGui.RobloxSaveOutfitController (LocalScript, 8063 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/RobloxSaveOutfitGui/RobloxSaveOutfitController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/RobloxSaveOutfitGui/RobloxSaveOutfitController.luau
+[CACHED] StarterGui.SaveOutfitShortcutGui.ShortcutController (LocalScript, 409 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/SaveOutfitShortcutGui/ShortcutController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/SaveOutfitShortcutGui/ShortcutController.luau
+[CACHED] StarterGui.SaveOutfitShortcutGui.ResetAvatarController (LocalScript, 4768 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/SaveOutfitShortcutGui/ResetAvatarController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/SaveOutfitShortcutGui/ResetAvatarController.luau
+[CACHED] StarterGui.BackgroundPreviewGui.BackgroundPreviewController (LocalScript, 12249 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/BackgroundPreviewGui/BackgroundPreviewController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/BackgroundPreviewGui/BackgroundPreviewController.luau
+[CACHED] StarterGui.UGCClaimGui.UGCClaimController (LocalScript, 18774 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/UGCClaimController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/UGCClaimController.luau
+[CACHED] StarterGui.UGCClaimGui.CoinShopPurchases (LocalScript, 16523 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/CoinShopPurchases.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/CoinShopPurchases.luau
+[CACHED] StarterGui.UGCClaimGui.InviteFriendsController (LocalScript, 1990 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/InviteFriendsController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/InviteFriendsController.luau
+[CACHED] StarterGui.UGCClaimGui.GroupJoinController (LocalScript, 5088 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/GroupJoinController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/GroupJoinController.luau
+[CACHED] StarterGui.UGCClaimGui.FavoriteRewardController (LocalScript, 2044 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/FavoriteRewardController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/FavoriteRewardController.luau
+[CACHED] StarterGui.UGCClaimGui.UGCVIPController (LocalScript, 7391 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/UGCVIPController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/UGCVIPController.luau
+[CACHED] StarterGui.UGCClaimGui.RewardGiftUI (ModuleScript, 13729 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/UGCClaimGui/RewardGiftUI.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/UGCClaimGui/RewardGiftUI.luau
+[CACHED] StarterGui.GiveawayGui.GiveawayController (LocalScript, 12302 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/GiveawayGui/GiveawayController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GiveawayGui/GiveawayController.luau
+[CACHED] StarterGui.FirstVisitTutorialGui.TutorialController (LocalScript, 10209 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/FirstVisitTutorialGui/TutorialController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/FirstVisitTutorialGui/TutorialController.luau
+[CACHED] StarterGui.FirstVisitTutorialGui.ResponsiveLayout (ModuleScript, 912 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/FirstVisitTutorialGui/ResponsiveLayout.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/FirstVisitTutorialGui/ResponsiveLayout.luau
+[CACHED] StarterGui.CatalogGui.CatalogController (LocalScript, 52019 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/CatalogController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/CatalogController.luau
+[CACHED] StarterGui.CatalogGui.LivePreviewController (LocalScript, 5939 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/LivePreviewController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/LivePreviewController.luau
+[CACHED] StarterGui.CatalogGui.EquippedStripController (LocalScript, 7341 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/EquippedStripController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/EquippedStripController.luau
+[CACHED] StarterGui.CatalogGui.BodyEditorController (LocalScript, 13913 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/BodyEditorController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/BodyEditorController.luau
+[CACHED] StarterGui.CatalogGui.Root.Panel.CatalogHome.CategoryCarousel (LocalScript, 2289 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/Root/Panel/CatalogHome/CategoryCarousel.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/Panel/CatalogHome/CategoryCarousel.luau
+[CACHED] StarterGui.CatalogGui.Root.Panel.CatalogHome.CategoryShineController (LocalScript, 2267 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/Root/Panel/CatalogHome/CategoryShineController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/Panel/CatalogHome/CategoryShineController.luau
+[CACHED] StarterGui.CatalogGui.Root.LivePreview.DefaultBackdropController (LocalScript, 1352 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CatalogGui/Root/LivePreview/DefaultBackdropController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CatalogGui/Root/LivePreview/DefaultBackdropController.luau
+[CACHED] StarterGui.GamepassStoreGui.StoreController (LocalScript, 4464 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/GamepassStoreGui/StoreController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/StoreController.luau
+[CACHED] StarterGui.GamepassStoreGui.GamepassPurchases (LocalScript, 2797 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/GamepassStoreGui/GamepassPurchases.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/GamepassPurchases.luau
+[CACHED] StarterGui.GamepassStoreGui.VIPGiftController (LocalScript, 11869 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/GamepassStoreGui/VIPGiftController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/GamepassStoreGui/VIPGiftController.luau
+[CACHED] StarterGui.CommunityGui.CommunityController (LocalScript, 19097 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/CommunityGui/CommunityController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/CommunityGui/CommunityController.luau
+[CACHED] StarterGui.ScreenGui.Frame.CatelogButton.FreeBadge.BadgeStyle (LocalScript, 203 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/ScreenGui/Frame/CatelogButton/FreeBadge/BadgeStyle.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/ScreenGui/Frame/CatelogButton/FreeBadge/BadgeStyle.luau
+[CACHED] StarterGui.ScreenGui.OutfitsController (LocalScript, 5131 bytes) -> decompiledGames/avatar-creator/v611/StarterGui/ScreenGui/OutfitsController.luau | copied from decompiledGames/avatar-creator/v611/Players/LocalPlayer/PlayerGui/ScreenGui/OutfitsController.luau
+[OK] ReplicatedStorage.CatalogUI (ModuleScript, 10969 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/CatalogUI.luau
+[OK] ReplicatedStorage.OutfitCodec (ModuleScript, 4988 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/OutfitCodec.luau
+[OK] ReplicatedStorage.AtelierTheme (ModuleScript, 9738 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/AtelierTheme.luau
+[OK] ReplicatedStorage.CatalogPriceRange (ModuleScript, 2105 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/CatalogPriceRange.luau
+[OK] ReplicatedStorage.MenuFade (ModuleScript, 4970 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/MenuFade.luau
+[OK] ReplicatedStorage.CoinProducts (ModuleScript, 162 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/CoinProducts.luau
+[OK] ReplicatedStorage.IconNavigation (ModuleScript, 9352 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/IconNavigation.luau
+[OK] ReplicatedStorage.Gamepasses (ModuleScript, 469 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/Gamepasses.luau
+[OK] ReplicatedStorage.ViewportLayoutWatch (ModuleScript, 898 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/ViewportLayoutWatch.luau
+[OK] ReplicatedStorage.CoinGiftProducts (ModuleScript, 162 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/CoinGiftProducts.luau
+[OK] ReplicatedStorage.UGCRewardPreview (ModuleScript, 10093 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/UGCRewardPreview.luau
+[OK] ReplicatedStorage.LimitedCoinPolicy (ModuleScript, 392 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/LimitedCoinPolicy.luau
+[OK] ReplicatedStorage.MobileCatalogLayout (ModuleScript, 24347 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/MobileCatalogLayout.luau
+[OK] ReplicatedStorage.MobilePanelLayout (ModuleScript, 16235 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/MobilePanelLayout.luau
+[OK] ReplicatedStorage.GiveawayDockLayout (ModuleScript, 992 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/GiveawayDockLayout.luau
+[OK] ReplicatedStorage.BoothTransferRules (ModuleScript, 834 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/BoothTransferRules.luau
+[OK] ReplicatedStorage.SavedPreferences (ModuleScript, 1152 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/SavedPreferences.luau
+[OK] ReplicatedStorage.OutfitSaveFlow (ModuleScript, 5727 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/OutfitSaveFlow.luau
+[OK] ReplicatedStorage.OutfitHubLayout (ModuleScript, 5116 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/OutfitHubLayout.luau
+[OK] ReplicatedStorage.SavedOutfitPreview (ModuleScript, 5961 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/SavedOutfitPreview.luau
+[OK] ReplicatedStorage.OutfitOrbitControls (ModuleScript, 3421 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/OutfitOrbitControls.luau
+[OK] ReplicatedStorage.VIPGiftProducts (ModuleScript, 28 bytes) -> decompiledGames/avatar-creator/v611/ReplicatedStorage/VIPGiftProducts.luau
+
+--------------- NO BYTECODE (NOT QUEUED) -------------------
+Workspace.Player3.Health
+Workspace.Player7.Health
+Workspace.Player4.Health
+Workspace.Player6.Health
+Workspace.Player5.Health
+Workspace.Player8.Health
+Workspace.Player2.Health
+Workspace.LocalPlayer.Health
+StarterPlayer.PlayerModule.ServerAuthority.ServerAuthorityServer
+StarterPlayer.PlayerModule.InputSetup

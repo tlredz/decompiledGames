@@ -1,0 +1,15 @@
+==================== DECOMPILE ERRORS ====================
+Game: Ball VS Ball (v52)
+Total problems: 3
+
+#1 [SYNTAX] ReplicatedStorage.Packages._Index.essentiallyblue_zoneplus@3.2.2.zoneplus
+    file:  decompiledGames/ball-vs-ball/v52/ReplicatedStorage/Packages/_Index/essentiallyblue_zoneplus@3/2/2/zoneplus.lua
+    error: VmSlGRowsqqomlSQLitqNTWCR:854: Ambiguous syntax: this looks like an argument list for a function call, but could also be a start of new statement; use ';' to separate statements
+
+#2 [SYNTAX] ReplicatedStorage.Engine.Gui.DuelChoice
+    file:  decompiledGames/ball-vs-ball/v52/ReplicatedStorage/Engine/Gui/DuelChoice.lua
+    error: VmSlGTAuAfAYctMozMPxiZhoJ:296: Expected identifier when parsing expression, got ';'
+
+#3 [DECOMPILE] ReplicatedStorage.Engine.Service.PartyService
+    file:  decompiledGames/ball-vs-ball/v52/ReplicatedStorage/Engine/Service/PartyService.lua
+    error: bad request: control-flow structuring failed: residual goto/label would be invalid Luau (HTTP 400)

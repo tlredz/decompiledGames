@@ -1,0 +1,1 @@
+return require(script.Parent._Index["sleitnick_observers@0.4.0"].observers)

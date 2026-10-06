@@ -1,0 +1,5 @@
+return {
+	SET_TAG = "__set",
+	INSTANCE_ATTRIBUTE = "__networkTag",
+	INSTANCE_TAG = "__instance"
+}
